@@ -8,12 +8,12 @@
 
 #import "DADataManager.h"
 
-/** 
- *	This would be the root directory in the application's documents folder.
- *	
- *	Sub-directory structure will be like pathPrefix/data
- */
 NSString *const pathPrefix = @"Data";
+
+NSString *const kSubFolderDataFiles = @"files";
+NSString *const kSubFolderImageFiles = @"images";
+NSString *const kSubFolderAudioFiles = @"audio";
+NSString *const kSubFolderVideoFiles = @"videos";
 
 @interface DADataManager ()
 
@@ -39,30 +39,71 @@ NSString *const pathPrefix = @"Data";
 	return [documentsPath stringByAppendingPathComponent:[NSString stringWithFormat:@"%@", fileName]];
 }
 
-- (NSString *)dataFilesPathForFileName:(NSString *)fileName {
+- (NSString *)libraryPathForFileName:(NSString *)fileName {
+	NSArray *paths = NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES);
+	NSString *documentsPath = [NSString stringWithFormat:@"%@", [paths lastObject]];
+	return [documentsPath stringByAppendingPathComponent:[NSString stringWithFormat:@"%@", fileName]];
+}
+
+- (NSString *)filePathForFileName:(NSString *)fileName subfolder:(NSString *)subfolder {
 	NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
 	NSString *documentsPath = [NSString stringWithFormat:@"%@", [paths lastObject]];
-	[self.fileManager createDirectoryAtPath:[NSString stringWithFormat:@"%@/%@/data", [paths lastObject], pathPrefix] withIntermediateDirectories:YES attributes:nil error:nil];
-	return [documentsPath stringByAppendingPathComponent:[NSString stringWithFormat:@"%@/data/%@", pathPrefix, fileName]];
+	[self.fileManager createDirectoryAtPath:[NSString stringWithFormat:@"%@/%@/%@", [paths lastObject], pathPrefix, subfolder] withIntermediateDirectories:YES attributes:nil error:nil];
+	return [documentsPath stringByAppendingPathComponent:[NSString stringWithFormat:@"%@/%@/%@", pathPrefix, subfolder, fileName]];
+}
+
+- (NSString *)dataFilesPathForFileName:(NSString *)fileName {
+	return [self filePathForFileName:fileName subfolder:kSubFolderDataFiles];
 }
 
 - (NSString *)imagesPathForFileName:(NSString *)fileName {
-	NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-	NSString *documentsPath = [NSString stringWithFormat:@"%@", [paths lastObject]];
-	[self.fileManager createDirectoryAtPath:[NSString stringWithFormat:@"%@/%@/images", [paths lastObject], pathPrefix] withIntermediateDirectories:YES attributes:nil error:nil];
-	return [documentsPath stringByAppendingPathComponent:[NSString stringWithFormat:@"%@/images/%@", pathPrefix, fileName]];
+	return [self filePathForFileName:fileName subfolder:kSubFolderImageFiles];
+}
+
+- (NSString *)audioPathForFileName:(NSString *)fileName {
+	return [self filePathForFileName:fileName subfolder:kSubFolderAudioFiles];
 }
 
 - (NSString *)videosPathForFileName:(NSString *)fileName {
-	NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-	NSString *documentsPath = [NSString stringWithFormat:@"%@", [paths lastObject]];
-	[self.fileManager createDirectoryAtPath:[NSString stringWithFormat:@"%@/%@/videos", [paths lastObject], pathPrefix] withIntermediateDirectories:YES attributes:nil error:nil];
-	return [documentsPath stringByAppendingPathComponent:[NSString stringWithFormat:@"%@/videos/%@", pathPrefix, fileName]];
+	return [self filePathForFileName:fileName subfolder:kSubFolderVideoFiles];
 }
 
 - (NSURL *)videosURLForFileName:(NSString *)fileName {
 	return [NSURL fileURLWithPath:[self videosPathForFileName:fileName]];
 }
+
+#pragma mark - File checking
+
+- (BOOL)fileExistsInDocuments:(NSString *)fileName {
+	NSString *filePath = [self documentsPathForFileName:fileName];
+	return [self.fileManager fileExistsAtPath:filePath];
+}
+
+- (BOOL)dataFileExistsInDocuments:(NSString *)fileName {
+	NSString *filePath = [self dataFilesPathForFileName:fileName];
+	return [self.fileManager fileExistsAtPath:filePath];
+}
+
+- (BOOL)imageExistsInDocuments:(NSString *)fileName {
+	NSString *filePath = [self imagesPathForFileName:fileName];
+	return [self.fileManager fileExistsAtPath:filePath];
+}
+
+- (BOOL)audioFileExistsInDocuments:(NSString *)fileName {
+	NSString *filePath = [self audioPathForFileName:fileName];
+	return [self.fileManager fileExistsAtPath:filePath];
+}
+
+- (BOOL)videoExistsInDocuments:(NSString *)fileName {
+	NSString *filePath = [self videosPathForFileName:fileName];
+	return [self.fileManager fileExistsAtPath:filePath];
+}
+
+- (BOOL)videoURLExistsInDocuments:(NSURL *)url {
+	return [self.fileManager fileExistsAtPath:url.path];
+}
+
+#pragma mark - Deletion
 
 - (BOOL)deleteFileAtFilePath:(NSString *)filePath {
 	return [self.fileManager removeItemAtPath:filePath error:nil];
@@ -85,9 +126,13 @@ NSString *const pathPrefix = @"Data";
 
 - (BOOL)saveObject:(id)object toFilePath:(NSString *)filePath {
 	NSError *error;
-	NSData *data = [NSJSONSerialization dataWithJSONObject:object options:kNilOptions error:&error];
-	if (error == nil)
-		return [self saveData:data toDocumentsFile:filePath];
+	@try {
+		NSData *data = [NSJSONSerialization dataWithJSONObject:object options:kNilOptions error:&error];
+		if (error == nil)
+			return [self saveData:data toDocumentsFile:filePath];
+	} @catch (NSException *exception) {
+		return NO;
+	}
 	return NO;
 }
 
@@ -96,46 +141,34 @@ NSString *const pathPrefix = @"Data";
 	return [self.fileManager fileExistsAtPath:filePath];
 }
 
-- (BOOL)fileExistsInDocuments:(NSString *)fileName {
-	NSString *filePath = [self documentsPathForFileName:fileName];
-	return [self.fileManager fileExistsAtPath:filePath];
-}
-
-- (BOOL)dataFileExistsInDocuments:(NSString *)fileName {
-	NSString *filePath = [self dataFilesPathForFileName:fileName];
-	return [self.fileManager fileExistsAtPath:filePath];
-}
-
-- (BOOL)imageExistsInDocuments:(NSString *)fileName {
-	NSString *filePath = [self imagesPathForFileName:fileName];
-	return [self.fileManager fileExistsAtPath:filePath];
-}
-
-- (BOOL)videoExistsInDocuments:(NSString *)fileName {
-	NSString *filePath = [self videosPathForFileName:fileName];
-	return [self.fileManager fileExistsAtPath:filePath];
-}
-
-- (BOOL)videoURLExistsInDocuments:(NSURL *)url {
-	return [self.fileManager fileExistsAtPath:url.path];
-}
-
-- (id)fetchJSONFromDocumentsFileName:(NSString *)name {
+- (id)fetchJSONFromDocumentsFilePath:(NSString *)filePath {
 	NSError *error;
-	NSString *filePath = [self documentsPathForFileName:name];
+	return [self fetchJSONFromDocumentsFilepath:filePath error:&error];
+}
+
+- (id)fetchJSONFromDocumentsFilepath:(NSString *)filePath error:(NSError *__autoreleasing *)error {
 	NSData *data = [NSData dataWithContentsOfFile:filePath];
-	id jsonData = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
-	if (error == nil)
-		return jsonData;
+	@try {
+		id jsonData = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:error];
+		if (error == nil)
+			return jsonData;
+	} @catch (NSException *exception) {
+		return nil;
+	}
 	return nil;
 }
 
-- (id)fetchJSONFromDocumentsFileName:(NSString *)name error:(NSError *__autoreleasing *)error {
-	NSString *filePath = [self documentsPathForFileName:name];
-	NSData *data = [NSData dataWithContentsOfFile:filePath];
-	id jsonData = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:error];
-	if (error == nil)
-		return jsonData;
+- (id)fetchJSONFromDocumentsDataFileName:(NSString *)fileName {
+	NSError *error;
+	NSString *filePath = [self documentsPathForFileName:fileName];
+	@try {
+		NSData *data = [NSData dataWithContentsOfFile:filePath];
+		id jsonData = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
+		if (error == nil)
+			return jsonData;
+	} @catch (NSException *exception) {
+		return nil;
+	}
 	return nil;
 }
 
