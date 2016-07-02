@@ -23,6 +23,16 @@ FOUNDATION_EXPORT NSString *const pathPrefix;
 #pragma mark - Paths for file names
 
 /**
+ *	Returns the top level directory for the application's data in the containers folder.
+ */
+- (NSString *)getRootPath;
+
+/**
+ *	Get path by appending path components application's data in the containers folder.
+ */
+- (NSString *)rootPathForFileName:(NSString *)fileName;
+
+/**
  *	Returns path for a @em fileName present in the root of the application's documents directory.
  */
 - (NSString *)documentsPathForFileName:(NSString *)fileName;
@@ -184,5 +194,15 @@ FOUNDATION_EXPORT NSString *const pathPrefix;
  *	Shared instance.
  */
 + (DADataManager *)sharedManager;
+
+@end
+
+@interface NSString (URLUtilities)
+
+/// Returns the NSURL object associated with the NSString object; coresponding to NSURL's absoluteString.
+- (NSURL *)URL;
+
+/// Returns the fileURL for a filePath.
+- (NSURL *)fileURL;
 
 @end

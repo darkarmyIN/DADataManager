@@ -14,6 +14,7 @@
 		592A542F1D26A2890074CE82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 592A542D1D26A2890074CE82 /* LaunchScreen.storyboard */; };
 		592A543F1D26EB360074CE82 /* HomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 592A543E1D26EB360074CE82 /* HomeTableViewController.m */; };
 		5954856F1D278886000C677A /* ProgressTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5954856E1D278886000C677A /* ProgressTableViewCell.m */; };
+		595485721D27C913000C677A /* BrowseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 595485711D27C913000C677A /* BrowseTableViewController.m */; };
 		7CE8FF56478890D0B2FD764B /* Pods_DADataManagerDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBECFA157F0177BB5A3CA6B4 /* Pods_DADataManagerDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,8 @@
 		592A543E1D26EB360074CE82 /* HomeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewController.m; sourceTree = "<group>"; };
 		5954856D1D278886000C677A /* ProgressTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressTableViewCell.h; sourceTree = "<group>"; };
 		5954856E1D278886000C677A /* ProgressTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressTableViewCell.m; sourceTree = "<group>"; };
+		595485701D27C913000C677A /* BrowseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrowseTableViewController.h; sourceTree = "<group>"; };
+		595485711D27C913000C677A /* BrowseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrowseTableViewController.m; sourceTree = "<group>"; };
 		93BBABA4DFAFC350FB2A15AE /* Pods-DADataManagerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DADataManagerDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DADataManagerDemo/Pods-DADataManagerDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		DBECFA157F0177BB5A3CA6B4 /* Pods_DADataManagerDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DADataManagerDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -119,6 +122,8 @@
 			children = (
 				592A543D1D26EB360074CE82 /* HomeTableViewController.h */,
 				592A543E1D26EB360074CE82 /* HomeTableViewController.m */,
+				595485701D27C913000C677A /* BrowseTableViewController.h */,
+				595485711D27C913000C677A /* BrowseTableViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -253,6 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				595485721D27C913000C677A /* BrowseTableViewController.m in Sources */,
 				592A54241D26A2890074CE82 /* AppDelegate.m in Sources */,
 				592A543F1D26EB360074CE82 /* HomeTableViewController.m in Sources */,
 				5954856F1D278886000C677A /* ProgressTableViewCell.m in Sources */,

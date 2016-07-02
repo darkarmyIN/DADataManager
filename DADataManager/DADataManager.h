@@ -1,6 +1,6 @@
 //
 //  DADataManager.h
-//  DADataManagerDemo
+//  DADataManager
 //
 //  Created by Avikant Saini on 7/1/16.
 //  Copyright © 2016 Dark Army. All rights reserved.
@@ -23,47 +23,63 @@ FOUNDATION_EXPORT NSString *const pathPrefix;
 #pragma mark - Paths for file names
 
 /**
+ *	Returns the top level directory for the application's data in the containers folder.
+ */
+- (NSString *)getRootPath;
+
+/**
+ *	Get path by appending path components application's data in the containers folder.
+ */
+- (NSString *)rootPathForFileName:(NSString *)fileName;
+
+/**
  *	Returns path for a @em fileName present in the root of the application's documents directory.
  */
 - (NSString *)documentsPathForFileName:(NSString *)fileName;
+- (NSURL *)documentsURLForFileName:(NSString *)fileName;
 
 /**
  *	Returns path for a @em fileName present in the root of the application's library directory.
  */
 - (NSString *)libraryPathForFileName:(NSString *)fileName;
+- (NSURL *)libraryURLForFileName:(NSString *)fileName;
 
 /**
  *	Returns path for a @em fileName present in the 'data' subfolder in the @em pathPrefix subfolder in the application's documents directory.
- *	@see imagesPathForFileName, videosPathForFileName
+ *	@see dataFilesURLForFileName
  */
 - (NSString *)dataFilesPathForFileName:(NSString *)fileName;
+- (NSURL *)dataFilesURLForFileName:(NSString *)fileName;
 
 /**
  *	Returns path for a @em fileName present in the 'images' subfolder in the @em pathPrefix subfolder in the application's documents directory.
- *	@see dataFilesPathForFileName, videosPathForFileName
+ *	@see dataFilesPathForFileName, audioPathForFileName, videosPathForFileName
  */
 - (NSString *)imagesPathForFileName:(NSString *)fileName;
+- (NSURL *)imagesURLForFileName:(NSString *)fileName;
 
 
 /**
  *	Returns path for a @em fileName present in the 'audio' subfolder in the @em pathPrefix subfolder in the application's documents directory.
- *	@see dataFilesPathForFileName, videosPathForFileName, imagesPathForFileName
+ *	@see dataFilesPathForFileName, imagesPathForFileName, videosPathForFileName
  */
 - (NSString *)audioPathForFileName:(NSString *)fileName;
+- (NSURL *)audioURLForFileName:(NSString *)fileName;
 
 /**
  *	Returns path for a @em fileName present in the 'videos' subfolder in the @em pathPrefix subfolder in the application's documents directory.
- *	@see dataFilesPathForFileName, videosPathForFileName
+ *	@see dataFilesPathForFileName, imagesPathForFileName, audioPathForFileName
  */
 - (NSString *)videosPathForFileName:(NSString *)fileName;
-
-/**
- *	Returns URL for a @em video present in the 'videos' subfolder in the @em pathPrefix subfolder in the application's documents directory.
- *	@see videosPathForFileName
- */
 - (NSURL *)videosURLForFileName:(NSString *)fileName;
 
 #pragma mark - File checking
+
+/**
+ *	Checks if a @em file exists at any filepath.
+ *	@see [NSFileManager fileExistsAtPath]
+ */
+- (BOOL)fileExistsAtPath:(NSString *)filePath;
 
 /**
  *	Checks if a @em fileName exists in the documents folder. Passing a sub-filepath for a file in the documents folder works too.
@@ -178,5 +194,15 @@ FOUNDATION_EXPORT NSString *const pathPrefix;
  *	Shared instance.
  */
 + (DADataManager *)sharedManager;
+
+@end
+
+@interface NSString (URLUtilities)
+
+/// Returns the NSURL object associated with the NSString object; coresponding to NSURL's absoluteString.
+- (NSURL *)URL;
+
+/// Returns the fileURL for a filePath.
+- (NSURL *)fileURL;
 
 @end

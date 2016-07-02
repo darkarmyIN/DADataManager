@@ -33,10 +33,19 @@ NSString *const kSubFolderVideoFiles = @"videos";
 
 #pragma mark - Paths
 
-- (NSString *)documentsPathForFileName:(NSString *)fileName {
+- (NSString *)getRootPath {
+	return [self rootPathForFileName:@""];
+}
+
+- (NSString *)rootPathForFileName:(NSString *)fileName {
 	NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-	NSString *documentsPath = [NSString stringWithFormat:@"%@", [paths lastObject]];
+	NSString *documentsPath = [[NSString stringWithFormat:@"%@", [paths lastObject]] stringByDeletingLastPathComponent];
+	[self.fileManager createDirectoryAtPath:[NSString stringWithFormat:@"%@/%@", documentsPath, fileName.stringByDeletingLastPathComponent] withIntermediateDirectories:YES attributes:nil error:nil];
 	return [documentsPath stringByAppendingPathComponent:[NSString stringWithFormat:@"%@", fileName]];
+}
+
+- (NSString *)documentsPathForFileName:(NSString *)fileName {
+	return [self rootPathForFileName:[NSString stringWithFormat:@"Documents/%@", fileName]];
 }
 
 - (NSURL *)documentsURLForFileName:(NSString *)fileName {
@@ -44,9 +53,7 @@ NSString *const kSubFolderVideoFiles = @"videos";
 }
 
 - (NSString *)libraryPathForFileName:(NSString *)fileName {
-	NSArray *paths = NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES);
-	NSString *documentsPath = [NSString stringWithFormat:@"%@", [paths lastObject]];
-	return [documentsPath stringByAppendingPathComponent:[NSString stringWithFormat:@"%@", fileName]];
+	return [self rootPathForFileName:[NSString stringWithFormat:@"Library/%@", fileName]];
 }
 
 - (NSURL *)libraryURLForFileName:(NSString *)fileName {
@@ -54,10 +61,11 @@ NSString *const kSubFolderVideoFiles = @"videos";
 }
 
 - (NSString *)filePathForFileName:(NSString *)fileName subfolder:(NSString *)subfolder {
-	NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-	NSString *documentsPath = [NSString stringWithFormat:@"%@", [paths lastObject]];
-	[self.fileManager createDirectoryAtPath:[NSString stringWithFormat:@"%@/%@/%@", [paths lastObject], pathPrefix, subfolder] withIntermediateDirectories:YES attributes:nil error:nil];
-	return [documentsPath stringByAppendingPathComponent:[NSString stringWithFormat:@"%@/%@/%@", pathPrefix, subfolder, fileName]];
+//	NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+//	NSString *documentsPath = [NSString stringWithFormat:@"%@", [paths lastObject]];
+//	[self.fileManager createDirectoryAtPath:[NSString stringWithFormat:@"%@/%@/%@", [paths lastObject], pathPrefix, subfolder] withIntermediateDirectories:YES attributes:nil error:nil];
+//	return [documentsPath stringByAppendingPathComponent:[NSString stringWithFormat:@"%@/%@/%@", pathPrefix, subfolder, fileName]];
+	return [self documentsPathForFileName:[NSString stringWithFormat:@"%@/%@/%@", pathPrefix, subfolder, fileName]];
 }
 
 - (NSString *)dataFilesPathForFileName:(NSString *)fileName {
@@ -184,7 +192,7 @@ NSString *const kSubFolderVideoFiles = @"videos";
 
 - (id)fetchJSONFromDocumentsDataFileName:(NSString *)fileName {
 	NSError *error;
-	NSString *filePath = [self documentsPathForFileName:fileName];
+	NSString *filePath = [self dataFilesPathForFileName:fileName];
 	@try {
 		NSData *data = [NSData dataWithContentsOfFile:filePath];
 		id jsonData = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
@@ -218,5 +226,17 @@ NSString *const kSubFolderVideoFiles = @"videos";
 	return sharedManager;
 }
 
+
+@end
+
+@implementation NSString (URLUtilities)
+
+- (NSURL *)URL {
+	return [NSURL URLWithString:self];
+}
+
+- (NSURL *)fileURL {
+	return [NSURL fileURLWithPath:self];
+}
 
 @end
