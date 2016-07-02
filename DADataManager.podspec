@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "DADataManager"
-  s.version      = "0.2"
+  s.version      = "0.2.1"
   s.summary      = "Lightweight storage library for iOS."
 
   # This description is used to generate tags and improve search results.
