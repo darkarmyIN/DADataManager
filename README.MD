@@ -4,7 +4,7 @@
 
 ---------------------------------
 
-Ever needed to save a singular URL response, for testing purposes and didn't want to use a persistancy framework like _CoreData_ or _Relam_; Or a rarely subject-to-change static response that you probably saved in NSUserDefaults; Or just wanted to save a downloaded file for later retrieval. 
+Ever needed to save a singular URL response, for testing purposes and didn't want to use a persistancy framework like _CoreData_ or _Realm_; Or a rarely subject-to-change static response that you probably saved in NSUserDefaults; Or just wanted to save a downloaded file for later retrieval. 
 
 _Enter **DADataManager** to the rescue._
 
@@ -15,7 +15,7 @@ _Enter **DADataManager** to the rescue._
 ### [CocoaPods](https://cocoapods.org/) (recommended)
 
 - Add `pod 'DADataManager'` to your podfile.
-- Add `#import <DADataManager/DADataManager.h>` in the class you want to use it.
+- Add `#import <DADataManager/DADataManager.h>` (or `@import DADataManager` if you build as a framework/Swift) in the class you want to use it.
 
 ### Manual (not recommended)
 
@@ -43,7 +43,7 @@ NSArray *array = @[@"One", @"Two", @"Three"];
 
 ## Methods
 
-#### Paths for file names
+Paths for file names
 
 These methods return a file path or URL for files stored in the application's documents or library folder.
 

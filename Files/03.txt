@@ -1,0 +1,1504 @@
+Using worker: saucelabs-mac.worker.travis-ci.org:travis-mac_osx-5
+
+travis_fold:start:system_info[0K[33;1mBuild system information[0m
+Build language: objective-c
+travis_fold:end:system_info[0K
+travis_fold:start:git.checkout[0Ktravis_time:start:0e44c5d9[0K$ git clone --depth=50 --branch=6.1.0 git://github.com/jessesquires/JSQMessagesViewController.git jessesquires/JSQMessagesViewController
+Cloning into 'jessesquires/JSQMessagesViewController'...
+remote: Counting objects: 572, done.[K
+remote: Compressing objects:   0% (1/387)   [Kremote: Compressing objects:   1% (4/387)   [Kremote: Compressing objects:   2% (8/387)   [Kremote: Compressing objects:   3% (12/387)   [Kremote: Compressing objects:   4% (16/387)   [Kremote: Compressing objects:   5% (20/387)   [Kremote: Compressing objects:   6% (24/387)   [Kremote: Compressing objects:   7% (28/387)   [Kremote: Compressing objects:   8% (31/387)   [Kremote: Compressing objects:   9% (35/387)   [Kremote: Compressing objects:  10% (39/387)   [Kremote: Compressing objects:  11% (43/387)   [Kremote: Compressing objects:  12% (47/387)   [Kremote: Compressing objects:  13% (51/387)   [Kremote: Compressing objects:  14% (55/387)   [Kremote: Compressing objects:  15% (59/387)   [Kremote: Compressing objects:  16% (62/387)   [Kremote: Compressing objects:  17% (66/387)   [Kremote: Compressing objects:  18% (70/387)   [Kremote: Compressing objects:  19% (74/387)   [Kremote: Compressing objects:  20% (78/387)   [Kremote: Compressing objects:  21% (82/387)   [Kremote: Compressing objects:  22% (86/387)   [Kremote: Compressing objects:  23% (90/387)   [Kremote: Compressing objects:  24% (93/387)   [Kremote: Compressing objects:  25% (97/387)   [Kremote: Compressing objects:  26% (101/387)   [Kremote: Compressing objects:  27% (105/387)   [Kremote: Compressing objects:  28% (109/387)   [Kremote: Compressing objects:  29% (113/387)   [Kremote: Compressing objects:  30% (117/387)   [Kremote: Compressing objects:  31% (120/387)   [Kremote: Compressing objects:  32% (124/387)   [Kremote: Compressing objects:  33% (128/387)   [Kremote: Compressing objects:  34% (132/387)   [Kremote: Compressing objects:  35% (136/387)   [Kremote: Compressing objects:  36% (140/387)   [Kremote: Compressing objects:  37% (144/387)   [Kremote: Compressing objects:  38% (148/387)   [Kremote: Compressing objects:  39% (151/387)   [Kremote: Compressing objects:  40% (155/387)   [Kremote: Compressing objects:  41% (159/387)   [Kremote: Compressing objects:  42% (163/387)   [Kremote: Compressing objects:  43% (167/387)   [Kremote: Compressing objects:  44% (171/387)   [Kremote: Compressing objects:  45% (175/387)   [Kremote: Compressing objects:  46% (179/387)   [Kremote: Compressing objects:  47% (182/387)   [Kremote: Compressing objects:  48% (186/387)   [Kremote: Compressing objects:  49% (190/387)   [Kremote: Compressing objects:  50% (194/387)   [Kremote: Compressing objects:  51% (198/387)   [Kremote: Compressing objects:  52% (202/387)   [Kremote: Compressing objects:  53% (206/387)   [Kremote: Compressing objects:  54% (209/387)   [Kremote: Compressing objects:  55% (213/387)   [Kremote: Compressing objects:  56% (217/387)   [Kremote: Compressing objects:  57% (221/387)   [Kremote: Compressing objects:  58% (225/387)   [Kremote: Compressing objects:  59% (229/387)   [Kremote: Compressing objects:  60% (233/387)   [Kremote: Compressing objects:  61% (237/387)   [Kremote: Compressing objects:  62% (240/387)   [Kremote: Compressing objects:  63% (244/387)   [Kremote: Compressing objects:  64% (248/387)   [Kremote: Compressing objects:  65% (252/387)   [Kremote: Compressing objects:  66% (256/387)   [Kremote: Compressing objects:  67% (260/387)   [Kremote: Compressing objects:  68% (264/387)   [Kremote: Compressing objects:  69% (268/387)   [Kremote: Compressing objects:  70% (271/387)   [Kremote: Compressing objects:  71% (275/387)   [Kremote: Compressing objects:  72% (279/387)   [Kremote: Compressing objects:  73% (283/387)   [Kremote: Compressing objects:  74% (287/387)   [Kremote: Compressing objects:  75% (291/387)   [Kremote: Compressing objects:  76% (295/387)   [Kremote: Compressing objects:  77% (298/387)   [Kremote: Compressing objects:  78% (302/387)   [Kremote: Compressing objects:  79% (306/387)   [Kremote: Compressing objects:  80% (310/387)   [Kremote: Compressing objects:  81% (314/387)   [Kremote: Compressing objects:  82% (318/387)   [Kremote: Compressing objects:  83% (322/387)   [Kremote: Compressing objects:  84% (326/387)   [Kremote: Compressing objects:  85% (329/387)   [Kremote: Compressing objects:  86% (333/387)   [Kremote: Compressing objects:  87% (337/387)   [Kremote: Compressing objects:  88% (341/387)   [Kremote: Compressing objects:  89% (345/387)   [Kremote: Compressing objects:  90% (349/387)   [Kremote: Compressing objects:  91% (353/387)   [Kremote: Compressing objects:  92% (357/387)   [Kremote: Compressing objects:  93% (360/387)   [Kremote: Compressing objects:  94% (364/387)   [Kremote: Compressing objects:  95% (368/387)   [Kremote: Compressing objects:  96% (372/387)   [Kremote: Compressing objects:  97% (376/387)   [Kremote: Compressing objects:  98% (380/387)   [Kremote: Compressing objects:  99% (384/387)   [Kremote: Compressing objects: 100% (387/387)   [Kremote: Compressing objects: 100% (387/387), done.[K
+Receiving objects:   0% (1/572)   Receiving objects:   1% (6/572)   Receiving objects:   2% (12/572)   Receiving objects:   3% (18/572)   Receiving objects:   4% (23/572)   Receiving objects:   5% (29/572)   Receiving objects:   6% (35/572)   Receiving objects:   7% (41/572)   Receiving objects:   8% (46/572)   Receiving objects:   9% (52/572)   Receiving objects:  10% (58/572)   Receiving objects:  11% (63/572)   Receiving objects:  12% (69/572)   Receiving objects:  13% (75/572)   Receiving objects:  14% (81/572)   Receiving objects:  15% (86/572)   Receiving objects:  16% (92/572)   Receiving objects:  17% (98/572)   Receiving objects:  18% (103/572)   Receiving objects:  19% (109/572)   Receiving objects:  20% (115/572)   Receiving objects:  21% (121/572)   Receiving objects:  22% (126/572)   Receiving objects:  23% (132/572)   Receiving objects:  24% (138/572)   Receiving objects:  25% (143/572)   Receiving objects:  26% (149/572)   Receiving objects:  27% (155/572)   Receiving objects:  28% (161/572)   Receiving objects:  29% (166/572)   Receiving objects:  30% (172/572)   Receiving objects:  31% (178/572)   Receiving objects:  32% (184/572)   Receiving objects:  33% (189/572)   Receiving objects:  34% (195/572)   Receiving objects:  35% (201/572)   Receiving objects:  36% (206/572)   Receiving objects:  37% (212/572)   Receiving objects:  38% (218/572)   Receiving objects:  39% (224/572)   Receiving objects:  40% (229/572)   Receiving objects:  41% (235/572)   Receiving objects:  42% (241/572), 1.18 MiB | 2.32 MiB/s   Receiving objects:  43% (246/572), 1.18 MiB | 2.32 MiB/s   Receiving objects:  44% (252/572), 1.18 MiB | 2.32 MiB/s   Receiving objects:  45% (258/572), 1.18 MiB | 2.32 MiB/s   Receiving objects:  46% (264/572), 1.18 MiB | 2.32 MiB/s   Receiving objects:  47% (269/572), 1.18 MiB | 2.32 MiB/s   Receiving objects:  48% (275/572), 1.18 MiB | 2.32 MiB/s   Receiving objects:  49% (281/572), 1.18 MiB | 2.32 MiB/s   Receiving objects:  50% (286/572), 1.18 MiB | 2.32 MiB/s   Receiving objects:  51% (292/572), 1.18 MiB | 2.32 MiB/s   Receiving objects:  52% (298/572), 1.18 MiB | 2.32 MiB/s   Receiving objects:  53% (304/572), 1.18 MiB | 2.32 MiB/s   Receiving objects:  54% (309/572), 1.18 MiB | 2.32 MiB/s   Receiving objects:  55% (315/572), 1.18 MiB | 2.32 MiB/s   Receiving objects:  56% (321/572), 1.18 MiB | 2.32 MiB/s   Receiving objects:  57% (327/572), 1.18 MiB | 2.32 MiB/s   Receiving objects:  58% (332/572), 1.18 MiB | 2.32 MiB/s   Receiving objects:  59% (338/572), 1.18 MiB | 2.32 MiB/s   Receiving objects:  60% (344/572), 1.18 MiB | 2.32 MiB/s   Receiving objects:  61% (349/572), 1.18 MiB | 2.32 MiB/s   Receiving objects:  62% (355/572), 1.18 MiB | 2.32 MiB/s   Receiving objects:  63% (361/572), 1.18 MiB | 2.32 MiB/s   Receiving objects:  64% (367/572), 1.18 MiB | 2.32 MiB/s   Receiving objects:  65% (372/572), 1.18 MiB | 2.32 MiB/s   Receiving objects:  66% (378/572), 1.18 MiB | 2.32 MiB/s   Receiving objects:  67% (384/572), 1.18 MiB | 2.32 MiB/s   Receiving objects:  68% (389/572), 1.18 MiB | 2.32 MiB/s   Receiving objects:  69% (395/572), 1.18 MiB | 2.32 MiB/s   Receiving objects:  70% (401/572), 1.18 MiB | 2.32 MiB/s   Receiving objects:  71% (407/572), 1.18 MiB | 2.32 MiB/s   Receiving objects:  72% (412/572), 1.18 MiB | 2.32 MiB/s   Receiving objects:  73% (418/572), 1.18 MiB | 2.32 MiB/s   Receiving objects:  74% (424/572), 1.18 MiB | 2.32 MiB/s   Receiving objects:  75% (429/572), 1.18 MiB | 2.32 MiB/s   Receiving objects:  76% (435/572), 1.18 MiB | 2.32 MiB/s   Receiving objects:  77% (441/572), 1.18 MiB | 2.32 MiB/s   Receiving objects:  78% (447/572), 1.18 MiB | 2.32 MiB/s   Receiving objects:  79% (452/572), 1.18 MiB | 2.32 MiB/s   Receiving objects:  80% (458/572), 1.18 MiB | 2.32 MiB/s   Receiving objects:  81% (464/572), 1.18 MiB | 2.32 MiB/s   Receiving objects:  82% (470/572), 1.18 MiB | 2.32 MiB/s   Receiving objects:  83% (475/572), 1.18 MiB | 2.32 MiB/s   Receiving objects:  84% (481/572), 1.18 MiB | 2.32 MiB/s   Receiving objects:  85% (487/572), 1.18 MiB | 2.32 MiB/s   Receiving objects:  86% (492/572), 1.18 MiB | 2.32 MiB/s   Receiving objects:  87% (498/572), 1.18 MiB | 2.32 MiB/s   Receiving objects:  88% (504/572), 1.18 MiB | 2.32 MiB/s   Receiving objects:  89% (510/572), 1.18 MiB | 2.32 MiB/s   Receiving objects:  90% (515/572), 1.18 MiB | 2.32 MiB/s   Receiving objects:  91% (521/572), 1.18 MiB | 2.32 MiB/s   Receiving objects:  92% (527/572), 1.18 MiB | 2.32 MiB/s   Receiving objects:  93% (532/572), 1.18 MiB | 2.32 MiB/s   Receiving objects:  94% (538/572), 1.18 MiB | 2.32 MiB/s   Receiving objects:  95% (544/572), 1.18 MiB | 2.32 MiB/s   Receiving objects:  96% (550/572), 1.18 MiB | 2.32 MiB/s   remote: Total 572 (delta 276), reused 377 (delta 168)[K
+Receiving objects:  97% (555/572), 1.18 MiB | 2.32 MiB/s   Receiving objects:  98% (561/572), 1.18 MiB | 2.32 MiB/s   Receiving objects:  99% (567/572), 1.18 MiB | 2.32 MiB/s   Receiving objects: 100% (572/572), 1.18 MiB | 2.32 MiB/s   Receiving objects: 100% (572/572), 2.37 MiB | 2.32 MiB/s, done.
+Resolving deltas:   0% (0/276)   Resolving deltas:  19% (53/276)   Resolving deltas:  20% (56/276)   Resolving deltas:  21% (58/276)   Resolving deltas:  22% (62/276)   Resolving deltas:  25% (70/276)   Resolving deltas:  27% (75/276)   Resolving deltas:  28% (78/276)   Resolving deltas:  32% (91/276)   Resolving deltas:  33% (92/276)   Resolving deltas:  34% (94/276)   Resolving deltas:  35% (99/276)   Resolving deltas:  36% (102/276)   Resolving deltas:  44% (123/276)   Resolving deltas:  45% (125/276)   Resolving deltas:  46% (129/276)   Resolving deltas:  47% (130/276)   Resolving deltas:  52% (146/276)   Resolving deltas:  53% (147/276)   Resolving deltas:  54% (150/276)   Resolving deltas:  55% (153/276)   Resolving deltas:  56% (155/276)   Resolving deltas:  57% (158/276)   Resolving deltas:  59% (163/276)   Resolving deltas:  60% (166/276)   Resolving deltas:  62% (172/276)   Resolving deltas:  63% (174/276)   Resolving deltas:  65% (181/276)   Resolving deltas:  66% (183/276)   Resolving deltas:  68% (190/276)   Resolving deltas:  69% (192/276)   Resolving deltas:  70% (194/276)   Resolving deltas:  71% (196/276)   Resolving deltas:  73% (204/276)   Resolving deltas:  74% (206/276)   Resolving deltas:  75% (208/276)   Resolving deltas:  77% (214/276)   Resolving deltas:  78% (216/276)   Resolving deltas:  80% (223/276)   Resolving deltas:  81% (225/276)   Resolving deltas:  82% (227/276)   Resolving deltas:  83% (230/276)   Resolving deltas:  84% (232/276)   Resolving deltas:  87% (242/276)   Resolving deltas:  88% (244/276)   Resolving deltas:  89% (248/276)   Resolving deltas:  90% (249/276)   Resolving deltas:  91% (253/276)   Resolving deltas:  93% (257/276)   Resolving deltas:  97% (270/276)   Resolving deltas:  98% (272/276)   Resolving deltas:  99% (274/276)   Resolving deltas: 100% (276/276)   Resolving deltas: 100% (276/276), done.
+Checking connectivity... done.
+Note: checking out '8f28bc513e44e3d849ae25e0f6fbd53265c61860'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b new_branch_name
+
+travis_time:end:0e44c5d9:start=1416790554000000000,finish=1416790559000000000,duration=5000000000[0K$ cd jessesquires/JSQMessagesViewController
+$ git checkout -qf 8f28bc513e44e3d849ae25e0f6fbd53265c61860
+travis_fold:end:git.checkout[0Ktravis_fold:start:rvm[0Ktravis_time:start:0080316c[0K$ rvm use default
+[32mUsing /Users/travis/.rvm/gems/ruby-2.0.0-p481[0m
+travis_time:end:0080316c:start=1416790559000000000,finish=1416790560000000000,duration=1000000000[0Ktravis_fold:end:rvm[0Ktravis_time:start:024838e3[0Ktravis_time:end:024838e3:start=1416790560000000000,finish=1416790560000000000,duration=0[0Ktravis_time:start:2fe88b83[0Ktravis_time:end:2fe88b83:start=1416790560000000000,finish=1416790560000000000,duration=0[0K$ ruby --version
+ruby 2.0.0p481 (2014-05-08 revision 45883) [x86_64-darwin13.1.0]
+$ rvm --version
+rvm 1.25.33 (stable) by Wayne E. Seguin <wayneeseguin@gmail.com>, Michal Papis <mpapis@gmail.com> [https://rvm.io/]
+$ bundle --version
+Bundler version 1.7.4
+travis_fold:start:announce[0K$ xcodebuild -version -sdk
+MacOSX10.9.sdk - OS X 10.9 (macosx10.9)
+SDKVersion: 10.9
+Path: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk
+PlatformVersion: 1.1
+PlatformPath: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform
+ProductBuildVersion: 13F26
+ProductCopyright: 1983-2014 Apple Inc.
+ProductName: Mac OS X
+ProductUserVisibleVersion: 10.9.5
+ProductVersion: 10.9.5
+
+MacOSX10.10.sdk - OS X 10.10 (macosx10.10)
+SDKVersion: 10.10
+Path: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk
+PlatformVersion: 1.1
+PlatformPath: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform
+ProductBuildVersion: 14A382
+ProductCopyright: 1983-2014 Apple Inc.
+ProductName: Mac OS X
+ProductUserVisibleVersion: 10.10
+ProductVersion: 10.10
+
+iPhoneOS8.1.sdk - iOS 8.1 (iphoneos8.1)
+SDKVersion: 8.1
+Path: /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk
+PlatformVersion: 8.1
+PlatformPath: /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform
+ProductBuildVersion: 12B411
+ProductCopyright: 1983-2014 Apple Inc.
+ProductName: iPhone OS
+ProductVersion: 8.1
+
+iPhoneSimulator7.0.sdk - Simulator - iOS 7.0 (iphonesimulator7.0)
+SDKVersion: 7.0
+Path: /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk
+PlatformVersion: 8.1
+PlatformPath: /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform
+ProductBuildVersion: 11B507
+ProductCopyright: 1983-2013 Apple Inc.
+ProductName: iPhone OS
+ProductVersion: 7.0.3
+
+iPhoneSimulator7.1.sdk - Simulator - iOS 7.1 (iphonesimulator7.1)
+SDKVersion: 7.1
+Path: /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk
+PlatformVersion: 8.1
+PlatformPath: /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform
+ProductBuildVersion: 11D167
+ProductCopyright: 1983-2014 Apple Inc.
+ProductName: iPhone OS
+ProductVersion: 7.1
+
+iPhoneSimulator8.1.sdk - Simulator - iOS 8.1 (iphonesimulator8.1)
+SDKVersion: 8.1
+Path: /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator8.1.sdk
+PlatformVersion: 8.1
+PlatformPath: /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform
+ProductBuildVersion: 12B411
+ProductCopyright: 1983-2014 Apple Inc.
+ProductName: iPhone OS
+ProductVersion: 8.1
+
+Xcode 6.1
+Build version 6A1052c
+$ xctool -version
+0.2.1
+travis_fold:end:announce[0K$ pod --version
+0.34.4
+travis_fold:start:before_install.1[0Ktravis_time:start:0b3d37f8[0K$ export LANG=en_US.UTF-8
+travis_time:end:0b3d37f8:start=1416790562000000000,finish=1416790562000000000,duration=0[0Ktravis_fold:end:before_install.1[0Ktravis_fold:start:before_install.2[0Ktravis_time:start:1c837dc9[0K$ gem install cocoapods
+Fetching: cocoapods-core-0.35.0.gemFetching: cocoapods-core-0.35.0.gem ( 10%)Fetching: cocoapods-core-0.35.0.gem ( 12%)Fetching: cocoapods-core-0.35.0.gem ( 21%)Fetching: cocoapods-core-0.35.0.gem ( 23%)Fetching: cocoapods-core-0.35.0.gem ( 32%)Fetching: cocoapods-core-0.35.0.gem ( 34%)Fetching: cocoapods-core-0.35.0.gem ( 43%)Fetching: cocoapods-core-0.35.0.gem ( 45%)Fetching: cocoapods-core-0.35.0.gem ( 54%)Fetching: cocoapods-core-0.35.0.gem ( 56%)Fetching: cocoapods-core-0.35.0.gem ( 65%)Fetching: cocoapods-core-0.35.0.gem ( 67%)Fetching: cocoapods-core-0.35.0.gem ( 75%)Fetching: cocoapods-core-0.35.0.gem ( 78%)Fetching: cocoapods-core-0.35.0.gem ( 86%)Fetching: cocoapods-core-0.35.0.gem ( 89%)Fetching: cocoapods-core-0.35.0.gem ( 97%)Fetching: cocoapods-core-0.35.0.gem (100%)Fetching: cocoapods-core-0.35.0.gem (100%)
+Successfully installed cocoapods-core-0.35.0
+Fetching: xcodeproj-0.20.2.gemFetching: xcodeproj-0.20.2.gem ( 28%)Fetching: xcodeproj-0.20.2.gem ( 57%)Fetching: xcodeproj-0.20.2.gem ( 86%)Fetching: xcodeproj-0.20.2.gem (100%)Fetching: xcodeproj-0.20.2.gem (100%)
+Successfully installed xcodeproj-0.20.2
+Fetching: cocoapods-downloader-0.8.0.gemFetching: cocoapods-downloader-0.8.0.gem ( 65%)Fetching: cocoapods-downloader-0.8.0.gem ( 73%)Fetching: cocoapods-downloader-0.8.0.gem (100%)Fetching: cocoapods-downloader-0.8.0.gem (100%)
+Successfully installed cocoapods-downloader-0.8.0
+Fetching: cocoapods-try-0.4.2.gemFetching: cocoapods-try-0.4.2.gem ( 57%)Fetching: cocoapods-try-0.4.2.gem ( 64%)Fetching: cocoapods-try-0.4.2.gem (100%)Fetching: cocoapods-try-0.4.2.gem (100%)
+Successfully installed cocoapods-try-0.4.2
+Fetching: cocoapods-trunk-0.4.1.gemFetching: cocoapods-trunk-0.4.1.gem ( 45%)Fetching: cocoapods-trunk-0.4.1.gem ( 50%)Fetching: cocoapods-trunk-0.4.1.gem ( 94%)Fetching: cocoapods-trunk-0.4.1.gem (100%)Fetching: cocoapods-trunk-0.4.1.gem (100%)
+Successfully installed cocoapods-trunk-0.4.1
+Fetching: molinillo-0.1.2.gemFetching: molinillo-0.1.2.gem (100%)Fetching: molinillo-0.1.2.gem (100%)
+Successfully installed molinillo-0.1.2
+Fetching: cocoapods-0.35.0.gemFetching: cocoapods-0.35.0.gem (  6%)Fetching: cocoapods-0.35.0.gem (  7%)Fetching: cocoapods-0.35.0.gem ( 12%)Fetching: cocoapods-0.35.0.gem ( 13%)Fetching: cocoapods-0.35.0.gem ( 19%)Fetching: cocoapods-0.35.0.gem ( 20%)Fetching: cocoapods-0.35.0.gem ( 25%)Fetching: cocoapods-0.35.0.gem ( 26%)Fetching: cocoapods-0.35.0.gem ( 31%)Fetching: cocoapods-0.35.0.gem ( 32%)Fetching: cocoapods-0.35.0.gem ( 37%)Fetching: cocoapods-0.35.0.gem ( 39%)Fetching: cocoapods-0.35.0.gem ( 44%)Fetching: cocoapods-0.35.0.gem ( 45%)Fetching: cocoapods-0.35.0.gem ( 50%)Fetching: cocoapods-0.35.0.gem ( 52%)Fetching: cocoapods-0.35.0.gem ( 56%)Fetching: cocoapods-0.35.0.gem ( 58%)Fetching: cocoapods-0.35.0.gem ( 62%)Fetching: cocoapods-0.35.0.gem ( 64%)Fetching: cocoapods-0.35.0.gem ( 69%)Fetching: cocoapods-0.35.0.gem ( 71%)Fetching: cocoapods-0.35.0.gem ( 75%)Fetching: cocoapods-0.35.0.gem ( 77%)Fetching: cocoapods-0.35.0.gem ( 81%)Fetching: cocoapods-0.35.0.gem ( 84%)Fetching: cocoapods-0.35.0.gem ( 87%)Fetching: cocoapods-0.35.0.gem ( 90%)Fetching: cocoapods-0.35.0.gem ( 94%)Fetching: cocoapods-0.35.0.gem ( 96%)Fetching: cocoapods-0.35.0.gem (100%)Fetching: cocoapods-0.35.0.gem (100%)
+Successfully installed cocoapods-0.35.0
+Parsing documentation for cocoapods-0.35.0
+Installing ri documentation for cocoapods-0.35.0
+Parsing documentation for cocoapods-core-0.35.0
+Installing ri documentation for cocoapods-core-0.35.0
+Parsing documentation for cocoapods-downloader-0.8.0
+Installing ri documentation for cocoapods-downloader-0.8.0
+Parsing documentation for cocoapods-trunk-0.4.1
+Installing ri documentation for cocoapods-trunk-0.4.1
+Parsing documentation for cocoapods-try-0.4.2
+Installing ri documentation for cocoapods-try-0.4.2
+Parsing documentation for molinillo-0.1.2
+Installing ri documentation for molinillo-0.1.2
+Parsing documentation for xcodeproj-0.20.2
+Installing ri documentation for xcodeproj-0.20.2
+7 gems installed
+travis_time:end:1c837dc9:start=1416790562000000000,finish=1416790584000000000,duration=22000000000[0Ktravis_fold:end:before_install.2[0Ktravis_fold:start:before_install.3[0Ktravis_time:start:24807532[0K$ brew update
+Updated Homebrew from 77e2b755 to cfb03ce1.
+[1;34m==>[1;39m New Formulae[0m
+aescrypt-packetizer			jenv
+aptly					jsoncpp
+blucat					lastpass-cli
+camlp4					libiomp
+closure-linter				libsoxr
+euler-py				makefile2graph
+fibjs					megatools
+finatra					mitie
+flow					nailgun
+gammaray				odt2txt
+gdnsd					osquery
+gnatsd					pinentry-mac
+groovysdk				pulse
+hardlink-osx				rbenv-bundler-ruby-version
+hashcash				simple-amqp-client
+hh					skinny
+homebrew/versions/cassandra20		snow
+homebrew/versions/gradle20		sslmate
+homebrew/versions/gradle21		stlink
+homebrew/versions/protobuf250		with-readline
+idris					yash
+[1;34m==>[1;39m Updated Formulae[0m
+abcde					capnp
+acpica					capstone
+activemq-cpp				cassandra
+adns					ccache
+adobe-air-sdk				ceylon
+aget					cgal
+aha					checkstyle
+akka					chromedriver
+alpine					chruby
+amap					chuck
+analog					clib
+android-ndk				cliclick
+android-platform-tools			cln
+ansible					cloog
+ansifilter				closure-compiler
+ape					clutter
+apib					clutter-gtk
+apngasm					cmake
+app-engine-java-sdk			coccinelle
+arangodb				cogl
+argp-standalone				confuse
+argus					cookiecutter
+argus-clients				coq
+aria2					coreutils
+arp-scan				couchpotatoserver
+artifactory				cpanminus
+asciidoc				cppcheck
+asn1c					cppunit
+aspell					cracklib
+assimp					cracklib-words
+astyle					crosstool-ng
+at-spi2-atk				curl
+at-spi2-core				czmq
+atf					d-bus
+atk					daq
+ats2-postiats				dar
+aubio					datomic
+augeas					davix
+autoconf-archive			dcmtk
+autojump				dfu-util
+autossh					dgtal
+avfs					dialog
+avian					direnv
+avidemux				disco
+aws-elasticbeanstalk			dnsmasq
+awscli					docbook
+babl					docbook-xsl
+bash-git-prompt				docker
+bdw-gc					dockutil
+berkeley-db				doitlive
+berkeley-db4				dos2unix
+betty					dovecot
+bfg					doxygen
+bibtex2html				dpkg
+bind					duo_unix
+bison					duplicity
+bitlbee					duply
+boost					easy-tag
+boost-build				eet
+boot2docker				eina
+bpm-tools				elasticsearch
+bro					elixir
+bsdmake					emacs
+cairo					embryo
+cairomm					emscripten
+camlp5					encfs
+erlang					gnutls
+ettercap				go
+evas					go-app-engine-32
+exiftool				go-app-engine-64
+expat					goaccess
+faac					google-app-engine
+faad2					google-perftools
+fakeroot				gource
+ffmbc					gpgme
+ffmpeg					gpp
+ffmpeg2theora				gputils
+fftw					gradle
+fig					grails
+findutils				graphviz
+fish					groonga
+flac					groovyserv
+flex					gsasl
+fltk					gsettings-desktop-schemas
+fontforge				gsl
+freeling				gssdp
+freexl					gst-libav
+frei0r					gst-plugins-bad
+frescobaldi				gst-plugins-base
+fribidi					gst-plugins-good
+fswatch					gst-plugins-ugly
+fuse4x					gstreamer
+fuse4x-kext				gtk+
+fwknop					gtk+3
+fzf					gtkglext
+gawk					gtkmm
+gcc					gtksourceview
+gdal					gtksourceview3
+gdbm					gtkwave
+gdk-pixbuf				guile
+gecode					gupnp
+gegl					hadoop
+geographiclib				hamlib
+geoip					hardlink
+geos					harfbuzz
+geoserver				haxe
+gettext					hbase
+gflags					help2man
+ghc					henplus
+ghostscript				heroku-toolbelt
+git					hevea
+git-annex				hicolor-icon-theme
+git-crypt				homebrew/versions/cassandra12
+git-flow-avh				homebrew/versions/gcc43
+glew					homebrew/versions/gcc44
+glib					homebrew/versions/gcc45
+glib-networking				homebrew/versions/gcc46
+global					homebrew/versions/gcc47
+globus-toolkit				homebrew/versions/gcc48
+gmime					homebrew/versions/gcc49
+gnome-doc-utils				homebrew/versions/jetty76
+gnu-getopt				homebrew/versions/llvm31
+gnu-indent				homebrew/versions/mysql55
+gnu-prolog				homebrew/versions/play22
+gnu-sed					homebrew/versions/ruby182
+gnu-tar					homebrew/versions/ruby186
+gnu-time				homebrew/versions/ruby193
+gnu-units				homebrew/versions/ruby20
+gnu-which				homebrew/versions/tomcat7
+gnupg					horndis
+gnupg2					hping
+gnuplot					htmlcompressor
+httperf					libdc1394
+hub					libdca
+hydra					libdrawtext
+icecast					libdsk
+icu4c					libdvbpsi
+ideviceinstaller			libdvdnav
+iftop					libebur128
+ilmbase					libechonest
+imagemagick				libextractor
+imap-uw					libfaketime
+imlib2					libfishsound
+influxdb				libfixbuf
+inspircd				libflowmanager
+iodine					libfreefare
+ios-webkit-debug-proxy			libfreenect
+iperf3					libgcrypt
+ircd-hybrid				libgeotiff
+ircd-irc2				libgetdata
+isl					libgfshare
+ispc					libgit2
+itstool					libgnomecanvasmm
+ivy					libgpg-error
+jack					libgroove
+jansson					libgsm
+jasper					libgtop
+jboss-forge				libharu
+jena					libical
+jenkins					libimobiledevice
+jetty					libiptcdata
+jmeter					libiscsi
+jpeg-turbo				libkate
+jrnl					libkml
+jruby					liblacewing
+json-c					liblas
+juju					liblastfm
+juju-quickstart				liblinear
+kafka					liblockfile
+kawa					liblqr
+keybase					liblunar
+knot					liblwgeom
+kyua					libmarisa
+lame					libmaxminddb
+languagetool				libmemcached
+lasi					libmetalink
+launch4j				libmicrohttpd
+ld64					libming
+ldapvi					libmodbus
+lensfun					libmodplug
+leptonica				libmongoclient
+lesstif					libmowgli
+libass					libmp3splt
+libassuan				libmpeg2
+libbs2b					libmspub
+libbson					libmtp
+libbtbb					libmxml
+libcapn					libnatpmp
+libcddb					libnids
+libcdio					libntlm
+libcec					liboauth
+libcello				libodbc++
+libcoap					libofx
+libcouchbase				liboil
+libcppa					libopendkim
+libcsv					libopkele
+libdap					libotr
+libdbusmenu-qt				libplist
+libpng					mpich2
+libqalculate				mr
+libsass					msgpack
+libsodium				msmtp
+libtecla				mu
+libtorrent				multimarkdown
+libuv					mysql-cluster
+libvirt					nagios-plugins
+libwbxml				nanomsg
+libxc					nanopb-generator
+libxml2					nasm
+libxmp					ncmpcpp
+libzzip					neko
+lilypond				neon
+liquibase				netpbm
+liquidprompt				nginx
+little-cms				ngrep
+little-cms2				ngspice
+llvm					ninja
+lnav					nkf
+lockrun					node
+log4shib				npth
+logentries				nspr
+logstalgia				nss
+logtalk					nuttcp
+loudmouth				nvm
+lsyncd					nzbget
+lua51					objective-caml
+luajit					onetime
+luarocks				opam
+lv2					open-mpi
+lzip					open-scene-graph
+lzo					openexr
+magit					openjpeg
+mariadb					openrtsp
+mat					openvpn
+matlab2tikz				opus
+mcabber					orientdb
+md5deep					osm2pgsql
+md5sha1sum				osxfuse
+mdp					p7zip
+mecab					pandoc
+media-info				pango
+mercurial				pangomm
+metaproxy				parallel
+mimms					parrot
+minbif					pass
+minidlna				passenger
+miniupnpc				pazpar2
+miredo					pcre
+mkvtoolnix				pdns
+mldonkey				pdnsrec
+mlt					peervpn
+moc					percona-server
+monetdb					percona-toolkit
+mongo-c					perl
+mongodb					perl-build
+monit					perlmagick
+mono					pgbadger
+moreutils				pgpool-ii
+mosquitto				pgtap
+mp3splt					phantomjs
+mp4v2					pidgin
+mpd					pig
+mpfr					pinentry
+mpg123					pixman
+platypus				selenium-server-standalone
+pngcrush				serd
+pngquant				sfcgal
+poco					shadowsocks-libev
+polarssl				shellcheck
+poppler					shiboken
+postgis					shrewsoft-vpn-client
+postgresql				siege
+pow					signing-party
+profanity				silc-client
+protobuf				silk
+pth					sip
+pup					slurm
+py2cairo				smake
+pyenv					snort
+pyenv-virtualenvwrapper			solr
+pygobject				sonar
+pygtk					sord
+pygtkglext				spatialindex
+pypy					speex
+pypy3					sphinx
+pyqt					spidermonkey
+python					spin
+python3					sqlcipher
+qbs					sqlite
+qca					sqlitebrowser
+qjson					sqsh
+qrencode				squid
+qscintilla2				ssdb
+qt5					ssdeep
+quantlib				stormfs
+qwt					stunnel
+rabbitmq				subversion
+rancid					svtplay-dl
+raptor					swi-prolog
+rarian					swig
+rasqal					sword
+rbenv-bundler				sylpheed
+re2c					syncthing
+reclass					synfig
+rethinkdb				synfigstudio
+rgbds					sysdig
+riak					taglib
+rlwrap					talloc
+rrdtool					tcpreplay
+rsnapshot				terminal-notifier
+rtmpdump				terraform
+ruby					tesseract
+ruby-build				texi2html
+s-lang					texinfo
+s3-backer				the_platinum_searcher
+s3fs					the_silver_searcher
+saltstack				theora
+sane-backends				thrift
+sassc					ticcutils
+sbt					timbl
+scala					timidity
+scamper					tmux
+screenfetch				tomcat
+sdl					tomcat-native
+sdl2					tor
+sdl2_image				torsocks
+sdl_gfx					translate-toolkit
+sdl_image				tuntap
+sdl_ttf					tup
+seexpr					tutum
+unbound					wxmac
+unison					wyrd
+unixodbc				x264
+unrar					x265
+uriparser				xapian
+usbmuxd					xerces-c
+uwsgi					xml-security-c
+vala					xmlto
+valabind				xplanetfx
+valgrind				xrootd
+vcsh					xulrunner
+vert.x					xvid
+vifm					yajl
+vim					yaml-cpp
+vpnc					yaz
+vrpn					yazpp
+w3m					ykpers
+watchman				youtube-dl
+wbox					yubico-piv-tool
+webp					zbackup
+wget					zenity
+wildfly-as				zeromq
+wine					zint
+wireshark				zookeeper
+wla-dx					zsh-syntax-highlighting
+[1;34m==>[1;39m Deleted Formulae[0m
+alpine-chappa	authexec	finch
+travis_time:end:24807532:start=1416790584000000000,finish=1416790599000000000,duration=15000000000[0Ktravis_fold:end:before_install.3[0Ktravis_fold:start:before_install.4[0Ktravis_time:start:042035af[0K$ if brew outdated | grep -qx xctool; then brew upgrade xctool; fi
+travis_time:end:042035af:start=1416790599000000000,finish=1416790600000000000,duration=1000000000[0Ktravis_fold:end:before_install.4[0Ktravis_fold:start:install.cocoapods[0K[33;1mInstalling Pods with 'pod install'[0m
+travis_time:start:00da228a[0K$ pushd .
+~/build/jessesquires/JSQMessagesViewController ~/build/jessesquires/JSQMessagesViewController
+travis_time:end:00da228a:start=1416790600000000000,finish=1416790600000000000,duration=0[0Ktravis_time:start:03c0d962[0K$ pod install
+Analyzing dependencies
+Downloading dependencies
+[32mInstalling JSQSystemSoundPlayer (2.0.0)[0m
+[32mInstalling OCMock (3.1.1)[0m
+Generating Pods project
+Integrating client project
+travis_time:end:03c0d962:start=1416790600000000000,finish=1416790634000000000,duration=34000000000[0Ktravis_time:start:0037969c[0K$ popd
+~/build/jessesquires/JSQMessagesViewController
+travis_time:end:0037969c:start=1416790634000000000,finish=1416790634000000000,duration=0[0Ktravis_fold:end:install.cocoapods[0Ktravis_time:start:00d1d494[0K$ xctool clean build test -workspace JSQMessages.xcworkspace -scheme JSQMessages -sdk iphonesimulator7.1 ONLY_ACTIVE_ARCH=NO
+[Info] Loading settings for scheme 'JSQMessages' ...[Info] Loading settings for scheme 'JSQMessages' ... (2108 ms)
+
+[1m=== CLEAN ===[0m
+
+  xcodebuild [1mclean[0m [4mJSQMessages[0m
+    [1mPods[0m / [1mPods-JSQMessagesTests-OCMock[0m (Debug)
+        Check dependencies      [32m✓[0m Check dependencies [33m(254 ms)[0m
+        Remove libPods-JSQMessagesTests-OCMock.a      [32m✓[0m Remove libPods-JSQMessagesTests-OCMock.a [2m[32m(2 ms)[0m
+        Remove Pods-JSQMessagesTests-OCMock-prefix.pch.pch      [32m✓[0m Remove Pods-JSQMessagesTests-OCMock-prefix.pch.pch [2m[32m(2 ms)[0m
+        Remove Pods-JSQMessagesTests-OCMock-prefix.pch.pch      [32m✓[0m Remove Pods-JSQMessagesTests-OCMock-prefix.pch.pch [2m[32m(1 ms)[0m
+        Remove Pods-JSQMessagesTests-OCMock-prefix.pch.pch      [32m✓[0m Remove Pods-JSQMessagesTests-OCMock-prefix.pch.pch [2m[32m(2 ms)[0m
+        Remove Pods-JSQMessagesTests-OCMock-prefix.pch.pch      [32m✓[0m Remove Pods-JSQMessagesTests-OCMock-prefix.pch.pch [2m[32m(6 ms)[0m
+        Remove Pods-JSQMessagesTests-OCMock.build      [32m✓[0m Remove Pods-JSQMessagesTests-OCMock.build [2m[32m(7 ms)[0m
+      [1m0 errored, 0 warning (276 ms)[0m
+
+    [1mPods[0m / [1mPods-JSQSystemSoundPlayer[0m (Debug)
+      [1m0 errored, 0 warning (103 ms)[0m
+
+      Check dependencies    [32m✓[0m Check dependencies [2m[32m(36 ms)[0m
+      Remove libPods-JSQSystemSoundPlayer.a    [32m✓[0m Remove libPods-JSQSystemSoundPlayer.a [2m[32m(9 ms)[0m
+      Remove Pods-JSQSystemSoundPlayer-prefix.pch.pch    [32m✓[0m Remove Pods-JSQSystemSoundPlayer-prefix.pch.pch [2m[32m(7 ms)[0m
+      Remove Pods-JSQSystemSoundPlayer-prefix.pch.pch    [32m✓[0m Remove Pods-JSQSystemSoundPlayer-prefix.pch.pch [2m[32m(31 ms)[0m
+      Remove Pods-JSQSystemSoundPlayer-prefix.pch.pch    [32m✓[0m Remove Pods-JSQSystemSoundPlayer-prefix.pch.pch [2m[32m(24 ms)[0m
+      Remove Pods-JSQSystemSoundPlayer-prefix.pch.pch    [32m✓[0m Remove Pods-JSQSystemSoundPlayer-prefix.pch.pch [2m[32m(20 ms)[0m
+      Remove Pods-JSQSystemSoundPlayer.build    [32m✓[0m Remove Pods-JSQSystemSoundPlayer.build [2m[32m(9 ms)[0m
+    [1mPods[0m / [1mPods[0m (Debug)
+      [1m0 errored, 0 warning (14 ms)[0m
+
+      Check dependencies    [32m✓[0m Check dependencies [2m[32m(13 ms)[0m
+      Remove libPods.a    [32m✓[0m Remove libPods.a [2m[32m(12 ms)[0m
+      Remove Pods.build    [32m✓[0m Remove Pods.build [2m[32m(12 ms)[0m
+    [1mJSQMessages[0m / [1mJSQMessages[0m (Debug)
+        Check dependencies      [32m✓[0m Check dependencies [33m(303 ms)[0m
+        Create product structure      [32m✓[0m Create product structure [2m[32m(0 ms)[0m
+[2m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[2m/bin/mkdir -p /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Products/Debug-iphonesimulator/JSQMessages.app[0m
+[2m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+        Remove JSQMessages.app.dSYM      [32m✓[0m Remove JSQMessages.app.dSYM [2m[32m(1 ms)[0m
+        Remove JSQMessages.build      [32m✓[0m Remove JSQMessages.build [2m[32m(1 ms)[0m
+        Remove JSQMessages.app      [32m✓[0m Remove JSQMessages.app [2m[32m(2 ms)[0m
+      [1m0 errored, 0 warning (317 ms)[0m
+
+    [1mPods[0m / [1mPods-JSQMessagesTests[0m (Debug)
+      [1m0 errored, 0 warning (17 ms)[0m
+
+      Check dependencies    [32m✓[0m Check dependencies [2m[32m(14 ms)[0m
+      Remove libPods-JSQMessagesTests.a    [32m✓[0m Remove libPods-JSQMessagesTests.a [2m[32m(0 ms)[0m
+      Remove Pods-JSQMessagesTests.build    [32m✓[0m Remove Pods-JSQMessagesTests.build [2m[32m(1 ms)[0m
+    [1mJSQMessages[0m / [1mJSQMessagesTests[0m (Debug)
+        Check dependencies      [32m���[0m Check dependencies [2m[32m(5 ms)[0m
+        Create product structure      [32m✓[0m Create product structure [2m[32m(8 ms)[0m
+[2m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[2m/bin/mkdir -p /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Products/Debug-iphonesimulator/JSQMessagesTests.xctest[0m
+[2m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+        Remove JSQMessagesTests.xctest.dSYM      [32m✓[0m Remove JSQMessagesTests.xctest.dSYM [2m[32m(7 ms)[0m
+        Remove JSQMessagesTests.xctest      [32m✓[0m Remove JSQMessagesTests.xctest [2m[32m(6 ms)[0m
+        Remove JSQMessagesTests.build      [32m✓[0m Remove JSQMessagesTests.build [2m[32m(0 ms)[0m
+      [1m0 errored, 0 warning (19 ms)[0m
+
+
+  xcodebuild [1mbuild[0m [4mclean[0m
+    [1mPods[0m / [1mPods-JSQSystemSoundPlayer[0m (Debug)
+        Check dependencies      [32m✓[0m Check dependencies [32m(77 ms)[0m
+        Remove libPods-JSQSystemSoundPlayer.a      [32m✓[0m Remove libPods-JSQSystemSoundPlayer.a [2m[32m(3 ms)[0m
+        Remove Pods-JSQSystemSoundPlayer-prefix.pch.pch      [32m✓[0m Remove Pods-JSQSystemSoundPlayer-prefix.pch.pch [2m[32m(3 ms)[0m
+        Remove Pods-JSQSystemSoundPlayer-prefix.pch.pch      [32m✓[0m Remove Pods-JSQSystemSoundPlayer-prefix.pch.pch [2m[32m(5 ms)[0m
+        Remove Pods-JSQSystemSoundPlayer-prefix.pch.pch      [32m✓[0m Remove Pods-JSQSystemSoundPlayer-prefix.pch.pch [2m[32m(6 ms)[0m
+        Remove Pods-JSQSystemSoundPlayer-prefix.pch.pch      [32m✓[0m Remove Pods-JSQSystemSoundPlayer-prefix.pch.pch [2m[32m(7 ms)[0m
+        Remove Pods-JSQSystemSoundPlayer.build      [32m✓[0m Remove Pods-JSQSystemSoundPlayer.build [2m[32m(6 ms)[0m
+      [1m0 errored, 0 warning (101 ms)[0m
+
+    [1mPods[0m / [1mPods-JSQMessagesTests-OCMock[0m (Debug)
+        Check dependencies      [32m✓[0m Check dependencies [33m(272 ms)[0m
+        Remove libPods-JSQMessagesTests-OCMock.a      [32m✓[0m Remove libPods-JSQMessagesTests-OCMock.a [2m[32m(3 ms)[0m
+        Remove Pods-JSQMessagesTests-OCMock-prefix.pch.pch      [32m✓[0m Remove Pods-JSQMessagesTests-OCMock-prefix.pch.pch [2m[32m(4 ms)[0m
+        Remove Pods-JSQMessagesTests-OCMock-prefix.pch.pch      [32m✓[0m Remove Pods-JSQMessagesTests-OCMock-prefix.pch.pch [2m[32m(3 ms)[0m
+        Remove Pods-JSQMessagesTests-OCMock-prefix.pch.pch      [32m✓[0m Remove Pods-JSQMessagesTests-OCMock-prefix.pch.pch [2m[32m(2 ms)[0m
+        Remove Pods-JSQMessagesTests-OCMock-prefix.pch.pch      [32m✓[0m Remove Pods-JSQMessagesTests-OCMock-prefix.pch.pch [2m[32m(8 ms)[0m
+        Remove Pods-JSQMessagesTests-OCMock.build      [32m✓[0m Remove Pods-JSQMessagesTests-OCMock.build [2m[32m(8 ms)[0m
+      [1m0 errored, 0 warning (290 ms)[0m
+
+    [1mPods[0m / [1mPods[0m (Debug)
+      [1m0 errored, 0 warning (4 ms)[0m
+
+      Check dependencies    [32m✓[0m Check dependencies [2m[32m(0 ms)[0m
+      Remove libPods.a    [32m✓[0m Remove libPods.a [2m[32m(1 ms)[0m
+      Remove Pods.build    [32m✓[0m Remove Pods.build [2m[32m(1 ms)[0m
+    [1mJSQMessages[0m / [1mJSQMessages[0m (Debug)
+        Check dependencies      [32m✓[0m Check dependencies [33m(265 ms)[0m
+        Create product structure      [32m✓[0m Create product structure [2m[32m(2 ms)[0m
+[2m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[2m/bin/mkdir -p /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Products/Debug-iphonesimulator/JSQMessages.app[0m
+[2m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+        Remove JSQMessages.app.dSYM      [32m✓[0m Remove JSQMessages.app.dSYM [2m[32m(7 ms)[0m
+        Remove JSQMessages.app      [32m✓[0m Remove JSQMessages.app [2m[32m(6 ms)[0m
+        Remove JSQMessages.build      [32m✓[0m Remove JSQMessages.build [2m[32m(8 ms)[0m
+      [1m0 errored, 0 warning (282 ms)[0m
+
+    [1mPods[0m / [1mPods-JSQMessagesTests[0m (Debug)
+      [1m0 errored, 0 warning (19 ms)[0m
+
+      Check dependencies    [32m✓[0m Check dependencies [2m[32m(17 ms)[0m
+      Remove libPods-JSQMessagesTests.a    [32m✓[0m Remove libPods-JSQMessagesTests.a [2m[32m(1 ms)[0m
+      Remove Pods-JSQMessagesTests.build    [32m✓[0m Remove Pods-JSQMessagesTests.build [2m[32m(0 ms)[0m
+    [1mJSQMessages[0m / [1mJSQMessagesTests[0m (Debug)
+        Check dependencies      [32m✓[0m Check dependencies [2m[32m(44 ms)[0m
+        Create product structure      [32m✓[0m Create product structure [2m[32m(3 ms)[0m
+[2m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[2m/bin/mkdir -p /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Products/Debug-iphonesimulator/JSQMessagesTests.xctest[0m
+[2m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+        Remove JSQMessagesTests.xctest      [32m✓[0m Remove JSQMessagesTests.xctest [2m[32m(3 ms)[0m
+        Remove JSQMessagesTests.build      [32m✓[0m Remove JSQMessagesTests.build [2m[32m(9 ms)[0m
+        Remove JSQMessagesTests.xctest.dSYM      [32m✓[0m Remove JSQMessagesTests.xctest.dSYM [2m[32m(10 ms)[0m
+      [1m0 errored, 0 warning (59 ms)[0m
+
+
+
+[1m[32m** CLEAN SUCCEEDED **[0m [2m(3471 ms)[0m
+
+[1m=== BUILD ===[0m
+
+  xcodebuild [1mbuild[0m [4mJSQMessages[0m
+    [1mPods[0m / [1mPods-JSQMessagesTests-OCMock[0m (Debug)
+        Check dependencies      [32m✓[0m Check dependencies [33m(383 ms)[0m
+        Write auxiliary files      [32m✓[0m Write auxiliary files [2m[32m(21 ms)[0m
+[2m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[2m/bin/mkdir -p /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JSQMessagesTests-OCMock.build/Objects-normal/i386
+write-file /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JSQMessagesTests-OCMock.build/Objects-normal/i386/Pods-JSQMessagesTests-OCMock.LinkFileList
+write-file /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JSQMessagesTests-OCMock.build/Pods-JSQMessagesTests-OCMock-project-headers.hmap
+write-file /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JSQMessagesTests-OCMock.build/Pods-JSQMessagesTests-OCMock.hmap
+write-file /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JSQMessagesTests-OCMock.build/Pods-JSQMessagesTests-OCMock-own-target-headers.hmap
+write-file /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JSQMessagesTests-OCMock.build/Pods-JSQMessagesTests-OCMock-all-target-headers.hmap
+/bin/mkdir -p /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/PrecompiledHeaders/Pods-JSQMessagesTests-OCMock-prefix-hhtzfscwiduiotgvvjkrzcrfpcrz
+write-file /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/PrecompiledHeaders/Pods-JSQMessagesTests-OCMock-prefix-hhtzfscwiduiotgvvjkrzcrfpcrz/Pods-JSQMessagesTests-OCMock-prefix.pch.pch.hash-criteria
+/bin/mkdir -p /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/PrecompiledHeaders/Pods-JSQMessagesTests-OCMock-prefix-ezrgtywavpinkibayuelxtzvpxpy
+write-file /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/PrecompiledHeaders/Pods-JSQMessagesTests-OCMock-prefix-ezrgtywavpinkibayuelxtzvpxpy/Pods-JSQMessagesTests-OCMock-prefix.pch.pch.hash-criteria
+/bin/mkdir -p /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/PrecompiledHeaders/Pods-JSQMessagesTests-OCMock-prefix-gymzrvcxbhmjhqbbjvzxklrwjpwf
+write-file /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/PrecompiledHeaders/Pods-JSQMessagesTests-OCMock-prefix-gymzrvcxbhmjhqbbjvzxklrwjpwf/Pods-JSQMessagesTests-OCMock-prefix.pch.pch.hash-criteria
+write-file /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JSQMessagesTests-OCMock.build/Pods-JSQMessagesTests-OCMock-generated-files.hmap
+write-file /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JSQMessagesTests-OCMock.build/Pods-JSQMessagesTests-OCMock-all-non-framework-target-headers.hmap
+/bin/mkdir -p /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/PrecompiledHeaders/Pods-JSQMessagesTests-OCMock-prefix-ffmplzmjaztvcocygsqrhlhswchz
+write-file /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/PrecompiledHeaders/Pods-JSQMessagesTests-OCMock-prefix-ffmplzmjaztvcocygsqrhlhswchz/Pods-JSQMessagesTests-OCMock-prefix.pch.pch.hash-criteria
+/bin/mkdir -p /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JSQMessagesTests-OCMock.build/Objects-normal/x86_64
+write-file /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JSQMessagesTests-OCMock.build/Objects-normal/x86_64/Pods-JSQMessagesTests-OCMock.LinkFileList[0m
+[2m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+        Precompile Target Support Pods-JSQMessagesTests-OCMock-prefix.pch      [32m✓[0m Precompile Target Support Pods-JSQMessagesTests-OCMock-prefix.pch [31m(1150 ms)[0m
+        Precompile Target Support Pods-JSQMessagesTests-OCMock-prefix.pch      [32m✓[0m Precompile Target Support Pods-JSQMessagesTests-OCMock-prefix.pch [32m(64 ms)[0m
+        Precompile Target Support Pods-JSQMessagesTests-OCMock-prefix.pch      [32m✓[0m Precompile Target Support Pods-JSQMessagesTests-OCMock-prefix.pch [31m(1159 ms)[0m
+        Precompile Target Support Pods-JSQMessagesTests-OCMock-prefix.pch      [32m✓[0m Precompile Target Support Pods-JSQMessagesTests-OCMock-prefix.pch [32m(73 ms)[0m
+        Compile NSInvocation+OCMAdditions.m      [32m✓[0m Compile NSInvocation+OCMAdditions.m [32m(92 ms)[0m
+        Compile NSMethodSignature+OCMAdditions.m      [32m✓[0m Compile NSMethodSignature+OCMAdditions.m [32m(66 ms)[0m
+        Compile NSNotificationCenter+OCMAdditions.m      [32m✓[0m Compile NSNotificationCenter+OCMAdditions.m [32m(66 ms)[0m
+        Compile NSObject+OCMAdditions.m      [32m✓[0m Compile NSObject+OCMAdditions.m [32m(65 ms)[0m
+        Compile NSValue+OCMAdditions.m      [32m✓[0m Compile NSValue+OCMAdditions.m [32m(68 ms)[0m
+        Compile OCClassMockObject.m      [32m✓[0m Compile OCClassMockObject.m [32m(91 ms)[0m
+        Compile OCMArg.m      [32m✓[0m Compile OCMArg.m [32m(65 ms)[0m
+        Compile OCMBlockCaller.m      [32m✓[0m Compile OCMBlockCaller.m [32m(71 ms)[0m
+        Compile OCMBoxedReturnValueProvider.m      [32m✓[0m Compile OCMBoxedReturnValueProvider.m [32m(77 ms)[0m
+        Compile OCMConstraint.m      [32m✓[0m Compile OCMConstraint.m [32m(84 ms)[0m
+        Compile OCMExceptionReturnValueProvider.m      [32m✓[0m Compile OCMExceptionReturnValueProvider.m [32m(58 ms)[0m
+        Compile OCMExpectationRecorder.m      [32m✓[0m Compile OCMExpectationRecorder.m [32m(66 ms)[0m
+        Compile OCMFunctions.m      [32m✓[0m Compile OCMFunctions.m [32m(83 ms)[0m
+        Compile OCMIndirectReturnValueProvider.m      [32m✓[0m Compile OCMIndirectReturnValueProvider.m [32m(59 ms)[0m
+        Compile OCMInvocationExpectation.m      [32m✓[0m Compile OCMInvocationExpectation.m [32m(57 ms)[0m
+        Compile OCMInvocationMatcher.m      [32m✓[0m Compile OCMInvocationMatcher.m [32m(67 ms)[0m
+        Compile OCMInvocationStub.m      [32m✓[0m Compile OCMInvocationStub.m [32m(58 ms)[0m
+        Compile OCMLocation.m      [32m✓[0m Compile OCMLocation.m [32m(61 ms)[0m
+        Compile OCMMacroState.m      [32m✓[0m Compile OCMMacroState.m [32m(70 ms)[0m
+        Compile OCMNotificationPoster.m      [32m✓[0m Compile OCMNotificationPoster.m [32m(60 ms)[0m
+        Compile OCMObserverRecorder.m      [32m✓[0m Compile OCMObserverRecorder.m [32m(65 ms)[0m
+        Compile OCMPassByRefSetter.m      [32m✓[0m Compile OCMPassByRefSetter.m [32m(66 ms)[0m
+        Compile OCMRealObjectForwarder.m      [32m✓[0m Compile OCMRealObjectForwarder.m [32m(63 ms)[0m
+        Compile OCMRecorder.m      [32m✓[0m Compile OCMRecorder.m [32m(71 ms)[0m
+        Compile OCMReturnValueProvider.m      [32m✓[0m Compile OCMReturnValueProvider.m [32m(60 ms)[0m
+        Compile OCMStubRecorder.m      [32m✓[0m Compile OCMStubRecorder.m [32m(77 ms)[0m
+        Compile OCMVerifier.m      [32m✓[0m Compile OCMVerifier.m [32m(59 ms)[0m
+        Compile OCMockObject.m      [32m✓[0m Compile OCMockObject.m [32m(102 ms)[0m
+        Compile OCObserverMockObject.m      [32m✓[0m Compile OCObserverMockObject.m [32m(72 ms)[0m
+        Compile OCPartialMockObject.m      [32m✓[0m Compile OCPartialMockObject.m [32m(75 ms)[0m
+        Compile OCProtocolMockObject.m      [32m✓[0m Compile OCProtocolMockObject.m [32m(66 ms)[0m
+        Compile Target Support Pods-JSQMessagesTests-OCMock-dummy.m      [32m✓[0m Compile Target Support Pods-JSQMessagesTests-OCMock-dummy.m [32m(53 ms)[0m
+        Compile NSInvocation+OCMAdditions.m      [32m✓[0m Compile NSInvocation+OCMAdditions.m [32m(83 ms)[0m
+        Compile NSMethodSignature+OCMAdditions.m      [32m✓[0m Compile NSMethodSignature+OCMAdditions.m [32m(60 ms)[0m
+        Compile NSNotificationCenter+OCMAdditions.m      [32m✓[0m Compile NSNotificationCenter+OCMAdditions.m [32m(55 ms)[0m
+        Compile NSObject+OCMAdditions.m      [32m✓[0m Compile NSObject+OCMAdditions.m [32m(63 ms)[0m
+        Compile NSValue+OCMAdditions.m      [32m✓[0m Compile NSValue+OCMAdditions.m [32m(63 ms)[0m
+        Compile OCClassMockObject.m      [32m✓[0m Compile OCClassMockObject.m [32m(77 ms)[0m
+        Compile OCMArg.m      [32m✓[0m Compile OCMArg.m [32m(71 ms)[0m
+        Compile OCMBlockCaller.m      [32m✓[0m Compile OCMBlockCaller.m [32m(58 ms)[0m
+        Compile OCMBoxedReturnValueProvider.m      [32m✓[0m Compile OCMBoxedReturnValueProvider.m [32m(63 ms)[0m
+        Compile OCMConstraint.m      [32m✓[0m Compile OCMConstraint.m [32m(65 ms)[0m
+        Compile OCMExceptionReturnValueProvider.m      [32m✓[0m Compile OCMExceptionReturnValueProvider.m [32m(55 ms)[0m
+        Compile OCMExpectationRecorder.m      [32m✓[0m Compile OCMExpectationRecorder.m [32m(62 ms)[0m
+        Compile OCMFunctions.m      [32m✓[0m Compile OCMFunctions.m [32m(73 ms)[0m
+        Compile OCMIndirectReturnValueProvider.m      [32m✓[0m Compile OCMIndirectReturnValueProvider.m [32m(62 ms)[0m
+        Compile OCMInvocationExpectation.m      [32m✓[0m Compile OCMInvocationExpectation.m [32m(64 ms)[0m
+        Compile OCMInvocationMatcher.m      [32m✓[0m Compile OCMInvocationMatcher.m [32m(73 ms)[0m
+        Compile OCMInvocationStub.m      [32m✓[0m Compile OCMInvocationStub.m [32m(58 ms)[0m
+        Compile OCMLocation.m      [32m✓[0m Compile OCMLocation.m [32m(58 ms)[0m
+        Compile OCMMacroState.m      [32m✓[0m Compile OCMMacroState.m [32m(67 ms)[0m
+        Compile OCMNotificationPoster.m      [32m✓[0m Compile OCMNotificationPoster.m [32m(60 ms)[0m
+        Compile OCMObserverRecorder.m      [32m✓[0m Compile OCMObserverRecorder.m [32m(67 ms)[0m
+        Compile OCMPassByRefSetter.m      [32m✓[0m Compile OCMPassByRefSetter.m [32m(58 ms)[0m
+        Compile OCMRealObjectForwarder.m      [32m✓[0m Compile OCMRealObjectForwarder.m [32m(64 ms)[0m
+        Compile OCMRecorder.m      [32m✓[0m Compile OCMRecorder.m [32m(64 ms)[0m
+        Compile OCMReturnValueProvider.m      [32m✓[0m Compile OCMReturnValueProvider.m [32m(62 ms)[0m
+        Compile OCMStubRecorder.m      [32m✓[0m Compile OCMStubRecorder.m [32m(74 ms)[0m
+        Compile OCMVerifier.m      [32m✓[0m Compile OCMVerifier.m [32m(64 ms)[0m
+        Compile OCMockObject.m      [32m✓[0m Compile OCMockObject.m [32m(80 ms)[0m
+        Compile OCObserverMockObject.m      [32m✓[0m Compile OCObserverMockObject.m [32m(69 ms)[0m
+        Compile OCPartialMockObject.m      [32m✓[0m Compile OCPartialMockObject.m [32m(91 ms)[0m
+        Compile OCProtocolMockObject.m      [32m✓[0m Compile OCProtocolMockObject.m [32m(61 ms)[0m
+        Compile Target Support Pods-JSQMessagesTests-OCMock-dummy.m      [32m✓[0m Compile Target Support Pods-JSQMessagesTests-OCMock-dummy.m [32m(54 ms)[0m
+        Create static library libPods-JSQMessagesTests-OCMock.a      [32m✓[0m Create static library libPods-JSQMessagesTests-OCMock.a [2m[32m(22 ms)[0m
+        Create static library libPods-JSQMessagesTests-OCMock.a      [32m✓[0m Create static library libPods-JSQMessagesTests-OCMock.a [2m[32m(22 ms)[0m
+        Create universal binary libPods-JSQMessagesTests-OCMock.a      [32m✓[0m Create universal binary libPods-JSQMessagesTests-OCMock.a [32m(78 ms)[0m
+      [1m0 errored, 0 warning (12364 ms)[0m
+
+    [1mPods[0m / [1mPods-JSQSystemSoundPlayer[0m (Debug)
+      [1m0 errored, 0 warning (4398 ms)[0m
+
+      Check dependencies    [32m✓[0m Check dependencies [32m(102 ms)[0m
+      Write auxiliary files    [32m✓[0m Write auxiliary files [2m[32m(33 ms)[0m
+[2m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[2m/bin/mkdir -p /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JSQSystemSoundPlayer.build
+write-file /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JSQSystemSoundPlayer.build/Pods-JSQSystemSoundPlayer-project-headers.hmap
+write-file /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JSQSystemSoundPlayer.build/Pods-JSQSystemSoundPlayer.hmap
+write-file /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JSQSystemSoundPlayer.build/Pods-JSQSystemSoundPlayer-generated-files.hmap
+write-file /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JSQSystemSoundPlayer.build/Pods-JSQSystemSoundPlayer-own-target-headers.hmap
+/bin/mkdir -p /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/PrecompiledHeaders/Pods-JSQSystemSoundPlayer-prefix-eokwrgrccwugeucyurenwhhdpwqc
+write-file /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/PrecompiledHeaders/Pods-JSQSystemSoundPlayer-prefix-eokwrgrccwugeucyurenwhhdpwqc/Pods-JSQSystemSoundPlayer-prefix.pch.pch.hash-criteria
+/bin/mkdir -p /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/PrecompiledHeaders/Pods-JSQSystemSoundPlayer-prefix-fjepmyxjksmpttfodcgloanoxwzz
+write-file /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/PrecompiledHeaders/Pods-JSQSystemSoundPlayer-prefix-fjepmyxjksmpttfodcgloanoxwzz/Pods-JSQSystemSoundPlayer-prefix.pch.pch.hash-criteria
+/bin/mkdir -p /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/PrecompiledHeaders/Pods-JSQSystemSoundPlayer-prefix-bvrcaltztxmqsqcmevcmhqclrowt
+write-file /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/PrecompiledHeaders/Pods-JSQSystemSoundPlayer-prefix-bvrcaltztxmqsqcmevcmhqclrowt/Pods-JSQSystemSoundPlayer-prefix.pch.pch.hash-criteria
+/bin/mkdir -p /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/PrecompiledHeaders/Pods-JSQSystemSoundPlayer-prefix-gncswbehbfhcabbreotwvppruwei
+write-file /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/PrecompiledHeaders/Pods-JSQSystemSoundPlayer-prefix-gncswbehbfhcabbreotwvppruwei/Pods-JSQSystemSoundPlayer-prefix.pch.pch.hash-criteria
+/bin/mkdir -p /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JSQSystemSoundPlayer.build/Objects-normal/i386
+write-file /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JSQSystemSoundPlayer.build/Objects-normal/i386/Pods-JSQSystemSoundPlayer.LinkFileList
+/bin/mkdir -p /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JSQSystemSoundPlayer.build/Objects-normal/x86_64
+write-file /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JSQSystemSoundPlayer.build/Objects-normal/x86_64/Pods-JSQSystemSoundPlayer.LinkFileList
+write-file /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JSQSystemSoundPlayer.build/Pods-JSQSystemSoundPlayer-all-non-framework-target-headers.hmap
+write-file /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JSQSystemSoundPlayer.build/Pods-JSQSystemSoundPlayer-all-target-headers.hmap[0m
+[2m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+      Precompile Target Support Pods-JSQSystemSoundPlayer-prefix.pch    [32m✓[0m Precompile Target Support Pods-JSQSystemSoundPlayer-prefix.pch [31m(2141 ms)[0m
+      Precompile Target Support Pods-JSQSystemSoundPlayer-prefix.pch    [32m✓[0m Precompile Target Support Pods-JSQSystemSoundPlayer-prefix.pch [31m(1655 ms)[0m
+      Precompile Target Support Pods-JSQSystemSoundPlayer-prefix.pch    [32m✓[0m Precompile Target Support Pods-JSQSystemSoundPlayer-prefix.pch [31m(1100 ms)[0m
+      Precompile Target Support Pods-JSQSystemSoundPlayer-prefix.pch    [32m✓[0m Precompile Target Support Pods-JSQSystemSoundPlayer-prefix.pch [32m(60 ms)[0m
+      Compile JSQSystemSoundPlayer.m    [32m✓[0m Compile JSQSystemSoundPlayer.m [33m(481 ms)[0m
+      Compile Target Support Pods-JSQSystemSoundPlayer-dummy.m    [32m✓[0m Compile Target Support Pods-JSQSystemSoundPlayer-dummy.m [32m(56 ms)[0m
+      Compile JSQSystemSoundPlayer.m    [32m✓[0m Compile JSQSystemSoundPlayer.m [33m(276 ms)[0m
+      Compile Target Support Pods-JSQSystemSoundPlayer-dummy.m    [32m✓[0m Compile Target Support Pods-JSQSystemSoundPlayer-dummy.m [32m(54 ms)[0m
+      Create static library libPods-JSQSystemSoundPlayer.a    [32m✓[0m Create static library libPods-JSQSystemSoundPlayer.a [2m[32m(20 ms)[0m
+      Create static library libPods-JSQSystemSoundPlayer.a    [32m✓[0m Create static library libPods-JSQSystemSoundPlayer.a [2m[32m(14 ms)[0m
+      Create universal binary libPods-JSQSystemSoundPlayer.a    [32m✓[0m Create universal binary libPods-JSQSystemSoundPlayer.a [2m[32m(17 ms)[0m
+    [1mPods[0m / [1mPods[0m (Debug)
+      [1m0 errored, 0 warning (311 ms)[0m
+
+      Check dependencies    [32m✓[0m Check dependencies [2m[32m(10 ms)[0m
+      Write auxiliary files    [32m✓[0m Write auxiliary files [2m[32m(8 ms)[0m
+[2m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[2m/bin/mkdir -p /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build
+write-file /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/Pods.hmap
+write-file /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/Pods-project-headers.hmap
+/bin/mkdir -p /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/Objects-normal/x86_64
+write-file /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/Objects-normal/x86_64/Pods.LinkFileList
+/bin/mkdir -p /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/Objects-normal/i386
+write-file /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/Objects-normal/i386/Pods.LinkFileList
+write-file /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/Pods-own-target-headers.hmap
+write-file /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/Pods-all-non-framework-target-headers.hmap
+write-file /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/Pods-all-target-headers.hmap
+write-file /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/Pods-generated-files.hmap[0m
+[2m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+      Compile Target Support Pods-dummy.m    [32m✓[0m Compile Target Support Pods-dummy.m [2m[32m(49 ms)[0m
+      Compile Target Support Pods-dummy.m    [32m✓[0m Compile Target Support Pods-dummy.m [2m[32m(44 ms)[0m
+      Create static library libPods.a    [32m✓[0m Create static library libPods.a [2m[32m(14 ms)[0m
+      Create static library libPods.a    [32m✓[0m Create static library libPods.a [2m[32m(13 ms)[0m
+      Create universal binary libPods.a    [32m✓[0m Create universal binary libPods.a [2m[32m(15 ms)[0m
+    [1mJSQMessages[0m / [1mJSQMessages[0m (Debug)
+        Check dependencies      [32m✓[0m Check dependencies [2m[32m(6 ms)[0m
+        Write auxiliary files      [32m✓[0m Write auxiliary files [2m[32m(5 ms)[0m
+[2m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[2m/bin/mkdir -p /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/JSQMessages.build/Debug-iphonesimulator/JSQMessages.build/Objects-normal/x86_64
+write-file /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/JSQMessages.build/Debug-iphonesimulator/JSQMessages.build/Objects-normal/x86_64/JSQMessages.LinkFileList
+write-file /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/JSQMessages.build/Debug-iphonesimulator/JSQMessages.build/JSQMessages-all-non-framework-target-headers.hmap
+/bin/mkdir -p /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/JSQMessages.build/Debug-iphonesimulator/JSQMessages.build/Objects-normal/i386
+write-file /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/JSQMessages.build/Debug-iphonesimulator/JSQMessages.build/Objects-normal/i386/JSQMessages.LinkFileList
+write-file /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/JSQMessages.build/Debug-iphonesimulator/JSQMessages.build/JSQMessages-project-headers.hmap
+write-file /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/JSQMessages.build/Debug-iphonesimulator/JSQMessages.build/JSQMessages-generated-files.hmap
+write-file /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/JSQMessages.build/Debug-iphonesimulator/JSQMessages.build/JSQMessages-own-target-headers.hmap
+write-file /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/JSQMessages.build/Debug-iphonesimulator/JSQMessages.build/Script-3AF3068570D5C74873D84E30.sh
+chmod 0755 /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/JSQMessages.build/Debug-iphonesimulator/JSQMessages.build/Script-3AF3068570D5C74873D84E30.sh
+write-file /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/JSQMessages.build/Debug-iphonesimulator/JSQMessages.build/JSQMessages-all-target-headers.hmap
+write-file /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/JSQMessages.build/Debug-iphonesimulator/JSQMessages.build/JSQMessages.hmap
+write-file /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/JSQMessages.build/Debug-iphonesimulator/JSQMessages.build/Script-4CCCD7A86E86CB86C48E303C.sh
+chmod 0755 /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/JSQMessages.build/Debug-iphonesimulator/JSQMessages.build/Script-4CCCD7A86E86CB86C48E303C.sh[0m
+[2m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+        Create product structure      [32m✓[0m Create product structure [2m[32m(0 ms)[0m
+[2m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[2m/bin/mkdir -p /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Products/Debug-iphonesimulator/JSQMessages.app[0m
+[2m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+        Run custom shell script 'Check Pods Manifest.lock'      [32m✓[0m Run custom shell script 'Check Pods Manifest.lock' [2m[32m(49 ms)[0m
+        Compile JSQMessagesMediaPlaceholderView.m      [32m✓[0m Compile JSQMessagesMediaPlaceholderView.m [31m(1714 ms)[0m
+        Compile JSQMessagesCollectionViewCellOutgoing.m      [32m✓[0m Compile JSQMessagesCollectionViewCellOutgoing.m [31m(1297 ms)[0m
+        Compile JSQMessagesInputToolbar.m      [32m✓[0m Compile JSQMessagesInputToolbar.m [32m(103 ms)[0m
+        Compile JSQMessagesCollectionViewCell.m      [32m✓[0m Compile JSQMessagesCollectionViewCell.m [32m(132 ms)[0m
+        Compile JSQMessagesViewController.m      [32m✓[0m Compile JSQMessagesViewController.m [33m(217 ms)[0m
+        Compile NSUserDefaults+DemoSettings.m      [32m✓[0m Compile NSUserDefaults+DemoSettings.m [32m(52 ms)[0m
+        Compile JSQMessagesCellTextView.m      [32m✓[0m Compile JSQMessagesCellTextView.m [32m(100 ms)[0m
+        Compile UIView+JSQMessages.m      [32m✓[0m Compile UIView+JSQMessages.m [32m(85 ms)[0m
+        Compile JSQMessagesCollectionView.m      [32m✓[0m Compile JSQMessagesCollectionView.m [32m(113 ms)[0m
+        Compile JSQMessagesLabel.m      [32m✓[0m Compile JSQMessagesLabel.m [32m(92 ms)[0m
+        Compile JSQLocationMediaItem.m      [32m✓[0m Compile JSQLocationMediaItem.m [33m(318 ms)[0m
+        Compile JSQMessagesAvatarImage.m      [32m✓[0m Compile JSQMessagesAvatarImage.m [32m(71 ms)[0m
+        Compile JSQMessagesToolbarContentView.m      [32m✓[0m Compile JSQMessagesToolbarContentView.m [32m(103 ms)[0m
+        Compile JSQMessagesCollectionViewFlowLayout.m      [32m✓[0m Compile JSQMessagesCollectionViewFlowLayout.m [32m(178 ms)[0m
+        Compile DemoSettingsViewController.m      [32m✓[0m Compile DemoSettingsViewController.m [32m(127 ms)[0m
+        Compile JSQMessagesBubbleImage.m      [32m✓[0m Compile JSQMessagesBubbleImage.m [32m(68 ms)[0m
+        Compile JSQMessage.m      [32m✓[0m Compile JSQMessage.m [32m(83 ms)[0m
+        Compile JSQMessagesTypingIndicatorFooterView.m      [32m✓[0m Compile JSQMessagesTypingIndicatorFooterView.m [32m(101 ms)[0m
+        Compile JSQMessagesLoadEarlierHeaderView.m      [32m✓[0m Compile JSQMessagesLoadEarlierHeaderView.m [32m(101 ms)[0m
+        Compile JSQPhotoMediaItem.m      [32m✓[0m Compile JSQPhotoMediaItem.m [32m(94 ms)[0m
+        Compile JSQMessagesMediaViewBubbleImageMasker.m      [32m✓[0m Compile JSQMessagesMediaViewBubbleImageMasker.m [32m(98 ms)[0m
+        Compile UIImage+JSQMessages.m      [32m✓[0m Compile UIImage+JSQMessages.m [32m(76 ms)[0m
+        Compile JSQMessagesTimestampFormatter.m      [32m✓[0m Compile JSQMessagesTimestampFormatter.m [32m(94 ms)[0m
+        Compile DemoModelData.m      [32m✓[0m Compile DemoModelData.m [32m(99 ms)[0m
+        Compile main.m      [32m✓[0m Compile main.m [32m(57 ms)[0m
+        Compile AppDelegate.m      [32m✓[0m Compile AppDelegate.m [32m(88 ms)[0m
+        Compile UIDevice+JSQMessages.m      [32m✓[0m Compile UIDevice+JSQMessages.m [32m(60 ms)[0m
+        Compile NSString+JSQMessages.m      [32m✓[0m Compile NSString+JSQMessages.m [32m(51 ms)[0m
+        Compile JSQMediaItem.m      [32m✓[0m Compile JSQMediaItem.m [32m(99 ms)[0m
+        Compile JSQMessagesCollectionViewCellIncoming.m      [32m✓[0m Compile JSQMessagesCollectionViewCellIncoming.m [32m(94 ms)[0m
+        Compile JSQMessagesBubbleImageFactory.m      [32m✓[0m Compile JSQMessagesBubbleImageFactory.m [32m(76 ms)[0m
+        Compile DemoMessagesViewController.m      [32m✓[0m Compile DemoMessagesViewController.m [32m(150 ms)[0m
+        Compile UIColor+JSQMessages.m      [32m✓[0m Compile UIColor+JSQMessages.m [32m(59 ms)[0m
+        Compile JSQVideoMediaItem.m      [32m✓[0m Compile JSQVideoMediaItem.m [32m(104 ms)[0m
+        Compile JSQMessagesKeyboardController.m      [32m✓[0m Compile JSQMessagesKeyboardController.m [32m(126 ms)[0m
+        Compile JSQMessagesToolbarButtonFactory.m      [32m✓[0m Compile JSQMessagesToolbarButtonFactory.m [32m(100 ms)[0m
+        Compile JSQMessagesCollectionViewFlowLayoutInvalidationContext.m      [32m✓[0m Compile JSQMessagesCollectionViewFlowLayoutInvalidationContext.m [32m(65 ms)[0m
+        Compile TableViewController.m      [32m✓[0m Compile TableViewController.m [32m(122 ms)[0m
+        Compile JSQMessagesAvatarImageFactory.m      [32m✓[0m Compile JSQMessagesAvatarImageFactory.m [32m(82 ms)[0m
+        Compile JSQSystemSoundPlayer+JSQMessages.m      [32m✓[0m Compile JSQSystemSoundPlayer+JSQMessages.m [32m(51 ms)[0m
+        Compile JSQMessagesComposerTextView.m      [32m✓[0m Compile JSQMessagesComposerTextView.m [32m(106 ms)[0m
+        Compile JSQMessagesCollectionViewLayoutAttributes.m      [32m✓[0m Compile JSQMessagesCollectionViewLayoutAttributes.m [32m(89 ms)[0m
+        Compile JSQMessagesMediaPlaceholderView.m      [32m✓[0m Compile JSQMessagesMediaPlaceholderView.m [31m(1208 ms)[0m
+        Compile JSQMessagesCollectionViewCellOutgoing.m      [32m✓[0m Compile JSQMessagesCollectionViewCellOutgoing.m [31m(1023 ms)[0m
+        Compile JSQMessagesInputToolbar.m      [32m✓[0m Compile JSQMessagesInputToolbar.m [32m(107 ms)[0m
+        Compile JSQMessagesCollectionViewCell.m      [32m✓[0m Compile JSQMessagesCollectionViewCell.m [32m(138 ms)[0m
+        Compile JSQMessagesViewController.m      [32m✓[0m Compile JSQMessagesViewController.m [32m(194 ms)[0m
+        Compile NSUserDefaults+DemoSettings.m      [32m✓[0m Compile NSUserDefaults+DemoSettings.m [32m(51 ms)[0m
+        Compile JSQMessagesCellTextView.m      [32m✓[0m Compile JSQMessagesCellTextView.m [32m(94 ms)[0m
+        Compile UIView+JSQMessages.m      [32m✓[0m Compile UIView+JSQMessages.m [32m(83 ms)[0m
+        Compile JSQMessagesCollectionView.m      [32m✓[0m Compile JSQMessagesCollectionView.m [32m(111 ms)[0m
+        Compile JSQMessagesLabel.m      [32m✓[0m Compile JSQMessagesLabel.m [32m(91 ms)[0m
+        Compile JSQLocationMediaItem.m      [32m✓[0m Compile JSQLocationMediaItem.m [33m(254 ms)[0m
+        Compile JSQMessagesAvatarImage.m      [32m✓[0m Compile JSQMessagesAvatarImage.m [32m(70 ms)[0m
+        Compile JSQMessagesToolbarContentView.m      [32m✓[0m Compile JSQMessagesToolbarContentView.m [32m(105 ms)[0m
+        Compile JSQMessagesCollectionViewFlowLayout.m      [32m✓[0m Compile JSQMessagesCollectionViewFlowLayout.m [32m(154 ms)[0m
+        Compile DemoSettingsViewController.m      [32m✓[0m Compile DemoSettingsViewController.m [32m(88 ms)[0m
+        Compile JSQMessagesBubbleImage.m      [32m✓[0m Compile JSQMessagesBubbleImage.m [32m(70 ms)[0m
+        Compile JSQMessage.m      [32m✓[0m Compile JSQMessage.m [33m(222 ms)[0m
+        Compile JSQMessagesTypingIndicatorFooterView.m      [32m✓[0m Compile JSQMessagesTypingIndicatorFooterView.m [32m(146 ms)[0m
+        Compile JSQMessagesLoadEarlierHeaderView.m      [32m✓[0m Compile JSQMessagesLoadEarlierHeaderView.m [31m(809 ms)[0m
+        Compile JSQPhotoMediaItem.m      [32m✓[0m Compile JSQPhotoMediaItem.m [31m(807 ms)[0m
+        Compile JSQMessagesMediaViewBubbleImageMasker.m      [32m✓[0m Compile JSQMessagesMediaViewBubbleImageMasker.m [31m(523 ms)[0m
+        Compile UIImage+JSQMessages.m      [32m✓[0m Compile UIImage+JSQMessages.m [31m(509 ms)[0m
+        Compile JSQMessagesTimestampFormatter.m      [32m✓[0m Compile JSQMessagesTimestampFormatter.m [33m(424 ms)[0m
+        Compile DemoModelData.m      [32m✓[0m Compile DemoModelData.m [33m(426 ms)[0m
+        Compile main.m      [32m✓[0m Compile main.m [33m(347 ms)[0m
+        Compile AppDelegate.m      [32m✓[0m Compile AppDelegate.m [33m(276 ms)[0m
+        Compile UIDevice+JSQMessages.m      [32m✓[0m Compile UIDevice+JSQMessages.m [33m(259 ms)[0m
+        Compile NSString+JSQMessages.m      [32m✓[0m Compile NSString+JSQMessages.m [32m(199 ms)[0m
+        Compile JSQMediaItem.m      [32m✓[0m Compile JSQMediaItem.m [33m(200 ms)[0m
+        Compile JSQMessagesCollectionViewCellIncoming.m      [32m✓[0m Compile JSQMessagesCollectionViewCellIncoming.m [32m(159 ms)[0m
+        Compile JSQMessagesBubbleImageFactory.m      [32m✓[0m Compile JSQMessagesBubbleImageFactory.m [32m(83 ms)[0m
+        Compile DemoMessagesViewController.m      [32m✓[0m Compile DemoMessagesViewController.m [32m(191 ms)[0m
+        Compile UIColor+JSQMessages.m      [32m✓[0m Compile UIColor+JSQMessages.m [32m(66 ms)[0m
+        Compile JSQVideoMediaItem.m      [32m✓[0m Compile JSQVideoMediaItem.m [32m(101 ms)[0m
+        Compile JSQMessagesKeyboardController.m      [32m✓[0m Compile JSQMessagesKeyboardController.m [32m(129 ms)[0m
+        Compile JSQMessagesToolbarButtonFactory.m      [32m✓[0m Compile JSQMessagesToolbarButtonFactory.m [32m(105 ms)[0m
+        Compile JSQMessagesCollectionViewFlowLayoutInvalidationContext.m      [32m✓[0m Compile JSQMessagesCollectionViewFlowLayoutInvalidationContext.m [32m(78 ms)[0m
+        Compile TableViewController.m      [32m✓[0m Compile TableViewController.m [32m(123 ms)[0m
+        Compile JSQMessagesAvatarImageFactory.m      [32m✓[0m Compile JSQMessagesAvatarImageFactory.m [32m(86 ms)[0m
+        Compile JSQSystemSoundPlayer+JSQMessages.m      [32m✓[0m Compile JSQSystemSoundPlayer+JSQMessages.m [32m(63 ms)[0m
+        Compile JSQMessagesComposerTextView.m      [32m✓[0m Compile JSQMessagesComposerTextView.m [32m(125 ms)[0m
+        Compile JSQMessagesCollectionViewLayoutAttributes.m      [32m✓[0m Compile JSQMessagesCollectionViewLayoutAttributes.m [32m(83 ms)[0m
+        Link JSQMessages      [32m✓[0m Link JSQMessages [33m(393 ms)[0m
+        Link JSQMessages      [32m✓[0m Link JSQMessages [33m(321 ms)[0m
+        Create universal binary JSQMessages      [32m✓[0m Create universal binary JSQMessages [2m[32m(39 ms)[0m
+        Copy JSQMessages.strings      [32m✓[0m Copy JSQMessages.strings [2m[32m(6 ms)[0m
+        Compile Storyboard file Main.storyboard      [32m✓[0m Compile Storyboard file Main.storyboard [31m(3703 ms)[0m
+        Copy JSQMessages.strings      [32m✓[0m Copy JSQMessages.strings [2m[32m(5 ms)[0m
+        Copy JSQMessages.strings      [32m✓[0m Copy JSQMessages.strings [2m[32m(3 ms)[0m
+        Copy JSQMessages.strings      [32m✓[0m Copy JSQMessages.strings [2m[32m(1 ms)[0m
+        Copy JSQMessages.strings      [32m✓[0m Copy JSQMessages.strings [2m[32m(2 ms)[0m
+        Copy JSQMessages.strings      [32m✓[0m Copy JSQMessages.strings [2m[32m(1 ms)[0m
+        Copy JSQMessages.strings      [32m✓[0m Copy JSQMessages.strings [2m[32m(3 ms)[0m
+        Copy JSQMessages.strings      [32m✓[0m Copy JSQMessages.strings [2m[32m(1 ms)[0m
+        Copy JSQMessages.strings      [32m✓[0m Copy JSQMessages.strings [2m[32m(10 ms)[0m
+        Copy JSQMessages.strings      [32m✓[0m Copy JSQMessages.strings [2m[32m(7 ms)[0m
+        Copy JSQMessages.strings      [32m✓[0m Copy JSQMessages.strings [2m[32m(2 ms)[0m
+        Copy JSQMessages.strings      [32m✓[0m Copy JSQMessages.strings [2m[32m(15 ms)[0m
+        Copy JSQMessages.strings      [32m✓[0m Copy JSQMessages.strings [2m[32m(6 ms)[0m
+        Copy JSQMessages.strings      [32m✓[0m Copy JSQMessages.strings [2m[32m(2 ms)[0m
+        Copy JSQMessages.strings      [32m✓[0m Copy JSQMessages.strings [2m[32m(12 ms)[0m
+        Copy JSQMessagesViewController.podspec      [32m✓[0m Copy JSQMessagesViewController.podspec [2m[32m(3 ms)[0m
+        Copy JSQMessagesAssets.bundle      [32m✓[0m Copy JSQMessagesAssets.bundle [2m[32m(40 ms)[0m
+        Compile XIB file JSQMessagesCollectionViewCellOutgoing.xib      [32m✓[0m Compile XIB file JSQMessagesCollectionViewCellOutgoing.xib [31m(3357 ms)[0m
+        Compile XIB file JSQMessagesCollectionViewCellIncoming.xib      [32m✓[0m Compile XIB file JSQMessagesCollectionViewCellIncoming.xib [33m(304 ms)[0m
+        Compile XIB file JSQMessagesToolbarContentView.xib      [32m✓[0m Compile XIB file JSQMessagesToolbarContentView.xib [31m(1383 ms)[0m
+        Compile XIB file JSQMessagesViewController.xib      [32m✓[0m Compile XIB file JSQMessagesViewController.xib [32m(81 ms)[0m
+        Compile XIB file JSQMessagesTypingIndicatorFooterView.xib      [32m✓[0m Compile XIB file JSQMessagesTypingIndicatorFooterView.xib [32m(65 ms)[0m
+        Compile XIB file JSQMessagesLoadEarlierHeaderView.xib      [32m✓[0m Compile XIB file JSQMessagesLoadEarlierHeaderView.xib [2m[32m(48 ms)[0m
+        Compile asset catalog Images.xcassets      [32m✓[0m Compile asset catalog Images.xcassets [31m(734 ms)[0m
+[2m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[2m/* com.apple.actool.document.notices */
+/Users/travis/build/jessesquires/JSQMessagesViewController/JSQMessagesDemo/Images.xcassets:./LaunchImage.launchimage/[iphone][736h][3x][portrait][full-screen][8.0]: notice: This launch image only applies to iOS 6.x and prior but the minimum deployment is 7.0 or later.
+/Users/travis/build/jessesquires/JSQMessagesViewController/JSQMessagesDemo/Images.xcassets:./LaunchImage.launchimage/[iphone][736h][3x][landscape][full-screen][8.0]: notice: This launch image only applies to iOS 6.x and prior but the minimum deployment is 7.0 or later.
+/Users/travis/build/jessesquires/JSQMessagesViewController/JSQMessagesDemo/Images.xcassets:./LaunchImage.launchimage/[iphone][667h][2x][portrait][full-screen][8.0]: notice: This launch image only applies to iOS 6.x and prior but the minimum deployment is 7.0 or later.
+/* com.apple.actool.compilation-results */
+/Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Products/Debug-iphonesimulator/JSQMessages.app/AppIcon29x29@2x.png
+/Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Products/Debug-iphonesimulator/JSQMessages.app/AppIcon29x29@3x.png
+/Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Products/Debug-iphonesimulator/JSQMessages.app/AppIcon40x40@2x.png
+/Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Products/Debug-iphonesimulator/JSQMessages.app/AppIcon40x40@3x.png
+/Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Products/Debug-iphonesimulator/JSQMessages.app/AppIcon60x60@2x.png
+/Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Products/Debug-iphonesimulator/JSQMessages.app/AppIcon60x60@3x.png
+/Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Products/Debug-iphonesimulator/JSQMessages.app/AppIcon29x29~ipad.png
+/Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Products/Debug-iphonesimulator/JSQMessages.app/AppIcon29x29@2x~ipad.png
+/Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Products/Debug-iphonesimulator/JSQMessages.app/AppIcon40x40~ipad.png
+/Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Products/Debug-iphonesimulator/JSQMessages.app/AppIcon40x40@2x~ipad.png
+/Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Products/Debug-iphonesimulator/JSQMessages.app/AppIcon76x76~ipad.png
+/Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Products/Debug-iphonesimulator/JSQMessages.app/AppIcon76x76@2x~ipad.png
+/Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Products/Debug-iphonesimulator/JSQMessages.app/LaunchImage-800-Portrait-736h@3x.png
+/Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Products/Debug-iphonesimulator/JSQMessages.app/LaunchImage-800-Landscape-736h@3x.png
+/Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Products/Debug-iphonesimulator/JSQMessages.app/LaunchImage-800-667h@2x.png
+/Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Products/Debug-iphonesimulator/JSQMessages.app/LaunchImage-700@2x.png
+/Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Products/Debug-iphonesimulator/JSQMessages.app/LaunchImage-700-568h@2x.png
+/Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Products/Debug-iphonesimulator/JSQMessages.app/LaunchImage-700-Portrait~ipad.png
+/Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Products/Debug-iphonesimulator/JSQMessages.app/LaunchImage-700-Landscape~ipad.png
+/Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Products/Debug-iphonesimulator/JSQMessages.app/LaunchImage-700-Portrait@2x~ipad.png
+/Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Products/Debug-iphonesimulator/JSQMessages.app/LaunchImage-700-Landscape@2x~ipad.png
+/Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Products/Debug-iphonesimulator/JSQMessages.app/Assets.car
+/Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/JSQMessages.build/Debug-iphonesimulator/JSQMessages.build/assetcatalog_generated_info.plist[0m
+[2m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+        Process Info.plist      [32m✓[0m Process Info.plist [2m[32m(21 ms)[0m
+        Generate JSQMessages.app.dSYM      [32m✓[0m Generate JSQMessages.app.dSYM [32m(183 ms)[0m
+        Run custom shell script 'Copy Pods Resources'      [32m✓[0m Run custom shell script 'Copy Pods Resources' [31m(1914 ms)[0m
+[2m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[2mbuilding file list ... done
+
+sent 29 bytes  received 20 bytes  98.00 bytes/sec
+total size is 0  speedup is 0.00
+/* com.apple.actool.compilation-results */
+/Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Products/Debug-iphonesimulator/JSQMessages.app/Assets.car[0m
+[2m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+        Touch JSQMessages.app      [32m✓[0m Touch JSQMessages.app [2m[32m(14 ms)[0m
+      [1m0 errored, 0 warning (16921 ms)[0m
+
+    [1mPods[0m / [1mPods-JSQMessagesTests[0m (Debug)
+      [1m0 errored, 0 warning (636 ms)[0m
+
+      Check dependencies    [32m✓[0m Check dependencies [2m[32m(19 ms)[0m
+      Write auxiliary files    [32m✓[0m Write auxiliary files [2m[32m(18 ms)[0m
+[2m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[2m/bin/mkdir -p /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JSQMessagesTests.build/Objects-normal/i386
+write-file /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JSQMessagesTests.build/Objects-normal/i386/Pods-JSQMessagesTests.LinkFileList
+write-file /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JSQMessagesTests.build/Pods-JSQMessagesTests-generated-files.hmap
+write-file /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JSQMessagesTests.build/Pods-JSQMessagesTests.hmap
+write-file /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JSQMessagesTests.build/Pods-JSQMessagesTests-project-headers.hmap
+write-file /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JSQMessagesTests.build/Pods-JSQMessagesTests-all-target-headers.hmap
+/bin/mkdir -p /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JSQMessagesTests.build/Objects-normal/x86_64
+write-file /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JSQMessagesTests.build/Objects-normal/x86_64/Pods-JSQMessagesTests.LinkFileList
+write-file /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JSQMessagesTests.build/Pods-JSQMessagesTests-own-target-headers.hmap
+write-file /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-JSQMessagesTests.build/Pods-JSQMessagesTests-all-non-framework-target-headers.hmap[0m
+[2m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+      Compile Target Support Pods-JSQMessagesTests-dummy.m    [32m✓[0m Compile Target Support Pods-JSQMessagesTests-dummy.m [2m[32m(48 ms)[0m
+      Compile Target Support Pods-JSQMessagesTests-dummy.m    [32m✓[0m Compile Target Support Pods-JSQMessagesTests-dummy.m [2m[32m(46 ms)[0m
+      Create static library libPods-JSQMessagesTests.a    [32m✓[0m Create static library libPods-JSQMessagesTests.a [2m[32m(14 ms)[0m
+      Create static library libPods-JSQMessagesTests.a    [32m✓[0m Create static library libPods-JSQMessagesTests.a [2m[32m(13 ms)[0m
+      Create universal binary libPods-JSQMessagesTests.a    [32m✓[0m Create universal binary libPods-JSQMessagesTests.a [2m[32m(14 ms)[0m
+    [1mJSQMessages[0m / [1mJSQMessagesTests[0m (Debug)
+        Check dependencies      [32m✓[0m Check dependencies [2m[32m(25 ms)[0m
+        Write auxiliary files      [32m✓[0m Write auxiliary files [2m[32m(25 ms)[0m
+[2m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[2m/bin/mkdir -p /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/JSQMessages.build/Debug-iphonesimulator/JSQMessagesTests.build
+write-file /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/JSQMessages.build/Debug-iphonesimulator/JSQMessagesTests.build/JSQMessagesTests-own-target-headers.hmap
+/bin/mkdir -p /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/JSQMessages.build/Debug-iphonesimulator/JSQMessagesTests.build/Objects-normal/x86_64
+write-file /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/JSQMessages.build/Debug-iphonesimulator/JSQMessagesTests.build/Objects-normal/x86_64/JSQMessagesTests.LinkFileList
+write-file /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/JSQMessages.build/Debug-iphonesimulator/JSQMessagesTests.build/JSQMessagesTests.hmap
+/bin/mkdir -p /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/JSQMessages.build/Debug-iphonesimulator/JSQMessagesTests.build/Objects-normal/i386
+write-file /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/JSQMessages.build/Debug-iphonesimulator/JSQMessagesTests.build/Objects-normal/i386/JSQMessagesTests.LinkFileList
+write-file /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/JSQMessages.build/Debug-iphonesimulator/JSQMessagesTests.build/JSQMessagesTests-project-headers.hmap
+write-file /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/JSQMessages.build/Debug-iphonesimulator/JSQMessagesTests.build/JSQMessagesTests-all-target-headers.hmap
+write-file /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/JSQMessages.build/Debug-iphonesimulator/JSQMessagesTests.build/JSQMessagesTests-all-non-framework-target-headers.hmap
+write-file /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/JSQMessages.build/Debug-iphonesimulator/JSQMessagesTests.build/JSQMessagesTests-generated-files.hmap
+write-file /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/JSQMessages.build/Debug-iphonesimulator/JSQMessagesTests.build/Script-F4044DAC71D69462CA8CAE98.sh
+chmod 0755 /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/JSQMessages.build/Debug-iphonesimulator/JSQMessagesTests.build/Script-F4044DAC71D69462CA8CAE98.sh
+write-file /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/JSQMessages.build/Debug-iphonesimulator/JSQMessagesTests.build/Script-F6B484334A138916FC111868.sh
+chmod 0755 /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/JSQMessages.build/Debug-iphonesimulator/JSQMessagesTests.build/Script-F6B484334A138916FC111868.sh[0m
+[2m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+        Create product structure      [32m✓[0m Create product structure [2m[32m(1 ms)[0m
+[2m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[2m/bin/mkdir -p /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Products/Debug-iphonesimulator/JSQMessagesTests.xctest[0m
+[2m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+        Copy Info.plist      [32m✓[0m Copy Info.plist [2m[32m(13 ms)[0m
+        Process Info.plist      [32m✓[0m Process Info.plist [2m[32m(18 ms)[0m
+        Run custom shell script 'Check Pods Manifest.lock'      [32m✓[0m Run custom shell script 'Check Pods Manifest.lock' [2m[32m(47 ms)[0m
+        Compile JSQMessagesUIColorTests.m      [32m✓[0m Compile JSQMessagesUIColorTests.m [31m(1200 ms)[0m
+        Compile JSQMessagesToolbarContentViewTests.m      [32m✓[0m Compile JSQMessagesToolbarContentViewTests.m [31m(1124 ms)[0m
+        Compile JSQMessagesInputToolbarTests.m      [32m✓[0m Compile JSQMessagesInputToolbarTests.m [32m(111 ms)[0m
+        Compile JSQMessagesLoadEarlierHeaderViewTests.m      [32m✓[0m Compile JSQMessagesLoadEarlierHeaderViewTests.m [32m(77 ms)[0m
+        Compile JSQMessagesCollectionViewCellTests.m      [32m✓[0m Compile JSQMessagesCollectionViewCellTests.m [32m(93 ms)[0m
+        Compile JSQMessagesLabelTests.m      [32m✓[0m Compile JSQMessagesLabelTests.m [32m(95 ms)[0m
+        Compile JSQMessagesCollectionViewFlowLayoutTests.m      [32m✓[0m Compile JSQMessagesCollectionViewFlowLayoutTests.m [32m(94 ms)[0m
+        Compile JSQMessageTextTests.m      [32m✓[0m Compile JSQMessageTextTests.m [32m(100 ms)[0m
+        Compile JSQMessageMediaTests.m      [32m✓[0m Compile JSQMessageMediaTests.m [32m(128 ms)[0m
+        Compile JSQMessagesAvatarImageFactoryTests.m      [32m✓[0m Compile JSQMessagesAvatarImageFactoryTests.m [32m(151 ms)[0m
+        Compile JSQMessagesUIViewTests.m      [32m✓[0m Compile JSQMessagesUIViewTests.m [32m(126 ms)[0m
+        Compile JSQMessagesBubbleImageTests.m      [32m✓[0m Compile JSQMessagesBubbleImageTests.m [32m(95 ms)[0m
+        Compile JSQMessagesAvatarImageTests.m      [32m✓[0m Compile JSQMessagesAvatarImageTests.m [32m(121 ms)[0m
+        Compile JSQMessagesTimestampFormatterTests.m      [32m✓[0m Compile JSQMessagesTimestampFormatterTests.m [32m(111 ms)[0m
+        Compile JSQMessagesComposerTextViewTests.m      [32m✓[0m Compile JSQMessagesComposerTextViewTests.m [32m(192 ms)[0m
+        Compile JSQMessagesCollectionViewTests.m      [32m✓[0m Compile JSQMessagesCollectionViewTests.m [32m(107 ms)[0m
+        Compile JSQMessagesNSStringTests.m      [32m✓[0m Compile JSQMessagesNSStringTests.m [32m(68 ms)[0m
+        Compile JSQMessagesToolbarButtonFactoryTests.m      [32m✓[0m Compile JSQMessagesToolbarButtonFactoryTests.m [32m(97 ms)[0m
+        Compile JSQMessagesMediaViewBubbleImageMaskerTests.m      [32m✓[0m Compile JSQMessagesMediaViewBubbleImageMaskerTests.m [32m(92 ms)[0m
+        Compile JSQMessagesTypingIndicatorFooterViewTests.m      [32m✓[0m Compile JSQMessagesTypingIndicatorFooterViewTests.m [32m(75 ms)[0m
+        Compile JSQMessagesUIImageTests.m      [32m✓[0m Compile JSQMessagesUIImageTests.m [32m(121 ms)[0m
+        Compile JSQMessagesCollectionViewLayoutAttributesTests.m      [32m✓[0m Compile JSQMessagesCollectionViewLayoutAttributesTests.m [32m(85 ms)[0m
+        Compile JSQMessagesViewControllerTests.m      [32m✓[0m Compile JSQMessagesViewControllerTests.m [33m(335 ms)[0m
+        Compile JSQMessagesKeyboardControllerTests.m      [32m✓[0m Compile JSQMessagesKeyboardControllerTests.m [32m(92 ms)[0m
+        Compile JSQMessagesBubbleImageFactoryTests.m      [32m✓[0m Compile JSQMessagesBubbleImageFactoryTests.m [33m(271 ms)[0m
+        Compile JSQMessagesUIColorTests.m      [32m✓[0m Compile JSQMessagesUIColorTests.m [31m(1062 ms)[0m
+        Compile JSQMessagesToolbarContentViewTests.m      [32m✓[0m Compile JSQMessagesToolbarContentViewTests.m [31m(1206 ms)[0m
+        Compile JSQMessagesInputToolbarTests.m      [32m✓[0m Compile JSQMessagesInputToolbarTests.m [32m(104 ms)[0m
+        Compile JSQMessagesLoadEarlierHeaderViewTests.m      [32m✓[0m Compile JSQMessagesLoadEarlierHeaderViewTests.m [32m(72 ms)[0m
+        Compile JSQMessagesCollectionViewCellTests.m      [32m✓[0m Compile JSQMessagesCollectionViewCellTests.m [32m(94 ms)[0m
+        Compile JSQMessagesLabelTests.m      [32m✓[0m Compile JSQMessagesLabelTests.m [32m(99 ms)[0m
+        Compile JSQMessagesCollectionViewFlowLayoutTests.m      [32m✓[0m Compile JSQMessagesCollectionViewFlowLayoutTests.m [32m(95 ms)[0m
+        Compile JSQMessageTextTests.m      [32m✓[0m Compile JSQMessageTextTests.m [32m(92 ms)[0m
+        Compile JSQMessageMediaTests.m      [32m✓[0m Compile JSQMessageMediaTests.m [32m(125 ms)[0m
+        Compile JSQMessagesAvatarImageFactoryTests.m      [32m✓[0m Compile JSQMessagesAvatarImageFactoryTests.m [32m(129 ms)[0m
+        Compile JSQMessagesUIViewTests.m      [32m✓[0m Compile JSQMessagesUIViewTests.m [32m(123 ms)[0m
+        Compile JSQMessagesBubbleImageTests.m      [32m✓[0m Compile JSQMessagesBubbleImageTests.m [32m(95 ms)[0m
+        Compile JSQMessagesAvatarImageTests.m      [32m✓[0m Compile JSQMessagesAvatarImageTests.m [32m(121 ms)[0m
+        Compile JSQMessagesTimestampFormatterTests.m      [32m✓[0m Compile JSQMessagesTimestampFormatterTests.m [32m(98 ms)[0m
+        Compile JSQMessagesComposerTextViewTests.m      [32m✓[0m Compile JSQMessagesComposerTextViewTests.m [32m(175 ms)[0m
+        Compile JSQMessagesCollectionViewTests.m      [32m✓[0m Compile JSQMessagesCollectionViewTests.m [32m(108 ms)[0m
+        Compile JSQMessagesNSStringTests.m      [32m✓[0m Compile JSQMessagesNSStringTests.m [32m(66 ms)[0m
+        Compile JSQMessagesToolbarButtonFactoryTests.m      [32m✓[0m Compile JSQMessagesToolbarButtonFactoryTests.m [32m(108 ms)[0m
+        Compile JSQMessagesMediaViewBubbleImageMaskerTests.m      [32m✓[0m Compile JSQMessagesMediaViewBubbleImageMaskerTests.m [32m(95 ms)[0m
+        Compile JSQMessagesTypingIndicatorFooterViewTests.m      [32m✓[0m Compile JSQMessagesTypingIndicatorFooterViewTests.m [32m(82 ms)[0m
+        Compile JSQMessagesUIImageTests.m      [32m✓[0m Compile JSQMessagesUIImageTests.m [32m(112 ms)[0m
+        Compile JSQMessagesCollectionViewLayoutAttributesTests.m      [32m✓[0m Compile JSQMessagesCollectionViewLayoutAttributesTests.m [32m(89 ms)[0m
+        Compile JSQMessagesViewControllerTests.m      [32m✓[0m Compile JSQMessagesViewControllerTests.m [33m(355 ms)[0m
+        Compile JSQMessagesKeyboardControllerTests.m      [32m✓[0m Compile JSQMessagesKeyboardControllerTests.m [32m(96 ms)[0m
+        Compile JSQMessagesBubbleImageFactoryTests.m      [32m✓[0m Compile JSQMessagesBubbleImageFactoryTests.m [33m(247 ms)[0m
+        Link JSQMessagesTests      [32m✓[0m Link JSQMessagesTests [32m(107 ms)[0m
+        Link JSQMessagesTests      [32m✓[0m Link JSQMessagesTests [32m(106 ms)[0m
+        Create universal binary JSQMessagesTests      [32m✓[0m Create universal binary JSQMessagesTests [2m[32m(46 ms)[0m
+        Generate JSQMessagesTests.xctest.dSYM      [32m✓[0m Generate JSQMessagesTests.xctest.dSYM [32m(98 ms)[0m
+        Run custom shell script 'Copy Pods Resources'      [32m✓[0m Run custom shell script 'Copy Pods Resources' [31m(715 ms)[0m
+[2m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[2mbuilding file list ... done
+
+sent 29 bytes  received 20 bytes  98.00 bytes/sec
+total size is 0  speedup is 0.00
+/* com.apple.actool.compilation-results */
+/Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Products/Debug-iphonesimulator/JSQMessagesTests.xctest/Assets.car[0m
+[2m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+        Touch JSQMessagesTests.xctest      [32m✓[0m Touch JSQMessagesTests.xctest [2m[32m(15 ms)[0m
+      [1m0 errored, 0 warning (6290 ms)[0m
+
+
+
+[1m[32m** BUILD SUCCEEDED **[0m [2m(29225 ms)[0m
+
+[1m=== TEST ===[0m
+
+  xcodebuild [1mbuild[0m [4mbuild[0m
+    [1mPods[0m / [1mPods-JSQMessagesTests-OCMock[0m (Debug)
+        Check dependencies      [32m✓[0m Check dependencies [31m(509 ms)[0m
+        Write auxiliary files      [32m✓[0m Write auxiliary files [32m(50 ms)[0m
+[2m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[2m/bin/mkdir -p /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/PrecompiledHeaders/Pods-JSQMessagesTests-OCMock-prefix-bgofootfyiygfvezqeidpxldtohj
+write-file /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/PrecompiledHeaders/Pods-JSQMessagesTests-OCMock-prefix-bgofootfyiygfvezqeidpxldtohj/Pods-JSQMessagesTests-OCMock-prefix.pch.pch.hash-criteria
+/bin/mkdir -p /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/PrecompiledHeaders/Pods-JSQMessagesTests-OCMock-prefix-fporhgyngzbmesfiggqdqadljnpo
+write-file /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/PrecompiledHeaders/Pods-JSQMessagesTests-OCMock-prefix-fporhgyngzbmesfiggqdqadljnpo/Pods-JSQMessagesTests-OCMock-prefix.pch.pch.hash-criteria
+/bin/mkdir -p /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/PrecompiledHeaders/Pods-JSQMessagesTests-OCMock-prefix-eluajzcdfkickaguuzmelrrjfxcz
+write-file /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/PrecompiledHeaders/Pods-JSQMessagesTests-OCMock-prefix-eluajzcdfkickaguuzmelrrjfxcz/Pods-JSQMessagesTests-OCMock-prefix.pch.pch.hash-criteria
+/bin/mkdir -p /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/PrecompiledHeaders/Pods-JSQMessagesTests-OCMock-prefix-hgxhtopdmgbsmwabgzyyvvdgmmjm
+write-file /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/PrecompiledHeaders/Pods-JSQMessagesTests-OCMock-prefix-hgxhtopdmgbsmwabgzyyvvdgmmjm/Pods-JSQMessagesTests-OCMock-prefix.pch.pch.hash-criteria[0m
+[2m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+        Precompile Target Support Pods-JSQMessagesTests-OCMock-prefix.pch      [32m✓[0m Precompile Target Support Pods-JSQMessagesTests-OCMock-prefix.pch [31m(1090 ms)[0m
+        Precompile Target Support Pods-JSQMessagesTests-OCMock-prefix.pch      [32m✓[0m Precompile Target Support Pods-JSQMessagesTests-OCMock-prefix.pch [32m(71 ms)[0m
+        Precompile Target Support Pods-JSQMessagesTests-OCMock-prefix.pch      [32m✓[0m Precompile Target Support Pods-JSQMessagesTests-OCMock-prefix.pch [31m(1164 ms)[0m
+        Precompile Target Support Pods-JSQMessagesTests-OCMock-prefix.pch      [32m✓[0m Precompile Target Support Pods-JSQMessagesTests-OCMock-prefix.pch [32m(98 ms)[0m
+        Compile NSInvocation+OCMAdditions.m      [32m✓[0m Compile NSInvocation+OCMAdditions.m [32m(78 ms)[0m
+        Compile NSMethodSignature+OCMAdditions.m      [32m✓[0m Compile NSMethodSignature+OCMAdditions.m [32m(58 ms)[0m
+        Compile NSNotificationCenter+OCMAdditions.m      [32m✓[0m Compile NSNotificationCenter+OCMAdditions.m [32m(59 ms)[0m
+        Compile NSObject+OCMAdditions.m      [32m✓[0m Compile NSObject+OCMAdditions.m [32m(64 ms)[0m
+        Compile NSValue+OCMAdditions.m      [32m✓[0m Compile NSValue+OCMAdditions.m [32m(66 ms)[0m
+        Compile OCClassMockObject.m      [32m✓[0m Compile OCClassMockObject.m [32m(79 ms)[0m
+        Compile OCMArg.m      [32m✓[0m Compile OCMArg.m [32m(67 ms)[0m
+        Compile OCMBlockCaller.m      [32m✓[0m Compile OCMBlockCaller.m [32m(59 ms)[0m
+        Compile OCMBoxedReturnValueProvider.m      [32m✓[0m Compile OCMBoxedReturnValueProvider.m [32m(60 ms)[0m
+        Compile OCMConstraint.m      [32m✓[0m Compile OCMConstraint.m [32m(66 ms)[0m
+        Compile OCMExceptionReturnValueProvider.m      [32m✓[0m Compile OCMExceptionReturnValueProvider.m [32m(56 ms)[0m
+        Compile OCMExpectationRecorder.m      [32m✓[0m Compile OCMExpectationRecorder.m [32m(62 ms)[0m
+        Compile OCMFunctions.m      [32m✓[0m Compile OCMFunctions.m [32m(80 ms)[0m
+        Compile OCMIndirectReturnValueProvider.m      [32m✓[0m Compile OCMIndirectReturnValueProvider.m [32m(63 ms)[0m
+        Compile OCMInvocationExpectation.m      [32m✓[0m Compile OCMInvocationExpectation.m [32m(67 ms)[0m
+        Compile OCMInvocationMatcher.m      [32m✓[0m Compile OCMInvocationMatcher.m [32m(69 ms)[0m
+        Compile OCMInvocationStub.m      [32m✓[0m Compile OCMInvocationStub.m [32m(92 ms)[0m
+        Compile OCMLocation.m      [32m✓[0m Compile OCMLocation.m [32m(64 ms)[0m
+        Compile OCMMacroState.m      [32m✓[0m Compile OCMMacroState.m [32m(69 ms)[0m
+        Compile OCMNotificationPoster.m      [32m✓[0m Compile OCMNotificationPoster.m [32m(60 ms)[0m
+        Compile OCMObserverRecorder.m      [32m✓[0m Compile OCMObserverRecorder.m [32m(64 ms)[0m
+        Compile OCMPassByRefSetter.m      [32m✓[0m Compile OCMPassByRefSetter.m [32m(60 ms)[0m
+        Compile OCMRealObjectForwarder.m      [32m✓[0m Compile OCMRealObjectForwarder.m [32m(60 ms)[0m
+        Compile OCMRecorder.m      [32m✓[0m Compile OCMRecorder.m [32m(64 ms)[0m
+        Compile OCMReturnValueProvider.m      [32m✓[0m Compile OCMReturnValueProvider.m [32m(64 ms)[0m
+        Compile OCMStubRecorder.m      [32m✓[0m Compile OCMStubRecorder.m [32m(75 ms)[0m
+        Compile OCMVerifier.m      [32m✓[0m Compile OCMVerifier.m [32m(61 ms)[0m
+        Compile OCMockObject.m      [32m✓[0m Compile OCMockObject.m [32m(85 ms)[0m
+        Compile OCObserverMockObject.m      [32m✓[0m Compile OCObserverMockObject.m [32m(65 ms)[0m
+        Compile OCPartialMockObject.m      [32m✓[0m Compile OCPartialMockObject.m [32m(75 ms)[0m
+        Compile OCProtocolMockObject.m      [32m✓[0m Compile OCProtocolMockObject.m [32m(62 ms)[0m
+        Compile Target Support Pods-JSQMessagesTests-OCMock-dummy.m      [32m✓[0m Compile Target Support Pods-JSQMessagesTests-OCMock-dummy.m [32m(54 ms)[0m
+        Compile NSInvocation+OCMAdditions.m      [32m✓[0m Compile NSInvocation+OCMAdditions.m [32m(80 ms)[0m
+        Compile NSMethodSignature+OCMAdditions.m      [32m✓[0m Compile NSMethodSignature+OCMAdditions.m [32m(59 ms)[0m
+        Compile NSNotificationCenter+OCMAdditions.m      [32m✓[0m Compile NSNotificationCenter+OCMAdditions.m [32m(55 ms)[0m
+        Compile NSObject+OCMAdditions.m      [32m✓[0m Compile NSObject+OCMAdditions.m [32m(62 ms)[0m
+        Compile NSValue+OCMAdditions.m      [32m✓[0m Compile NSValue+OCMAdditions.m [32m(66 ms)[0m
+        Compile OCClassMockObject.m      [32m✓[0m Compile OCClassMockObject.m [32m(76 ms)[0m
+        Compile OCMArg.m      [32m✓[0m Compile OCMArg.m [32m(64 ms)[0m
+        Compile OCMBlockCaller.m      [32m✓[0m Compile OCMBlockCaller.m [32m(59 ms)[0m
+        Compile OCMBoxedReturnValueProvider.m      [32m✓[0m Compile OCMBoxedReturnValueProvider.m [32m(64 ms)[0m
+        Compile OCMConstraint.m      [32m✓[0m Compile OCMConstraint.m [32m(63 ms)[0m
+        Compile OCMExceptionReturnValueProvider.m      [32m✓[0m Compile OCMExceptionReturnValueProvider.m [32m(56 ms)[0m
+        Compile OCMExpectationRecorder.m      [32m✓[0m Compile OCMExpectationRecorder.m [32m(58 ms)[0m
+        Compile OCMFunctions.m      [32m✓[0m Compile OCMFunctions.m [32m(76 ms)[0m
+        Compile OCMIndirectReturnValueProvider.m      [32m✓[0m Compile OCMIndirectReturnValueProvider.m [32m(60 ms)[0m
+        Compile OCMInvocationExpectation.m      [32m✓[0m Compile OCMInvocationExpectation.m [32m(64 ms)[0m
+        Compile OCMInvocationMatcher.m      [32m✓[0m Compile OCMInvocationMatcher.m [32m(69 ms)[0m
+        Compile OCMInvocationStub.m      [32m✓[0m Compile OCMInvocationStub.m [32m(61 ms)[0m
+        Compile OCMLocation.m      [32m✓[0m Compile OCMLocation.m [32m(66 ms)[0m
+        Compile OCMMacroState.m      [32m✓[0m Compile OCMMacroState.m [32m(64 ms)[0m
+        Compile OCMNotificationPoster.m      [32m✓[0m Compile OCMNotificationPoster.m [32m(56 ms)[0m
+        Compile OCMObserverRecorder.m      [32m✓[0m Compile OCMObserverRecorder.m [32m(118 ms)[0m
+        Compile OCMPassByRefSetter.m      [32m✓[0m Compile OCMPassByRefSetter.m [32m(61 ms)[0m
+        Compile OCMRealObjectForwarder.m      [32m✓[0m Compile OCMRealObjectForwarder.m [32m(58 ms)[0m
+        Compile OCMRecorder.m      [32m✓[0m Compile OCMRecorder.m [32m(62 ms)[0m
+        Compile OCMReturnValueProvider.m      [32m✓[0m Compile OCMReturnValueProvider.m [32m(58 ms)[0m
+        Compile OCMStubRecorder.m      [32m✓[0m Compile OCMStubRecorder.m [32m(70 ms)[0m
+        Compile OCMVerifier.m      [32m✓[0m Compile OCMVerifier.m [32m(58 ms)[0m
+        Compile OCMockObject.m      [32m✓[0m Compile OCMockObject.m [32m(84 ms)[0m
+        Compile OCObserverMockObject.m      [32m✓[0m Compile OCObserverMockObject.m [32m(71 ms)[0m
+        Compile OCPartialMockObject.m      [32m✓[0m Compile OCPartialMockObject.m [32m(73 ms)[0m
+        Compile OCProtocolMockObject.m      [32m✓[0m Compile OCProtocolMockObject.m [32m(62 ms)[0m
+        Compile Target Support Pods-JSQMessagesTests-OCMock-dummy.m      [32m✓[0m Compile Target Support Pods-JSQMessagesTests-OCMock-dummy.m [32m(57 ms)[0m
+        Create static library libPods-JSQMessagesTests-OCMock.a      [32m✓[0m Create static library libPods-JSQMessagesTests-OCMock.a [2m[32m(20 ms)[0m
+        Create static library libPods-JSQMessagesTests-OCMock.a      [32m✓[0m Create static library libPods-JSQMessagesTests-OCMock.a [2m[32m(21 ms)[0m
+        Create universal binary libPods-JSQMessagesTests-OCMock.a      [32m✓[0m Create universal binary libPods-JSQMessagesTests-OCMock.a [32m(67 ms)[0m
+      [1m0 errored, 0 warning (11925 ms)[0m
+
+    [1mPods[0m / [1mPods-JSQSystemSoundPlayer[0m (Debug)
+      [1m0 errored, 0 warning (3237 ms)[0m
+
+      Check dependencies    [32m✓[0m Check dependencies [32m(81 ms)[0m
+      Write auxiliary files    [32m✓[0m Write auxiliary files [2m[32m(7 ms)[0m
+[2m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[2m/bin/mkdir -p /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/PrecompiledHeaders/Pods-JSQSystemSoundPlayer-prefix-exvehuzuucaezfcqkgqnrwvtxdtb
+write-file /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/PrecompiledHeaders/Pods-JSQSystemSoundPlayer-prefix-exvehuzuucaezfcqkgqnrwvtxdtb/Pods-JSQSystemSoundPlayer-prefix.pch.pch.hash-criteria
+/bin/mkdir -p /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/PrecompiledHeaders/Pods-JSQSystemSoundPlayer-prefix-ftyhftwdgwsxvbflwfougyygeybh
+write-file /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/PrecompiledHeaders/Pods-JSQSystemSoundPlayer-prefix-ftyhftwdgwsxvbflwfougyygeybh/Pods-JSQSystemSoundPlayer-prefix.pch.pch.hash-criteria
+/bin/mkdir -p /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/PrecompiledHeaders/Pods-JSQSystemSoundPlayer-prefix-faaesdetxgttgrdzekowlryoakjp
+write-file /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/PrecompiledHeaders/Pods-JSQSystemSoundPlayer-prefix-faaesdetxgttgrdzekowlryoakjp/Pods-JSQSystemSoundPlayer-prefix.pch.pch.hash-criteria
+/bin/mkdir -p /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/PrecompiledHeaders/Pods-JSQSystemSoundPlayer-prefix-gcmbfksvtrfukiaanatkklcthchu
+write-file /Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Intermediates/PrecompiledHeaders/Pods-JSQSystemSoundPlayer-prefix-gcmbfksvtrfukiaanatkklcthchu/Pods-JSQSystemSoundPlayer-prefix.pch.pch.hash-criteria[0m
+[2m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+      Precompile Target Support Pods-JSQSystemSoundPlayer-prefix.pch    [32m✓[0m Precompile Target Support Pods-JSQSystemSoundPlayer-prefix.pch [31m(1104 ms)[0m
+      Precompile Target Support Pods-JSQSystemSoundPlayer-prefix.pch    [32m✓[0m Precompile Target Support Pods-JSQSystemSoundPlayer-prefix.pch [31m(1087 ms)[0m
+      Precompile Target Support Pods-JSQSystemSoundPlayer-prefix.pch    [32m✓[0m Precompile Target Support Pods-JSQSystemSoundPlayer-prefix.pch [31m(1110 ms)[0m
+      Precompile Target Support Pods-JSQSystemSoundPlayer-prefix.pch    [32m✓[0m Precompile Target Support Pods-JSQSystemSoundPlayer-prefix.pch [32m(76 ms)[0m
+      Compile JSQSystemSoundPlayer.m    [32m✓[0m Compile JSQSystemSoundPlayer.m [33m(300 ms)[0m
+      Compile Target Support Pods-JSQSystemSoundPlayer-dummy.m    [32m✓[0m Compile Target Support Pods-JSQSystemSoundPlayer-dummy.m [32m(54 ms)[0m
+      Compile JSQSystemSoundPlayer.m    [32m✓[0m Compile JSQSystemSoundPlayer.m [33m(290 ms)[0m
+      Compile Target Support Pods-JSQSystemSoundPlayer-dummy.m    [32m✓[0m Compile Target Support Pods-JSQSystemSoundPlayer-dummy.m [32m(54 ms)[0m
+      Create static library libPods-JSQSystemSoundPlayer.a    [32m✓[0m Create static library libPods-JSQSystemSoundPlayer.a [2m[32m(12 ms)[0m
+      Create static library libPods-JSQSystemSoundPlayer.a    [32m✓[0m Create static library libPods-JSQSystemSoundPlayer.a [2m[32m(13 ms)[0m
+      Create universal binary libPods-JSQSystemSoundPlayer.a    [32m✓[0m Create universal binary libPods-JSQSystemSoundPlayer.a [2m[32m(14 ms)[0m
+    [1mPods[0m / [1mPods[0m (Debug)
+      [1m0 errored, 0 warning (136 ms)[0m
+
+      Check dependencies    [32m✓[0m Check dependencies [2m[32m(2 ms)[0m
+      Compile Target Support Pods-dummy.m    [32m✓[0m Compile Target Support Pods-dummy.m [2m[32m(45 ms)[0m
+      Compile Target Support Pods-dummy.m    [32m✓[0m Compile Target Support Pods-dummy.m [2m[32m(45 ms)[0m
+      Create static library libPods.a    [32m✓[0m Create static library libPods.a [2m[32m(14 ms)[0m
+      Create static library libPods.a    [32m✓[0m Create static library libPods.a [2m[32m(11 ms)[0m
+      Create universal binary libPods.a    [32m✓[0m Create universal binary libPods.a [2m[32m(13 ms)[0m
+    [1mJSQMessages[0m / [1mJSQMessages[0m (Debug)
+        Check dependencies      [32m✓[0m Check dependencies [2m[32m(2 ms)[0m
+        Run custom shell script 'Check Pods Manifest.lock'      [32m✓[0m Run custom shell script 'Check Pods Manifest.lock' [2m[32m(35 ms)[0m
+        Compile JSQMessagesMediaPlaceholderView.m      [32m✓[0m Compile JSQMessagesMediaPlaceholderView.m [31m(1704 ms)[0m
+        Compile JSQMessagesCollectionViewCellOutgoing.m      [32m✓[0m Compile JSQMessagesCollectionViewCellOutgoing.m [31m(1156 ms)[0m
+        Compile JSQMessagesInputToolbar.m      [32m✓[0m Compile JSQMessagesInputToolbar.m [32m(97 ms)[0m
+        Compile JSQMessagesCollectionViewCell.m      [32m✓[0m Compile JSQMessagesCollectionViewCell.m [32m(127 ms)[0m
+        Compile JSQMessagesViewController.m      [32m✓[0m Compile JSQMessagesViewController.m [33m(209 ms)[0m
+        Compile NSUserDefaults+DemoSettings.m      [32m✓[0m Compile NSUserDefaults+DemoSettings.m [32m(54 ms)[0m
+        Compile JSQMessagesCellTextView.m      [32m✓[0m Compile JSQMessagesCellTextView.m [32m(94 ms)[0m
+        Compile UIView+JSQMessages.m      [32m✓[0m Compile UIView+JSQMessages.m [32m(86 ms)[0m
+        Compile JSQMessagesCollectionView.m      [32m✓[0m Compile JSQMessagesCollectionView.m [32m(106 ms)[0m
+        Compile JSQMessagesLabel.m      [32m✓[0m Compile JSQMessagesLabel.m [32m(92 ms)[0m
+        Compile JSQLocationMediaItem.m      [32m✓[0m Compile JSQLocationMediaItem.m [33m(258 ms)[0m
+        Compile JSQMessagesAvatarImage.m      [32m✓[0m Compile JSQMessagesAvatarImage.m [32m(75 ms)[0m
+        Compile JSQMessagesToolbarContentView.m      [32m✓[0m Compile JSQMessagesToolbarContentView.m [32m(120 ms)[0m
+        Compile JSQMessagesCollectionViewFlowLayout.m      [32m✓[0m Compile JSQMessagesCollectionViewFlowLayout.m [32m(174 ms)[0m
+        Compile DemoSettingsViewController.m      [32m✓[0m Compile DemoSettingsViewController.m [32m(86 ms)[0m
+        Compile JSQMessagesBubbleImage.m      [32m✓[0m Compile JSQMessagesBubbleImage.m [32m(73 ms)[0m
+        Compile JSQMessage.m      [32m✓[0m Compile JSQMessage.m [32m(84 ms)[0m
+        Compile JSQMessagesTypingIndicatorFooterView.m      [32m✓[0m Compile JSQMessagesTypingIndicatorFooterView.m [32m(99 ms)[0m
+        Compile JSQMessagesLoadEarlierHeaderView.m      [32m✓[0m Compile JSQMessagesLoadEarlierHeaderView.m [32m(99 ms)[0m
+        Compile JSQPhotoMediaItem.m      [32m✓[0m Compile JSQPhotoMediaItem.m [32m(109 ms)[0m
+        Compile JSQMessagesMediaViewBubbleImageMasker.m      [32m✓[0m Compile JSQMessagesMediaViewBubbleImageMasker.m [32m(91 ms)[0m
+        Compile UIImage+JSQMessages.m      [32m✓[0m Compile UIImage+JSQMessages.m [32m(71 ms)[0m
+        Compile JSQMessagesTimestampFormatter.m      [32m✓[0m Compile JSQMessagesTimestampFormatter.m [32m(77 ms)[0m
+        Compile DemoModelData.m      [32m✓[0m Compile DemoModelData.m [32m(97 ms)[0m
+        Compile main.m      [32m✓[0m Compile main.m [32m(56 ms)[0m
+        Compile AppDelegate.m      [32m✓[0m Compile AppDelegate.m [32m(92 ms)[0m
+        Compile UIDevice+JSQMessages.m      [32m✓[0m Compile UIDevice+JSQMessages.m [32m(60 ms)[0m
+        Compile NSString+JSQMessages.m      [32m✓[0m Compile NSString+JSQMessages.m [32m(50 ms)[0m
+        Compile JSQMediaItem.m      [32m✓[0m Compile JSQMediaItem.m [32m(98 ms)[0m
+        Compile JSQMessagesCollectionViewCellIncoming.m      [32m✓[0m Compile JSQMessagesCollectionViewCellIncoming.m [32m(92 ms)[0m
+        Compile JSQMessagesBubbleImageFactory.m      [32m✓[0m Compile JSQMessagesBubbleImageFactory.m [32m(77 ms)[0m
+        Compile DemoMessagesViewController.m      [32m✓[0m Compile DemoMessagesViewController.m [32m(153 ms)[0m
+        Compile UIColor+JSQMessages.m      [32m✓[0m Compile UIColor+JSQMessages.m [32m(60 ms)[0m
+        Compile JSQVideoMediaItem.m      [32m✓[0m Compile JSQVideoMediaItem.m [32m(95 ms)[0m
+        Compile JSQMessagesKeyboardController.m      [32m✓[0m Compile JSQMessagesKeyboardController.m [32m(139 ms)[0m
+        Compile JSQMessagesToolbarButtonFactory.m      [32m✓[0m Compile JSQMessagesToolbarButtonFactory.m [32m(94 ms)[0m
+        Compile JSQMessagesCollectionViewFlowLayoutInvalidationContext.m      [32m✓[0m Compile JSQMessagesCollectionViewFlowLayoutInvalidationContext.m [32m(65 ms)[0m
+        Compile TableViewController.m      [32m✓[0m Compile TableViewController.m [32m(123 ms)[0m
+        Compile JSQMessagesAvatarImageFactory.m      [32m✓[0m Compile JSQMessagesAvatarImageFactory.m [32m(82 ms)[0m
+        Compile JSQSystemSoundPlayer+JSQMessages.m      [32m✓[0m Compile JSQSystemSoundPlayer+JSQMessages.m [32m(52 ms)[0m
+        Compile JSQMessagesComposerTextView.m      [32m✓[0m Compile JSQMessagesComposerTextView.m [32m(104 ms)[0m
+        Compile JSQMessagesCollectionViewLayoutAttributes.m      [32m✓[0m Compile JSQMessagesCollectionViewLayoutAttributes.m [32m(91 ms)[0m
+        Compile JSQMessagesMediaPlaceholderView.m      [32m✓[0m Compile JSQMessagesMediaPlaceholderView.m [31m(1187 ms)[0m
+        Compile JSQMessagesCollectionViewCellOutgoing.m      [32m✓[0m Compile JSQMessagesCollectionViewCellOutgoing.m [31m(1014 ms)[0m
+        Compile JSQMessagesInputToolbar.m      [32m✓[0m Compile JSQMessagesInputToolbar.m [32m(109 ms)[0m
+        Compile JSQMessagesCollectionViewCell.m      [32m✓[0m Compile JSQMessagesCollectionViewCell.m [32m(138 ms)[0m
+        Compile JSQMessagesViewController.m      [32m✓[0m Compile JSQMessagesViewController.m [33m(202 ms)[0m
+        Compile NSUserDefaults+DemoSettings.m      [32m✓[0m Compile NSUserDefaults+DemoSettings.m [2m[32m(49 ms)[0m
+        Compile JSQMessagesCellTextView.m      [32m✓[0m Compile JSQMessagesCellTextView.m [32m(95 ms)[0m
+        Compile UIView+JSQMessages.m      [32m✓[0m Compile UIView+JSQMessages.m [32m(78 ms)[0m
+        Compile JSQMessagesCollectionView.m      [32m✓[0m Compile JSQMessagesCollectionView.m [32m(118 ms)[0m
+        Compile JSQMessagesLabel.m      [32m✓[0m Compile JSQMessagesLabel.m [32m(87 ms)[0m
+        Compile JSQLocationMediaItem.m      [32m✓[0m Compile JSQLocationMediaItem.m [33m(257 ms)[0m
+        Compile JSQMessagesAvatarImage.m      [32m✓[0m Compile JSQMessagesAvatarImage.m [32m(78 ms)[0m
+        Compile JSQMessagesToolbarContentView.m      [32m✓[0m Compile JSQMessagesToolbarContentView.m [32m(110 ms)[0m
+        Compile JSQMessagesCollectionViewFlowLayout.m      [32m✓[0m Compile JSQMessagesCollectionViewFlowLayout.m [33m(229 ms)[0m
+        Compile DemoSettingsViewController.m      [32m✓[0m Compile DemoSettingsViewController.m [32m(86 ms)[0m
+        Compile JSQMessagesBubbleImage.m      [32m✓[0m Compile JSQMessagesBubbleImage.m [32m(73 ms)[0m
+        Compile JSQMessage.m      [32m✓[0m Compile JSQMessage.m [32m(88 ms)[0m
+        Compile JSQMessagesTypingIndicatorFooterView.m      [32m✓[0m Compile JSQMessagesTypingIndicatorFooterView.m [32m(108 ms)[0m
+        Compile JSQMessagesLoadEarlierHeaderView.m      [32m✓[0m Compile JSQMessagesLoadEarlierHeaderView.m [32m(99 ms)[0m
+        Compile JSQPhotoMediaItem.m      [32m✓[0m Compile JSQPhotoMediaItem.m [32m(95 ms)[0m
+        Compile JSQMessagesMediaViewBubbleImageMasker.m      [32m✓[0m Compile JSQMessagesMediaViewBubbleImageMasker.m [32m(93 ms)[0m
+        Compile UIImage+JSQMessages.m      [32m✓[0m Compile UIImage+JSQMessages.m [32m(69 ms)[0m
+        Compile JSQMessagesTimestampFormatter.m      [32m✓[0m Compile JSQMessagesTimestampFormatter.m [32m(76 ms)[0m
+        Compile DemoModelData.m      [32m✓[0m Compile DemoModelData.m [32m(93 ms)[0m
+        Compile main.m      [32m✓[0m Compile main.m [32m(58 ms)[0m
+        Compile AppDelegate.m      [32m✓[0m Compile AppDelegate.m [32m(96 ms)[0m
+        Compile UIDevice+JSQMessages.m      [32m✓[0m Compile UIDevice+JSQMessages.m [32m(65 ms)[0m
+        Compile NSString+JSQMessages.m      [32m✓[0m Compile NSString+JSQMessages.m [32m(53 ms)[0m
+        Compile JSQMediaItem.m      [32m✓[0m Compile JSQMediaItem.m [32m(99 ms)[0m
+        Compile JSQMessagesCollectionViewCellIncoming.m      [32m✓[0m Compile JSQMessagesCollectionViewCellIncoming.m [32m(90 ms)[0m
+        Compile DemoMessagesViewController.m      [32m✓[0m Compile DemoMessagesViewController.m [32m(147 ms)[0m
+        Compile JSQMessagesBubbleImageFactory.m      [32m✓[0m Compile JSQMessagesBubbleImageFactory.m [32m(73 ms)[0m
+        Compile UIColor+JSQMessages.m      [32m✓[0m Compile UIColor+JSQMessages.m [32m(58 ms)[0m
+        Compile JSQVideoMediaItem.m      [32m✓[0m Compile JSQVideoMediaItem.m [32m(97 ms)[0m
+        Compile JSQMessagesKeyboardController.m      [32m✓[0m Compile JSQMessagesKeyboardController.m [31m(516 ms)[0m
+        Compile JSQMessagesToolbarButtonFactory.m      [32m✓[0m Compile JSQMessagesToolbarButtonFactory.m [33m(472 ms)[0m
+        Compile JSQMessagesCollectionViewFlowLayoutInvalidationContext.m      [32m✓[0m Compile JSQMessagesCollectionViewFlowLayoutInvalidationContext.m [33m(361 ms)[0m
+        Compile TableViewController.m      [32m✓[0m Compile TableViewController.m [33m(306 ms)[0m
+        Compile JSQMessagesAvatarImageFactory.m      [32m✓[0m Compile JSQMessagesAvatarImageFactory.m [33m(271 ms)[0m
+        Compile JSQSystemSoundPlayer+JSQMessages.m      [32m✓[0m Compile JSQSystemSoundPlayer+JSQMessages.m [32m(137 ms)[0m
+        Compile JSQMessagesComposerTextView.m      [32m✓[0m Compile JSQMessagesComposerTextView.m [33m(232 ms)[0m
+        Compile JSQMessagesCollectionViewLayoutAttributes.m      [32m✓[0m Compile JSQMessagesCollectionViewLayoutAttributes.m [32m(117 ms)[0m
+        Link JSQMessages      [32m✓[0m Link JSQMessages [31m(1460 ms)[0m
+        Link JSQMessages      [32m✓[0m Link JSQMessages [31m(1434 ms)[0m
+        Create universal binary JSQMessages      [32m✓[0m Create universal binary JSQMessages [2m[32m(27 ms)[0m
+        Generate JSQMessages.app.dSYM      [32m✓[0m Generate JSQMessages.app.dSYM [32m(162 ms)[0m
+        Run custom shell script 'Copy Pods Resources'      [32m✓[0m Run custom shell script 'Copy Pods Resources' [31m(715 ms)[0m
+[2m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[2mbuilding file list ... done
+
+sent 29 bytes  received 20 bytes  98.00 bytes/sec
+total size is 0  speedup is 0.00
+/* com.apple.actool.compilation-results */
+/Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Products/Debug-iphonesimulator/JSQMessages.app/Assets.car[0m
+[2m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+        Touch JSQMessages.app      [32m✓[0m Touch JSQMessages.app [2m[32m(11 ms)[0m
+      [1m0 errored, 0 warning (11628 ms)[0m
+
+    [1mPods[0m / [1mPods-JSQMessagesTests[0m (Debug)
+      [1m0 errored, 0 warning (1701 ms)[0m
+
+      Check dependencies    [32m✓[0m Check dependencies [2m[32m(0 ms)[0m
+      Compile Target Support Pods-JSQMessagesTests-dummy.m    [32m✓[0m Compile Target Support Pods-JSQMessagesTests-dummy.m [32m(51 ms)[0m
+      Compile Target Support Pods-JSQMessagesTests-dummy.m    [32m✓[0m Compile Target Support Pods-JSQMessagesTests-dummy.m [32m(57 ms)[0m
+      Create static library libPods-JSQMessagesTests.a    [32m✓[0m Create static library libPods-JSQMessagesTests.a [2m[32m(43 ms)[0m
+      Create static library libPods-JSQMessagesTests.a    [32m✓[0m Create static library libPods-JSQMessagesTests.a [2m[32m(26 ms)[0m
+      Create universal binary libPods-JSQMessagesTests.a    [32m✓[0m Create universal binary libPods-JSQMessagesTests.a [2m[32m(13 ms)[0m
+    [1mJSQMessages[0m / [1mJSQMessagesTests[0m (Debug)
+        Check dependencies      [32m✓[0m Check dependencies [2m[32m(5 ms)[0m
+        Run custom shell script 'Check Pods Manifest.lock'      [32m✓[0m Run custom shell script 'Check Pods Manifest.lock' [2m[32m(36 ms)[0m
+        Compile JSQMessagesUIColorTests.m      [32m✓[0m Compile JSQMessagesUIColorTests.m [31m(1131 ms)[0m
+        Compile JSQMessagesToolbarContentViewTests.m      [32m✓[0m Compile JSQMessagesToolbarContentViewTests.m [31m(1061 ms)[0m
+        Compile JSQMessagesInputToolbarTests.m      [32m✓[0m Compile JSQMessagesInputToolbarTests.m [32m(110 ms)[0m
+        Compile JSQMessagesLoadEarlierHeaderViewTests.m      [32m✓[0m Compile JSQMessagesLoadEarlierHeaderViewTests.m [32m(77 ms)[0m
+        Compile JSQMessagesCollectionViewCellTests.m      [32m✓[0m Compile JSQMessagesCollectionViewCellTests.m [32m(89 ms)[0m
+        Compile JSQMessagesLabelTests.m      [32m✓[0m Compile JSQMessagesLabelTests.m [32m(98 ms)[0m
+        Compile JSQMessagesCollectionViewFlowLayoutTests.m      [32m✓[0m Compile JSQMessagesCollectionViewFlowLayoutTests.m [32m(92 ms)[0m
+        Compile JSQMessageTextTests.m      [32m✓[0m Compile JSQMessageTextTests.m [32m(103 ms)[0m
+        Compile JSQMessageMediaTests.m      [32m✓[0m Compile JSQMessageMediaTests.m [32m(136 ms)[0m
+        Compile JSQMessagesAvatarImageFactoryTests.m      [32m✓[0m Compile JSQMessagesAvatarImageFactoryTests.m [32m(134 ms)[0m
+        Compile JSQMessagesUIViewTests.m      [32m✓[0m Compile JSQMessagesUIViewTests.m [32m(122 ms)[0m
+        Compile JSQMessagesBubbleImageTests.m      [32m✓[0m Compile JSQMessagesBubbleImageTests.m [32m(97 ms)[0m
+        Compile JSQMessagesAvatarImageTests.m      [32m✓[0m Compile JSQMessagesAvatarImageTests.m [32m(122 ms)[0m
+        Compile JSQMessagesTimestampFormatterTests.m      [32m✓[0m Compile JSQMessagesTimestampFormatterTests.m [32m(103 ms)[0m
+        Compile JSQMessagesCollectionViewTests.m      [32m✓[0m Compile JSQMessagesCollectionViewTests.m [32m(113 ms)[0m
+        Compile JSQMessagesComposerTextViewTests.m      [32m✓[0m Compile JSQMessagesComposerTextViewTests.m [32m(187 ms)[0m
+        Compile JSQMessagesNSStringTests.m      [32m✓[0m Compile JSQMessagesNSStringTests.m [32m(62 ms)[0m
+        Compile JSQMessagesToolbarButtonFactoryTests.m      [32m✓[0m Compile JSQMessagesToolbarButtonFactoryTests.m [32m(98 ms)[0m
+        Compile JSQMessagesMediaViewBubbleImageMaskerTests.m      [32m✓[0m Compile JSQMessagesMediaViewBubbleImageMaskerTests.m [32m(97 ms)[0m
+        Compile JSQMessagesTypingIndicatorFooterViewTests.m      [32m✓[0m Compile JSQMessagesTypingIndicatorFooterViewTests.m [32m(79 ms)[0m
+        Compile JSQMessagesUIImageTests.m      [32m✓[0m Compile JSQMessagesUIImageTests.m [32m(121 ms)[0m
+        Compile JSQMessagesCollectionViewLayoutAttributesTests.m      [32m✓[0m Compile JSQMessagesCollectionViewLayoutAttributesTests.m [32m(82 ms)[0m
+        Compile JSQMessagesViewControllerTests.m      [32m✓[0m Compile JSQMessagesViewControllerTests.m [33m(348 ms)[0m
+        Compile JSQMessagesKeyboardControllerTests.m      [32m✓[0m Compile JSQMessagesKeyboardControllerTests.m [32m(92 ms)[0m
+        Compile JSQMessagesBubbleImageFactoryTests.m      [32m✓[0m Compile JSQMessagesBubbleImageFactoryTests.m [33m(265 ms)[0m
+        Compile JSQMessagesUIColorTests.m      [32m✓[0m Compile JSQMessagesUIColorTests.m [31m(1054 ms)[0m
+        Compile JSQMessagesToolbarContentViewTests.m      [32m✓[0m Compile JSQMessagesToolbarContentViewTests.m [31m(1212 ms)[0m
+        Compile JSQMessagesInputToolbarTests.m      [32m✓[0m Compile JSQMessagesInputToolbarTests.m [32m(100 ms)[0m
+        Compile JSQMessagesLoadEarlierHeaderViewTests.m      [32m✓[0m Compile JSQMessagesLoadEarlierHeaderViewTests.m [32m(72 ms)[0m
+        Compile JSQMessagesCollectionViewCellTests.m      [32m✓[0m Compile JSQMessagesCollectionViewCellTests.m [32m(92 ms)[0m
+        Compile JSQMessagesLabelTests.m      [32m✓[0m Compile JSQMessagesLabelTests.m [32m(108 ms)[0m
+        Compile JSQMessagesCollectionViewFlowLayoutTests.m      [32m✓[0m Compile JSQMessagesCollectionViewFlowLayoutTests.m [32m(101 ms)[0m
+        Compile JSQMessageTextTests.m      [32m✓[0m Compile JSQMessageTextTests.m [32m(91 ms)[0m
+        Compile JSQMessageMediaTests.m      [32m✓[0m Compile JSQMessageMediaTests.m [32m(127 ms)[0m
+        Compile JSQMessagesAvatarImageFactoryTests.m      [32m✓[0m Compile JSQMessagesAvatarImageFactoryTests.m [32m(135 ms)[0m
+        Compile JSQMessagesUIViewTests.m      [32m✓[0m Compile JSQMessagesUIViewTests.m [32m(128 ms)[0m
+        Compile JSQMessagesBubbleImageTests.m      [32m✓[0m Compile JSQMessagesBubbleImageTests.m [32m(96 ms)[0m
+        Compile JSQMessagesAvatarImageTests.m      [32m✓[0m Compile JSQMessagesAvatarImageTests.m [32m(120 ms)[0m
+        Compile JSQMessagesTimestampFormatterTests.m      [32m✓[0m Compile JSQMessagesTimestampFormatterTests.m [32m(101 ms)[0m
+        Compile JSQMessagesComposerTextViewTests.m      [32m✓[0m Compile JSQMessagesComposerTextViewTests.m [32m(186 ms)[0m
+        Compile JSQMessagesCollectionViewTests.m      [32m✓[0m Compile JSQMessagesCollectionViewTests.m [32m(109 ms)[0m
+        Compile JSQMessagesNSStringTests.m      [32m✓[0m Compile JSQMessagesNSStringTests.m [32m(67 ms)[0m
+        Compile JSQMessagesToolbarButtonFactoryTests.m      [32m✓[0m Compile JSQMessagesToolbarButtonFactoryTests.m [32m(96 ms)[0m
+        Compile JSQMessagesMediaViewBubbleImageMaskerTests.m      [32m✓[0m Compile JSQMessagesMediaViewBubbleImageMaskerTests.m [32m(108 ms)[0m
+        Compile JSQMessagesTypingIndicatorFooterViewTests.m      [32m✓[0m Compile JSQMessagesTypingIndicatorFooterViewTests.m [32m(74 ms)[0m
+        Compile JSQMessagesUIImageTests.m      [32m✓[0m Compile JSQMessagesUIImageTests.m [32m(112 ms)[0m
+        Compile JSQMessagesCollectionViewLayoutAttributesTests.m      [32m✓[0m Compile JSQMessagesCollectionViewLayoutAttributesTests.m [32m(80 ms)[0m
+        Compile JSQMessagesViewControllerTests.m      [32m✓[0m Compile JSQMessagesViewControllerTests.m [33m(343 ms)[0m
+        Compile JSQMessagesKeyboardControllerTests.m      [32m✓[0m Compile JSQMessagesKeyboardControllerTests.m [32m(93 ms)[0m
+        Compile JSQMessagesBubbleImageFactoryTests.m      [32m✓[0m Compile JSQMessagesBubbleImageFactoryTests.m [33m(253 ms)[0m
+        Link JSQMessagesTests      [32m✓[0m Link JSQMessagesTests [32m(132 ms)[0m
+        Link JSQMessagesTests      [32m✓[0m Link JSQMessagesTests [32m(115 ms)[0m
+        Create universal binary JSQMessagesTests      [32m✓[0m Create universal binary JSQMessagesTests [2m[32m(42 ms)[0m
+        Generate JSQMessagesTests.xctest.dSYM      [32m✓[0m Generate JSQMessagesTests.xctest.dSYM [32m(99 ms)[0m
+        Run custom shell script 'Copy Pods Resources'      [32m✓[0m Run custom shell script 'Copy Pods Resources' [31m(710 ms)[0m
+[2m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[2mbuilding file list ... done
+
+sent 29 bytes  received 20 bytes  98.00 bytes/sec
+total size is 0  speedup is 0.00
+/* com.apple.actool.compilation-results */
+/Users/travis/Library/Developer/Xcode/DerivedData/JSQMessages-hkxdvdblflqetihkalzwwxtquucn/Build/Products/Debug-iphonesimulator/JSQMessagesTests.xctest/Assets.car[0m
+[2m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+        Touch JSQMessagesTests.xctest      [32m✓[0m Touch JSQMessagesTests.xctest [2m[32m(11 ms)[0m
+      [1m0 errored, 0 warning (6176 ms)[0m
+
+
+  [Info] Collecting info for testables...  [Info] Collecting info for testables... (4402 ms)
+  [1mrun-test[0m [4mJSQMessagesTests.xctest[0m (iphonesimulator7.1, application-test)
+    [Info] Installing 'com.hexedbits.JSQMessages' ...    [Info] Installed 'com.hexedbits.JSQMessages'. (9922 ms)
+    [Info] Launching test host and running tests ...    [Info] Launching test host and running tests ... (0 ms)
+      -[JSQMessageMediaTests testMediaMessageArchiving]    [32m✓[0m -[JSQMessageMediaTests testMediaMessageArchiving] [2m[32m(12 ms)[0m
+      -[JSQMessageMediaTests testMediaMessageInit]    [32m✓[0m -[JSQMessageMediaTests testMediaMessageInit] [2m[32m(1 ms)[0m
+      -[JSQMessageMediaTests testMediaMessageInvalidInit]
+[2m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[2m2014-11-24 00:58:39.046 JSQMessages[2197:5706] *** Assertion failure in -[JSQMessage init], /Users/travis/build/jessesquires/JSQMessagesViewController/JSQMessagesViewController/Model/JSQMessage.m:106
+[0m[2m2014-11-24 00:58:39.051 JSQMessages[2197:5706] *** Assertion failure in -[JSQMessage initWithSenderId:senderDisplayName:date:media:], /Users/travis/build/jessesquires/JSQMessagesViewController/JSQMessagesViewController/Model/JSQMessage.m:76
+[0m[2m━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+    [32m✓[0m -[JSQMessageMediaTests testMediaMessageInvalidInit] [2m[32m(9 ms)[0m
+      -[JSQMessageMediaTests testMediaMessageIsEqual]    [32m✓[0m -[JSQMessageMediaTests testMediaMessageIsEqual] [2m[32m(0 ms)[0m
+      -[JSQMessageTextTests testTextMessageArchiving]    [32m✓[0m -[JSQMessageTextTests testTextMessageArchiving] [2m[32m(0 ms)[0m
+      -[JSQMessageTextTests testTextMessageInit]    [32m✓[0m -[JSQMessageTextTests testTextMessageInit] [2m[32m(0 ms)[0m
+      -[JSQMessageTextTests testTextMessageInvalidInit]
+[2m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[2m2014-11-24 00:58:39.056 JSQMessages[2197:5706] *** Assertion failure in -[JSQMessage init], /Users/travis/build/jessesquires/JSQMessagesViewController/JSQMessagesViewController/Model/JSQMessage.m:106
+[0m[2m2014-11-24 00:58:39.057 JSQMessages[2197:5706] *** Assertion failure in -[JSQMessage initWithSenderId:senderDisplayName:date:text:], /Users/travis/build/jessesquires/JSQMessagesViewController/JSQMessagesViewController/Model/JSQMessage.m:52
+[0m[2m━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+    [32m✓[0m -[JSQMessageTextTests testTextMessageInvalidInit] [2m[32m(0 ms)[0m
+      -[JSQMessageTextTests testTextMessageIsEqual]    [32m✓[0m -[JSQMessageTextTests testTextMessageIsEqual] [2m[32m(0 ms)[0m
+      -[JSQMessagesAvatarImageFactoryTests testAvatarImage]    [32m✓[0m -[JSQMessagesAvatarImageFactoryTests testAvatarImage] [2m[32m(26 ms)[0m
+      -[JSQMessagesAvatarImageFactoryTests testAvatarInitialsImage]    [32m✓[0m -[JSQMessagesAvatarImageFactoryTests testAvatarInitialsImage] [2m[32m(2 ms)[0m
+      -[JSQMessagesAvatarImageTests testCopy]    [32m✓[0m -[JSQMessagesAvatarImageTests testCopy] [2m[32m(3 ms)[0m
+      -[JSQMessagesAvatarImageTests testInitInvalid]
+[2m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[2m2014-11-24 00:58:39.092 JSQMessages[2197:5706] *** Assertion failure in -[JSQMessagesAvatarImage init], /Users/travis/build/jessesquires/JSQMessagesViewController/JSQMessagesViewController/Model/JSQMessagesAvatarImage.m:59
+[0m[2m2014-11-24 00:58:39.093 JSQMessages[2197:5706] *** Assertion failure in -[JSQMessagesAvatarImage initWithAvatarImage:highlightedImage:placeholderImage:], /Users/travis/build/jessesquires/JSQMessagesViewController/JSQMessagesViewController/Model/JSQMessagesAvatarImage.m:45
+[0m[2m2014-11-24 00:58:39.094 JSQMessages[2197:5706] *** Assertion failure in -[JSQMessagesAvatarImage initWithAvatarImage:highlightedImage:placeholderImage:], /Users/travis/build/jessesquires/JSQMessagesViewController/JSQMessagesViewController/Model/JSQMessagesAvatarImage.m:45
+[0m[2m━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+    [32m✓[0m -[JSQMessagesAvatarImageTests testInitInvalid] [2m[32m(3 ms)[0m
+      -[JSQMessagesAvatarImageTests testInitValid]    [32m✓[0m -[JSQMessagesAvatarImageTests testInitValid] [2m[32m(0 ms)[0m
+      -[JSQMessagesBubbleImageFactoryTests testCustomIncomingMessageBubbleImageView]    [32m✓[0m -[JSQMessagesBubbleImageFactoryTests testCustomIncomingMessageBubbleImageView] [2m[32m(21 ms)[0m
+      -[JSQMessagesBubbleImageFactoryTests testCustomOutgoingMessageBubbleImageView]    [32m✓[0m -[JSQMessagesBubbleImageFactoryTests testCustomOutgoingMessageBubbleImageView] [2m[32m(1 ms)[0m
+      -[JSQMessagesBubbleImageFactoryTests testIncomingMessageBubbleImageView]    [32m✓[0m -[JSQMessagesBubbleImageFactoryTests testIncomingMessageBubbleImageView] [2m[32m(0 ms)[0m
+      -[JSQMessagesBubbleImageFactoryTests testOutgoingMessageBubbleImageView]    [32m✓[0m -[JSQMessagesBubbleImageFactoryTests testOutgoingMessageBubbleImageView] [2m[32m(0 ms)[0m
+      -[JSQMessagesBubbleImageTests testCopy]    [32m✓[0m -[JSQMessagesBubbleImageTests testCopy] [2m[32m(0 ms)[0m
+      -[JSQMessagesBubbleImageTests testInitInvalid]
+[2m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[2m2014-11-24 00:58:39.122 JSQMessages[2197:5706] *** Assertion failure in -[JSQMessagesBubbleImage init], /Users/travis/build/jessesquires/JSQMessagesViewController/JSQMessagesViewController/Model/JSQMessagesBubbleImage.m:41
+[0m[2m2014-11-24 00:58:39.123 JSQMessages[2197:5706] *** Assertion failure in -[JSQMessagesBubbleImage initWithMessageBubbleImage:highlightedImage:], /Users/travis/build/jessesquires/JSQMessagesViewController/JSQMessagesViewController/Model/JSQMessagesBubbleImage.m:27
+[0m[2m━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+    [32m✓[0m -[JSQMessagesBubbleImageTests testInitInvalid] [2m[32m(0 ms)[0m
+      -[JSQMessagesBubbleImageTests testInitValid]    [32m✓[0m -[JSQMessagesBubbleImageTests testInitValid] [2m[32m(0 ms)[0m
+      -[JSQMessagesCollectionViewCellTests testMessagesIncomingCollectionViewCellInit]    [32m✓[0m -[JSQMessagesCollectionViewCellTests testMessagesIncomingCollectionViewCellInit] [2m[32m(1 ms)[0m
+      -[JSQMessagesCollectionViewCellTests testMessagesOutgoingCollectionViewCellInit]    [32m✓[0m -[JSQMessagesCollectionViewCellTests testMessagesOutgoingCollectionViewCellInit] [2m[32m(0 ms)[0m
+      -[JSQMessagesCollectionViewFlowLayoutTests testFlowLayoutInit]    [32m✓[0m -[JSQMessagesCollectionViewFlowLayoutTests testFlowLayoutInit] [2m[32m(1 ms)[0m
+      -[JSQMessagesCollectionViewLayoutAttributesTests testLayoutAttributesInitAndIsEqual]    [32m✓[0m -[JSQMessagesCollectionViewLayoutAttributesTests testLayoutAttributesInitAndIsEqual] [2m[32m(0 ms)[0m
+      -[JSQMessagesCollectionViewTests testCollectionViewInit]    [32m✓[0m -[JSQMessagesCollectionViewTests testCollectionViewInit] [2m[32m(3 ms)[0m
+      -[JSQMessagesComposerTextViewTests testComposerTextViewInit]    [32m✓[0m -[JSQMessagesComposerTextViewTests testComposerTextViewInit] [2m[32m(29 ms)[0m
+      -[JSQMessagesInputToolbarTests testInputToolbarInit]    [32m✓[0m -[JSQMessagesInputToolbarTests testInputToolbarInit] [2m[32m(32 ms)[0m
+      -[JSQMessagesKeyboardControllerTests testKeyboardControllerInit]
+[2m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[2m2014-11-24 00:58:39.196 JSQMessages[2197:5706] *** Assertion failure in -[JSQMessagesKeyboardController initWithTextView:contextView:panGestureRecognizer:delegate:], /Users/travis/build/jessesquires/JSQMessagesViewController/JSQMessagesViewController/Controllers/JSQMessagesKeyboardController.m:75
+[0m[2m━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+    [32m✓[0m -[JSQMessagesKeyboardControllerTests testKeyboardControllerInit] [2m[32m(3 ms)[0m
+      -[JSQMessagesLabelTests testMessagesLabelInit]    [32m✓[0m -[JSQMessagesLabelTests testMessagesLabelInit] [2m[32m(0 ms)[0m
+      -[JSQMessagesLoadEarlierHeaderViewTests testLoadEarlierHeaderViewInit]    [32m✓[0m -[JSQMessagesLoadEarlierHeaderViewTests testLoadEarlierHeaderViewInit] [2m[32m(0 ms)[0m
+      -[JSQMessagesMediaViewBubbleImageMaskerTests testMediaViewBubbleImageMasker]    [32m✓[0m -[JSQMessagesMediaViewBubbleImageMaskerTests testMediaViewBubbleImageMasker] [2m[32m(4 ms)[0m
+      -[JSQMessagesNSStringTests testTrimingStringWhitespace]    [32m✓[0m -[JSQMessagesNSStringTests testTrimingStringWhitespace] [2m[32m(0 ms)[0m
+      -[JSQMessagesTimestampFormatterTests testRelativeDataForDate]    [32m✓[0m -[JSQMessagesTimestampFormatterTests testRelativeDataForDate] [2m[32m(7 ms)[0m
+      -[JSQMessagesTimestampFormatterTests testTimeForDate]    [32m✓[0m -[JSQMessagesTimestampFormatterTests testTimeForDate] [2m[32m(3 ms)[0m
+      -[JSQMessagesTimestampFormatterTests testTimestampForDate]    [32m✓[0m -[JSQMessagesTimestampFormatterTests testTimestampForDate] [2m[32m(1 ms)[0m
+      -[JSQMessagesTimestampFormatterTests testTimestampFormatterInit]    [32m✓[0m -[JSQMessagesTimestampFormatterTests testTimestampFormatterInit] [2m[32m(0 ms)[0m
+      -[JSQMessagesToolbarButtonFactoryTests testDefaultAccessoryButtonItem]    [32m✓[0m -[JSQMessagesToolbarButtonFactoryTests testDefaultAccessoryButtonItem] [2m[32m(0 ms)[0m
+      -[JSQMessagesToolbarButtonFactoryTests testDefaultSendButtonItem]    [32m✓[0m -[JSQMessagesToolbarButtonFactoryTests testDefaultSendButtonItem] [2m[32m(1 ms)[0m
+      -[JSQMessagesToolbarContentViewTests testToolbarContentViewInit]    [32m✓[0m -[JSQMessagesToolbarContentViewTests testToolbarContentViewInit] [2m[32m(8 ms)[0m
+      -[JSQMessagesTypingIndicatorFooterViewTests testTypingIndicatorFooterViewInit]    [32m✓[0m -[JSQMessagesTypingIndicatorFooterViewTests testTypingIndicatorFooterViewInit] [2m[32m(0 ms)[0m
+      -[JSQMessagesUIColorTests testDarkeningColors]    [32m✓[0m -[JSQMessagesUIColorTests testDarkeningColors] [2m[32m(0 ms)[0m
+      -[JSQMessagesUIColorTests testDarkeningColorsFloorToZero]    [32m✓[0m -[JSQMessagesUIColorTests testDarkeningColorsFloorToZero] [2m[32m(0 ms)[0m
+      -[JSQMessagesUIImageTests testImageAssets]    [32m✓[0m -[JSQMessagesUIImageTests testImageAssets] [2m[32m(3 ms)[0m
+      -[JSQMessagesUIImageTests testImageMasking]
+[2m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[2m2014-11-24 00:58:39.362 JSQMessages[2197:5706] *** Assertion failure in -[UIImage jsq_imageMaskedWithColor:], /Users/travis/build/jessesquires/JSQMessagesViewController/JSQMessagesViewController/Categories/UIImage+JSQMessages.m:25
+[0m[2m━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+    [32m✓[0m -[JSQMessagesUIImageTests testImageMasking] [2m[32m(0 ms)[0m
+      -[JSQMessagesUIViewTests testViewAutoLayoutPinEdges]    [32m✓[0m -[JSQMessagesUIViewTests testViewAutoLayoutPinEdges] [2m[32m(0 ms)[0m
+      -[JSQMessagesViewControllerTests testJSQMessagesViewControllerInit]    [32m✓[0m -[JSQMessagesViewControllerTests testJSQMessagesViewControllerInit] [2m[32m(17 ms)[0m
+      -[JSQMessagesViewControllerTests testJSQMessagesViewControllerSubclassInitProgramatically]    [32m✓[0m -[JSQMessagesViewControllerTests testJSQMessagesViewControllerSubclassInitProgramatically] [2m[32m(47 ms)[0m
+      -[JSQMessagesViewControllerTests testJSQMessagesViewControllerSubclassInitStoryboards]    [32m✓[0m -[JSQMessagesViewControllerTests testJSQMessagesViewControllerSubclassInitStoryboards] [32m(56 ms)[0m
+      -[JSQMessagesViewControllerTests testViewConfiguration]    [32m✓[0m -[JSQMessagesViewControllerTests testViewConfiguration] [2m[32m(45 ms)[0m
+    [1m49 passed, 0 failed, 0 errored, 49 total (503 ms)[0m
+
+
+[1m[32m** TEST SUCCEEDED: 49 passed, 0 failed, 0 errored, 49 total **[0m [2m(47417 ms)[0m
+
+travis_time:end:00d1d494:start=1416790634000000000,finish=1416790719000000000,duration=85000000000[0K
+[32;1mThe command "xctool clean build test -workspace JSQMessages.xcworkspace -scheme JSQMessages -sdk iphonesimulator7.1 ONLY_ACTIVE_ARCH=NO" exited with 0.[0m
+
+Done. Your build exited with 0.
