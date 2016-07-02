@@ -157,7 +157,7 @@ NSString *const kSubFolderVideoFiles = @"videos";
 	@try {
 		NSData *data = [NSJSONSerialization dataWithJSONObject:object options:kNilOptions error:&error];
 		if (error == nil)
-			return [self saveData:data toDocumentsFile:filePath];
+			return [self saveData:data toFilePath:filePath];
 	} @catch (NSException *exception) {
 		return NO;
 	}
@@ -165,8 +165,15 @@ NSString *const kSubFolderVideoFiles = @"videos";
 }
 
 - (BOOL)saveObject:(id)object toDocumentsFile:(NSString *)fileName {
-	NSString *filePath = [self dataFilesPathForFileName:fileName];
-	return [self.fileManager fileExistsAtPath:filePath];
+	NSError *error;
+	@try {
+		NSData *data = [NSJSONSerialization dataWithJSONObject:object options:kNilOptions error:&error];
+		if (error == nil)
+			return [self saveData:data toDocumentsFile:filePath];
+	} @catch (NSException *exception) {
+		return NO;
+	}
+	return NO;
 }
 
 - (id)fetchJSONFromDocumentsFilePath:(NSString *)filePath {

@@ -125,6 +125,7 @@
 				
 				// Save NSData object to a filePath
 				[dataManager saveData:data toFilePath:cell.filePath];
+				
 				[self finishTaskForCell:cell];
 				
 			}] resume];

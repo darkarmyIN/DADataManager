@@ -25,7 +25,7 @@ _Enter **DADataManager** to the rescue._
 
 ## Usage
 
-Create a instance of the DADataManager class.
+###### Create a instance of the DADataManager class.
 
 ```objc
 DADataManager *manager = [DADataManager sharedManager];
@@ -34,16 +34,59 @@ DADataManager *manager = [DADataManager sharedManager];
 let manager = DADataManager.sharedManager()
 ```
 
-Saving an object.
+###### Getting paths.
+
+`[manager imagesPathForFileName:@"image.jpg"]` _(image stored in ../Documents/Data/images)_
+
+`[manager dataFilesPathForFileName:@"file.json"]` _(file stored in ../Documents/Data/files)_
+
+`[manager rootPathForFileName:@"MyApp/Media/Videos/01.mp4"]` _(file stored in ../MyApp/Media/Videos/01.mp4)_
+
+`manager.libraryPathForFileName:("Samaritan/Core/Neural Nets/6741.SMRTN")` _(file stored at path ../Library/Samaritan/Core/Neural Nets/6741.SMRTN)_
+
+`manager.videosURLForFileName("1802.MP4")` _(File URL for video at path ../Documents/Data/vidoes/1802.MP4)_
+
+###### Saving objects.
 
 ```objc
 NSArray *array = @[@"One", @"Two", @"Three"];
 [manager saveObject:array toFilePath:[manager documentsPathForFileName:@"array.json"]];
 ```
 
+```swift
+let object = ["foo": 1, "bar": 2, "poo": 3, "jar": 4]
+manager.saveObject(object, toFilePath: manager.dataFilesPathForFileName("file.dat"))
+```
+
+###### Saving data downloaded off the internet
+
+```swift
+NSURLSession.sharedSession().dataTaskWithURL(URL, completionHandler: { (data, response, error) in
+	// Other stuff
+	let filePath = manager.videosPathForFileName("video.mov")
+	manager.saveData(data, toFilePath: filePath)
+}).resume()
+```
+
+###### Saving and getting images
+
+```swift
+let image = UIImage(data: data)
+dataManager.saveImage(image, fileName: manager.imagesPathForFileName("pic.jpg"))
+		
+let newImage = manager.getImageWithFileName("pic.jpg")
+```
+
+###### Deleting files
+
+```objc
+NSString *filePath = [manager documentsPathForFileName:@"array.json"];
+[manager deleteFileAtFilePath:filePath]
+```
+
 ## Methods
 
-Paths for file names
+###### Paths for file names
 
 These methods return a file path or URL for files stored in the application's documents or library folder.
 
@@ -62,7 +105,7 @@ Get the file paths for sub directories inside the documents folder.
  - (NSURL *)videosURLForFileName:(NSString *)fileName;
 ```
 
-Check if a file exists in the documents.
+###### Check if a file exists in the documents.
 
 ```objc
 - (BOOL)fileExistsInDocuments:(NSString *)fileName;
@@ -73,14 +116,14 @@ Check if a file exists in the documents.
 - (BOOL)videoURLExistsInDocuments:(NSURL *)url;
 ```
 
-Delete files at a file path or URL.
+###### Delete files at a file path or URL.
 
 ```objc
 - (BOOL)deleteFileAtFilePath:(NSString *)filePath;
 - (BOOL)deleteFileAtFileURL:(NSURL *)url;
 ```
 
-Data utilities.
+###### Data utilities.
 
 ```objc
 - (BOOL)saveData:(NSData *)data toFilePath:(NSString *)filePath;
@@ -99,7 +142,7 @@ Image utilities.
 - (UIImage *)getImageWithFileName:(NSString *)fileName;
 ```
 
-Shared instance
+###### Shared instance
 
 ```objc
 + (DADataManager)sharedManager;

@@ -225,8 +225,8 @@
                                                     <exclude reference="gFc-8S-uke"/>
                                                     <exclude reference="4vb-7x-z9b"/>
                                                     <exclude reference="XpN-V2-Dd7"/>
-                                                    <exclude reference="Ray-p8-Swp"/>
                                                     <exclude reference="Ogh-8d-KQP"/>
+                                                    <exclude reference="Ray-p8-Swp"/>
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
@@ -298,10 +298,10 @@
                                             <variation key="default">
                                                 <mask key="constraints">
                                                     <exclude reference="Veu-X4-9lf"/>
-                                                    <exclude reference="wLE-7D-sWU"/>
                                                     <exclude reference="ENu-gV-Q4O"/>
-                                                    <exclude reference="nTn-dx-2Lb"/>
+                                                    <exclude reference="wLE-7D-sWU"/>
                                                     <exclude reference="bPM-pi-lia"/>
+                                                    <exclude reference="nTn-dx-2Lb"/>
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
@@ -448,8 +448,8 @@
                                             <variation key="default">
                                                 <mask key="constraints">
                                                     <exclude reference="6LQ-xA-d0f"/>
-                                                    <exclude reference="kmj-rf-4bT"/>
                                                     <exclude reference="aH7-Gg-oVN"/>
+                                                    <exclude reference="kmj-rf-4bT"/>
                                                     <exclude reference="Et0-aq-Kwq"/>
                                                     <exclude reference="K56-dN-EhY"/>
                                                 </mask>
@@ -523,8 +523,8 @@
                                             <variation key="default">
                                                 <mask key="constraints">
                                                     <exclude reference="LC4-tO-EAq"/>
-                                                    <exclude reference="aJy-JC-Sf3"/>
                                                     <exclude reference="7So-OS-rnS"/>
+                                                    <exclude reference="aJy-JC-Sf3"/>
                                                     <exclude reference="0Ft-qd-33r"/>
                                                     <exclude reference="ycb-xz-3Mo"/>
                                                 </mask>
@@ -598,10 +598,10 @@
                                             <variation key="default">
                                                 <mask key="constraints">
                                                     <exclude reference="cPo-qg-7I2"/>
-                                                    <exclude reference="y5H-vD-VUl"/>
                                                     <exclude reference="U6i-ij-AMi"/>
-                                                    <exclude reference="YCp-gJ-c2U"/>
+                                                    <exclude reference="y5H-vD-VUl"/>
                                                     <exclude reference="M1w-7T-TIa"/>
+                                                    <exclude reference="YCp-gJ-c2U"/>
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
@@ -675,8 +675,8 @@
                                                     <exclude reference="PBo-Bi-qqP"/>
                                                     <exclude reference="dte-Tj-99U"/>
                                                     <exclude reference="fW2-uP-mvm"/>
-                                                    <exclude reference="rax-35-m4Y"/>
                                                     <exclude reference="JQs-aA-le4"/>
+                                                    <exclude reference="rax-35-m4Y"/>
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
