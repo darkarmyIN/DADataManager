@@ -169,7 +169,7 @@ NSString *const kSubFolderVideoFiles = @"videos";
 	@try {
 		NSData *data = [NSJSONSerialization dataWithJSONObject:object options:kNilOptions error:&error];
 		if (error == nil)
-			return [self saveData:data toDocumentsFile:filePath];
+			return [self saveData:data toDocumentsFile:fileName];
 	} @catch (NSException *exception) {
 		return NO;
 	}
