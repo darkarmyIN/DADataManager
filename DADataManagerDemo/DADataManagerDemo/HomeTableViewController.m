@@ -6,23 +6,48 @@
 //  Copyright © 2016 Dark Army. All rights reserved.
 //
 
-#import <DADataManager/DADataManager.h>
+@import DADataManager;
+@import AFNetworking;
+
 #import "HomeTableViewController.h"
+#import "ProgressTableViewCell.h"
 
 @interface HomeTableViewController ()
 
+@property (weak, nonatomic) IBOutlet ProgressTableViewCell *jsonDataCell;
+@property (weak, nonatomic) IBOutlet ProgressTableViewCell *binaryDataCell;
+@property (weak, nonatomic) IBOutlet ProgressTableViewCell *stringCell;
+@property (weak, nonatomic) IBOutlet ProgressTableViewCell *imageCell;
+@property (weak, nonatomic) IBOutlet ProgressTableViewCell *audioCell;
+@property (weak, nonatomic) IBOutlet ProgressTableViewCell *videoCell;
+@property (weak, nonatomic) IBOutlet ProgressTableViewCell *libraryCell;
+
+@property (nonatomic) NSArray<ProgressTableViewCell *> *cells;
+
 @end
 
-@implementation HomeTableViewController
+@implementation HomeTableViewController {
+	DADataManager *dataManager;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+	
+	// Create the instance
+	dataManager = [DADataManager sharedManager];
+	
+	// Set file paths from the instance
+	self.jsonDataCell.filePath = [dataManager dataFilesPathForFileName:@"01.json"];
+	self.binaryDataCell.filePath = [dataManager dataFilesPathForFileName:@"02.srt"];
+	self.stringCell.filePath = [dataManager documentsPathForFileName:@"03.txt"];
+	self.imageCell.filePath = [dataManager imagesPathForFileName:@"04.jpg"];
+	self.audioCell.filePath = [dataManager audioPathForFileName:@"05.mp3"];
+	self.videoCell.filePath = [dataManager videosPathForFileName:@"06.mp4"];
+	self.libraryCell.filePath = [dataManager libraryPathForFileName:@"07.dat"];
+	
+	self.cells = [NSMutableArray arrayWithObjects:self.jsonDataCell, self.binaryDataCell, self.stringCell, self.imageCell, self.audioCell, self.videoCell, nil];
+	
+	
 }
 
 - (void)didReceiveMemoryWarning {
@@ -30,68 +55,44 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - Table view data source
+#pragma mark - Table view delegate
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 0;
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+	
+	[tableView deselectRowAtIndexPath:indexPath animated:YES];
+	
+	if (indexPath.section == 0) {
+		
+		ProgressTableViewCell *cell = [self.cells objectAtIndex:indexPath.row];
+		
+		if ([dataManager fileExistsAtPath:cell.filePath]) {
+			// Do nothing if file's present
+			return;
+		}
+		
+		NSString *urlString = cell.subtitleLabel.text;
+		AFHTTPRequestSerializer *serializer = [AFHTTPRequestSerializer serializer];
+		NSURLRequest *request = [serializer requestWithMethod:@"GET" URLString:urlString parameters:nil error:nil];
+		AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
+		cell.activityIndicatorView.hidden = NO;
+		NSURLSessionDownloadTask *task = [manager downloadTaskWithRequest:request
+																 progress:^(NSProgress * _Nonnull downloadProgress) {
+																	 dispatch_async(dispatch_get_main_queue(), ^{
+																		 cell.progress = downloadProgress.fractionCompleted;
+																	 });
+																 } destination:^NSURL * _Nonnull(NSURL * _Nonnull targetPath, NSURLResponse * _Nonnull response) {
+																	 return [NSURL fileURLWithPath:cell.filePath];
+																 } completionHandler:^(NSURLResponse * _Nonnull response, NSURL * _Nullable filePath, NSError * _Nullable error) {
+																	 
+																	 dispatch_async(dispatch_get_main_queue(), ^{
+																		 cell.progress = 1;
+																		 cell.activityIndicatorView.hidden = YES;
+																		 cell.pathLabel.hidden = NO;
+																	 });
+																 }];
+		[task resume];
+		
+	}
+
 }
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 0;
-}
-
-/*
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
-    
-    return cell;
-}
-*/
-
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
 @end

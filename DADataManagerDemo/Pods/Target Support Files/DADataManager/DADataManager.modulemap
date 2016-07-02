@@ -1,0 +1,6 @@
+framework module DADataManager {
+  umbrella header "DADataManager-umbrella.h"
+
+  export *
+  module * { export * }
+}

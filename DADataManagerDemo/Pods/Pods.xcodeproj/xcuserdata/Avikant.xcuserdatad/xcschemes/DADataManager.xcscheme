@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'D9DEED7535DF9A98200E3D31FFC5E4B1'
+               BlueprintIdentifier = 'F2334EFEBFE5970E037508C44FC7B527'
                BlueprintName = 'DADataManager'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libDADataManager.a'>
+               BuildableName = 'DADataManager.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

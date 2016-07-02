@@ -39,10 +39,18 @@ NSString *const kSubFolderVideoFiles = @"videos";
 	return [documentsPath stringByAppendingPathComponent:[NSString stringWithFormat:@"%@", fileName]];
 }
 
+- (NSURL *)documentsURLForFileName:(NSString *)fileName {
+	return [NSURL fileURLWithPath:[self dataFilesPathForFileName:fileName]];
+}
+
 - (NSString *)libraryPathForFileName:(NSString *)fileName {
 	NSArray *paths = NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES);
 	NSString *documentsPath = [NSString stringWithFormat:@"%@", [paths lastObject]];
 	return [documentsPath stringByAppendingPathComponent:[NSString stringWithFormat:@"%@", fileName]];
+}
+
+- (NSURL *)libraryURLForFileName:(NSString *)fileName {
+	return [NSURL fileURLWithPath:[self libraryPathForFileName:fileName]];
 }
 
 - (NSString *)filePathForFileName:(NSString *)fileName subfolder:(NSString *)subfolder {
@@ -56,12 +64,24 @@ NSString *const kSubFolderVideoFiles = @"videos";
 	return [self filePathForFileName:fileName subfolder:kSubFolderDataFiles];
 }
 
+- (NSURL *)dataFilesURLForFileName:(NSString *)fileName {
+	return [NSURL fileURLWithPath:[self dataFilesPathForFileName:fileName]];
+}
+
 - (NSString *)imagesPathForFileName:(NSString *)fileName {
 	return [self filePathForFileName:fileName subfolder:kSubFolderImageFiles];
 }
 
+- (NSURL *)imagesURLForFileName:(NSString *)fileName {
+	return [NSURL fileURLWithPath:[self imagesPathForFileName:fileName]];
+}
+
 - (NSString *)audioPathForFileName:(NSString *)fileName {
 	return [self filePathForFileName:fileName subfolder:kSubFolderAudioFiles];
+}
+
+- (NSURL *)audioURLForFileName:(NSString *)fileName {
+	return [NSURL fileURLWithPath:[self audioPathForFileName:fileName]];
 }
 
 - (NSString *)videosPathForFileName:(NSString *)fileName {
@@ -73,6 +93,10 @@ NSString *const kSubFolderVideoFiles = @"videos";
 }
 
 #pragma mark - File checking
+
+- (BOOL)fileExistsAtPath:(NSString *)filePath {
+	return [self.fileManager fileExistsAtPath:filePath];
+}
 
 - (BOOL)fileExistsInDocuments:(NSString *)fileName {
 	NSString *filePath = [self documentsPathForFileName:fileName];

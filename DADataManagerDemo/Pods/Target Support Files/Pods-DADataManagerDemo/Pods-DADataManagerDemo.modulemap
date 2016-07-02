@@ -1,0 +1,6 @@
+framework module Pods_DADataManagerDemo {
+  umbrella header "Pods-DADataManagerDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}
