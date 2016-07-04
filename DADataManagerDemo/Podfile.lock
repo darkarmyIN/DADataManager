@@ -14,7 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
-  - DADataManager (0.1)
+  - DADataManager (0.2.2)
 
 DEPENDENCIES:
   - AFNetworking
@@ -22,7 +22,7 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
-  DADataManager: edf3dbd17f13bcb9744c8f7e0cc56adddc96418a
+  DADataManager: 1c6f0f8f4ce3c7e34f29ac542df44ce4020c71d1
 
 PODFILE CHECKSUM: ce57b52bc40c4d07d3fb3ce3e4b0a084b1e9a1b9
 

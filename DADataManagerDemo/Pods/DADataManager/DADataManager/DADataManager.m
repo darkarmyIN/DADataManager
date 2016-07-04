@@ -1,6 +1,6 @@
 //
 //  DADataManager.m
-//  DADataManagerDemo
+//  DADataManager
 //
 //  Created by Avikant Saini on 7/1/16.
 //  Copyright © 2016 Dark Army. All rights reserved.
@@ -61,10 +61,6 @@ NSString *const kSubFolderVideoFiles = @"videos";
 }
 
 - (NSString *)filePathForFileName:(NSString *)fileName subfolder:(NSString *)subfolder {
-//	NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-//	NSString *documentsPath = [NSString stringWithFormat:@"%@", [paths lastObject]];
-//	[self.fileManager createDirectoryAtPath:[NSString stringWithFormat:@"%@/%@/%@", [paths lastObject], pathPrefix, subfolder] withIntermediateDirectories:YES attributes:nil error:nil];
-//	return [documentsPath stringByAppendingPathComponent:[NSString stringWithFormat:@"%@/%@/%@", pathPrefix, subfolder, fileName]];
 	return [self documentsPathForFileName:[NSString stringWithFormat:@"%@/%@/%@", pathPrefix, subfolder, fileName]];
 }
 
@@ -161,7 +157,7 @@ NSString *const kSubFolderVideoFiles = @"videos";
 	@try {
 		NSData *data = [NSJSONSerialization dataWithJSONObject:object options:kNilOptions error:&error];
 		if (error == nil)
-			return [self saveData:data toDocumentsFile:filePath];
+			return [self saveData:data toFilePath:filePath];
 	} @catch (NSException *exception) {
 		return NO;
 	}
@@ -169,8 +165,15 @@ NSString *const kSubFolderVideoFiles = @"videos";
 }
 
 - (BOOL)saveObject:(id)object toDocumentsFile:(NSString *)fileName {
-	NSString *filePath = [self dataFilesPathForFileName:fileName];
-	return [self.fileManager fileExistsAtPath:filePath];
+	NSError *error;
+	@try {
+		NSData *data = [NSJSONSerialization dataWithJSONObject:object options:kNilOptions error:&error];
+		if (error == nil)
+			return [self saveData:data toDocumentsFile:fileName];
+	} @catch (NSException *exception) {
+		return NO;
+	}
+	return NO;
 }
 
 - (id)fetchJSONFromDocumentsFilePath:(NSString *)filePath {
